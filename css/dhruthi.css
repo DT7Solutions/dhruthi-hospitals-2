@@ -114,14 +114,42 @@ html,body {
     margin-top: -25px !important;
   }
   .about-text p{
-    font-size: 16px 
+    font-size: 16px;
+    text-align: justify;
+    text-justify: inter-word;
+    
+  }
+  .about-text .about-btn{
+    border: 2px solid rgb(245, 234, 234) !important;
+    margin-top: 10px !important;
+    margin-left: 30% !important;
+    color: rgb(2, 20, 36);
+    font-weight: 400 !important;
+    height: 40px !important ;
+    width: 30% !important;
+    border-radius:5px !important;
+    font-weight: 600;
+    background:linear-gradient(0deg, rgba(37, 162, 216, 0.3), #016c94);
+    color: white;
   }
 
+/* .about-text .about-btn:hover{
+       margin-top: 50px !important;
+       margin-left: 30%;
+       background:linear-gradient(0deg, rgba(37, 162, 216, 0.3), #016c94);
+       color: #e7edf0 !important;
+       border: none !important;
+       transition: 1.5s;
+      
+      }  */
+
   @media (max-width:992px){
-    /* .about-img{
-      width:400px;
+    .about-img{
+      width:550px;
       height:400px;
-    } */
+      margin-top: 10px !important;
+      margin-bottom: 4px !important;
+    }
   }
   
 
