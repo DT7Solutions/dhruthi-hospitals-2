@@ -564,13 +564,14 @@ strong {
 }
 
 .timeline-icon {
-  position: relative;
-  z-index: 100;
-  font-size: var(--h3-font-size);
-  color: var(--primary-color);
-  display: block;
-  text-align: center;
-  line-height: 80px;
+  position: relative !important;
+  z-index: 100 !important;
+  font-size: var(--h3-font-size) !important;
+  color: var(--primary-color) !important;
+  display: block !important;
+  text-align: center !important;
+  line-height: 80px !important;
+  display: none !important;
 }
 
 @media (max-width: 767px) {
@@ -605,7 +606,7 @@ strong {
     left: auto;
     right: 100%;
     border-left: 0;
-    border-right: 10px solid var(--dark-color);
+    border-right: 10px solid var();
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
   }
