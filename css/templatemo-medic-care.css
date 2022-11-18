@@ -487,7 +487,7 @@ strong {
   top: 37px;
   left: 50%;
   width: 0;
-  border-left: 1px solid var(--border-color);
+  border-left: 2px solid var(--border-color);
   height: 85%;
   z-index: 1;
   transform: translateX(-50%);
@@ -888,6 +888,11 @@ strong {
     margin-bottom: -100px;
     padding: 2rem;
   }
+  .location-container{
+    margin-top:20px;
+    margin-bottom: 20px;
+    
+  }
 
   .featured-circle {
     width: 320px;
@@ -965,4 +970,14 @@ strong {
   .timeline::before {
     left: 42px;
   }
+}
+
+@media screen and (min-width: 773px) and (max-width:992px){
+.map{
+  display:inline-block;
+  width:200px;
+  height:200px;
+  overflow: hidden;
+}
+
 }

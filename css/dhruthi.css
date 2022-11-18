@@ -13,15 +13,17 @@ html,body {
 
 #branchs-card{
     /* background-color: #0eaa7e; */
-    background-image: url(../images/dh-images//card-background.jpg);
+    background:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/dh-images//dhruthi-hospitals-hospitals-background-image-1920x1080.jpeg);
     opacity: 8;
     background-repeat: no-repeat;
     background-size: cover;
-    padding-left: 25px !important;
-    width: 100% !important;
+    background-attachment: fixed;
+    object-fit: contain;
+    width: 100%!important;
     height: auto;
-    background-blend-mode:luminosity !important;
-    z-index: -13;
+    border: none;
+    background-blend-mode:darken !important;
+    
 
 }
 #branchs-card .card{
@@ -40,7 +42,7 @@ html,body {
 .card-body .btn{
  border: 2px solid rgb(245, 233, 233) !important;
  margin-top: 50px !important;
- margin-left: 30%;
+ 
  /* background-color: aliceblue; */
  color: aliceblue;
  font-weight: 400 !important;
@@ -49,7 +51,6 @@ html,body {
 #branchs-card .card-body .btn:hover{
     /* border: 2px solid rgb(245, 233, 233) !important; */
     margin-top: 50px !important;
-    margin-left: 30%;
     background:linear-gradient(0deg, rgba(37, 162, 216, 0.3), #016c94);
     color: #e7edf0 !important;
     border: none !important;
@@ -63,6 +64,8 @@ html,body {
  /* background-image: url(../images//dh-images/dhruti-hospital-chirch-road-hospital-image-1-1024x436.webp); */
  background:linear-gradient(0deg, rgba(37, 162, 216, 0.3), #016c94),url(../images//dh-images/Untitled-design-11.webp);
  background-size: cover;
+ border-radius: 15px;
+ border: none !important;
 }
 .branches .card:hover{
     border: none;
@@ -127,7 +130,7 @@ html,body {
     color: rgb(2, 20, 36);
     font-weight: 400 !important;
     height: 40px !important ;
-    width: 30% !important;
+    
     border-radius:5px !important;
     font-weight: 600;
     background:linear-gradient(0deg, rgba(37, 162, 216, 0.3), #016c94);
@@ -153,9 +156,18 @@ html,body {
     }
   }
   
+  @media (max-width:772px){
+    .about-img{
+      width:500px;
+      height:400px;
+      margin-top: 10px !important;
+      margin-bottom: 4px !important;
+    }
+  }
+  
 
   /*--timeline--*/
-   /* .timeline-card{
+    .timeline-card{
     width:420px;
     height:190px;
     border-radius:5px;
@@ -166,19 +178,19 @@ html,body {
       height:190px;
     }
     
-  } */
+  } 
   
 
    /*--meet-our-doctors--*/
    .doctor-one{
-    border-radius: 50px;
-    width:300px;
-    height:300px;
+    border-radius: 200px;
+    width:450px;
+    height:450px;
    }
    .doctor-two{
-    border-radius: 50px;
-    width:350px;
-    height:350px;
+    border-radius: 200px;
+    width:450px;
+    height:450px;
    }
 
    .row-text{
@@ -308,16 +320,19 @@ html,body {
       width: 110px;
       height:110px;
     }
-    .location-container{
+    /* .location-container{
+      width:100%;
+      height:auto;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
     
       background-color: aliceblue;
-    }
+    } */
     .anything-section{
       background-color:#e5f5f9;
+      background-attachment: fixed;
     }
 
     .ftco-faqs .myaccordion .btn {
@@ -361,15 +376,22 @@ html,body {
 
   /*--services--*/
   .ftco-intro .services {
-    padding: 60px;
+    padding-top: 80px;
+    padding-bottom:60px;
     margin-top: 160px;
     background: #fff;
+    border-top-left-radius: 50px!important;
+    border-top-right-radius:50px!important;
+    
    
     border-radius: 4px;
 }
 
-.ftco-intro .services:hover {
-  background: linear-gradient(90deg, rgba(49, 130, 206, 1) 0%, rgba(56, 178, 172, 1) 100%);
+.ftco-intro .services:hover{
+ 
+  background: linear-gradient(90deg, rgba(49, 130, 206, 1) 40%, rgba(56, 178, 172, 1) 100%);
+  
+
   
 }
 .services {
@@ -443,7 +465,7 @@ html,body {
   border:none ;
   color: #ffff;
   border-radius: 10px;
-  padding: 7px;
+  padding: 10px;
 }
 
 .services .media-body .btn-custom {
@@ -463,11 +485,18 @@ html,body {
 
 .services .media-body .btn-custom:hover {
   background-color: #fff;
-}
+}  
 
 .fa-chevron-right{
   color: #fff;
 }
+.fa-chevron-right:hover{
+  color:#0aac7f;
+}
+.btn-custom:hover{
+  color: #0aac7f;
+}
+
 .heading{
   color:#006d95; font-weight:600;
 }
@@ -475,4 +504,115 @@ html,body {
 .heading:hover{
   color: #fff;
   font-weight: 600;
+}
+
+#booking{
+  background-image: linear-gradient(to top, #37ecba 0%, #72afd3 100%);
+}
+.form-image{
+  width: 100%;
+  height:auto;
+  background-size: cover;
+  object-fit: contain;
+
+}
+
+
+ .form-btn{
+  border: 2px solid rgb(245, 233, 233) !important;
+  display: flex!important;
+  align-items: center!important;
+  justify-content: center!important;
+  border-radius: 10px!important;
+  /* background-color: aliceblue; */
+  color: aliceblue;
+  font-weight: 400 !important;
+  background-color: transparent!important;
+  width: 130px !important;
+ 
+ }
+ input{
+  color: #fff;
+ } 
+ /* .location-container{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+ }
+  */
+  .location-container {
+    width: 350px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+
+}
+
+.maps {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+
+}
+
+.map-details{
+  margin: 10px;
+}
+.bi-geo-alt{
+  width: 40px !important;
+  height: 40px !important;
+
+}
+/* .form-control::placeholder{
+  color: #e5f5f9!important;
+}
+
+.booking-form.form-control{
+  color: #e5f5f9 !important;
+} */
+
+.logo{
+  max-width:250px;
+  height:100px;
+  border-radius: 10px;
+  
+}
+#reviews{
+  padding-top: -40px;
+}
+/*--animations--*/
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.slideInLeft {
+  animation-name: slideInLeft;
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+input[type=date].form-control{
+  color: #fff;
+}
+.form-control::placeholder{
+  color: #e5f5f9!important;
+}
+.form-control{
+  background-clip: initial!important;
 }
