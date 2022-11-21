@@ -276,12 +276,16 @@ strong {
 -------------------------------------*/
 .swiper {
   width: 100%;
-  height: 100%;
+  height:100%  !important;
 }
 
 .swiper-slide {
+  height: auto !important;
   background-position: center;
   background-size: cover;
+  overflow: hidden;
+  object-fit: cover !important;
+  object-position: bottom !important;
 }
 
 /* .swiper-slide img {
@@ -293,19 +297,14 @@ strong {
 } */
 .swiper-slide .slider-image{
   width: 100%;
-  height: 60vh !important;
+  height: 50vh !important;
   margin: 0 !important;
   padding: 0 !important;
-  /* background-position: center; */
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-
-  object-fit: cover;
-  object-position: bottom;
-}
+  background-size:cover;
+  object-fit: cover !important;
+  object-position: bottom !important;
+} 
 
 
 /*---------------------------------------
@@ -1003,3 +1002,14 @@ strong {
 .bi-star-fill{
   color: #ffe234;
 }
+
+
+.maps{
+  display: flex !important;
+  justify-content:space-around !important;
+  background-color: black !important;
+}
+.maps .card{
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+} 

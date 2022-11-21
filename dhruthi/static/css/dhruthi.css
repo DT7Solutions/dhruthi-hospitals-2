@@ -1,9 +1,12 @@
 .logo-banner{
     position: absolute !important;
-    top: 220px !important;
-    left: 15%;
-    z-index: 10;
+    top: 100px !important;
+    left: 20px !important;
+    z-index: 10; 
+}
 
+.logo-banner img{
+  border-radius: 10px !important;
 }
 html,body {
   margin: 0 !important;
@@ -616,3 +619,16 @@ input[type=date].form-control{
 .form-control{
   background-clip: initial!important;
 }
+
+
+@media (max-width:950px){
+  .logo-banner img{
+  position: absolute;
+  top: 0px !important;
+  left: 0px !important;
+  margin-left: -70px !important;
+  height: 150px ;
+  width: 170px !important;
+  }
+}
+
