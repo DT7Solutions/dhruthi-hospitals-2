@@ -1007,9 +1007,26 @@ strong {
 .maps{
   display: flex !important;
   justify-content:space-around !important;
-  background-color: black !important;
+  /* margin-top: -40px !important; */
+  margin-bottom: 10px !important;
+  /* background-color: black !important;  */
 }
 .maps .card{
-  margin-top: 10px !important;
+  margin-top: 50px !important;
   margin-bottom: 10px !important;
+  color: black !important;
+  border: none !important;
+  border-radius: 10px !important;
 } 
+.maps .card:hover{
+  transform: scale(1.2);
+  transition: all 0.5s;
+} 
+
+.deg-sign{
+  color: #247cff;
+  font-size: 20px !important;
+  font-weight: 600;
+  padding-bottom: 10px !important;
+ 
+}

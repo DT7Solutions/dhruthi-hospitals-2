@@ -1,1021 +1,1059 @@
 {% load static %}
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <meta name="description" content="">
-        <meta name="author" content="">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>Medic Care Bootstrap 5 CSS Template</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-        <!-- CSS FILES -->        
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <title>Dhruthi</title>
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-        <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+  <!-- CSS FILES -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
 
-        <link href="{% static 'css/bootstrap-icons.css' %}" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-        <link href="{% static 'css/owl.carousel.min.css' %}" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-        <link href="{% static 'css/owl.theme.default.min.css' %}" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
 
-        <link href="{% static 'css/templatemo-medic-care.css' %}" rel="stylesheet">
-        <link href="{% static 'css/animate.min.css' %}" rel="stylesheet">
+  <link href="{% static 'css/bootstrap-icons.css' %}" rel="stylesheet">
 
-        <link href="{% static 'css/dhruthi.css' %}" rel="stylesheet">
+  <link href="{% static 'css/owl.carousel.min.css' %}" rel="stylesheet">
 
-        <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<!--
+  <link href="{% static 'css/owl.theme.default.min.css' %}" rel="stylesheet">
+
+  <link href="{% static 'css/templatemo-medic-care.css' %}" rel="stylesheet">
+  <link href="{% static 'css/animate.min.css' %}" rel="stylesheet">
+
+  <link href="{% static 'css/dhruthi.css' %}" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!--
 
 TemplateMo 566 Medic Care
 
 https://templatemo.com/tm-566-medic-care
 
 -->
-    </head>
-    
-    <body id="top">
-    
-        <main>
-            <section class="slider-banner">
-                <div class="container-fluid carousel-section">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="swiper mySwiper">
-                                <div class="swiper-wrapper">
-                                  {% for slider_item in slider%}
-                                  <div class="swiper-slide" style="background-image: url({{slider_item.Image}});">
-                                  <div class='slider-image' >
-                                    </div>
-                                    
-                                  </div>
-                                  {% endfor %}
-                                  <!-- <div class="swiper-slide">
-                                    <img src="{% static 'images/dh-images/dhruthi-hospital-main-page-healthcare-image-1024x266.jpg' %}" />
-                                  </div>
-                                  <div class="swiper-slide">
-                                    <img src="{% static 'images/dh-images/dhruthi-hospital-main-page-image-teeth-image-01-1024x266.jpg' %}" />
-                                  </div> -->
-                                 
-                                </div>
-                                <!-- <div class="swiper-button-next"></div>
-                                <div class="swiper-button-prev"></div>
-                                <div class="swiper-pagination"></div> -->
-                              </div>
-            
-                        </div>
-                    </div>
-                </div>
-                <div class="logo-banner animated  flip">
-                    <img src="{% static 'images/dh-images/dhruthi-hospital-logo-250x115.png' %}" class="animated " style="width:300px;height:150px;" />
-                </div> 
-            </section>
+</head>
 
-            <section class="" id="branchs-card">
-                <div class="container">
-                    <div class="row card-row">
-                        <div class="col-lg-6 col-md-6 col-12 branches d-flex justify-content-center">
-                            <div class="card wow flipInY " data-wow-delay="0.9s">
-                                <div class="card-body" style="display: flex;flex-direction:column;justify-content:space-between;align-items: center;">
-                                  <img src="{5 static 'images/dh-images/dhruthi-hospital-logo-250x115.png' %}" class="logo"/>
-                                    <h5 class="card-title" style="font-size:22px ;font-weight:800;">Dhruthi Hospital</h5>
-                                    <p>Dhruthi Hospital is a multispeciality, tertiary care Hospital that lays its foundation on a ‘Patient’s Health care first’ ideology.</p>
-                                    <div>
-                                        <a href="https://dhruthihospital.com/dhruthi-hospitals/" ><button class="btn">Visit Website</button></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-12 branches d-flex justify-content-center">
-                            <div class="card wow flipInX" data-wow-delay="1.4s">
-                                <div class="card-body" style="display: flex;flex-direction:column;justify-content:space-between;align-items: center;">
-                                  <img src="{% static 'images/dh-images/dhruthi-clinics-logo-250x115.png' %}" class="logo"/>
-                                    <h5 class="card-title" style="font-size:22px ;font-weight:800;">Dhruthi Clinics</h5>
-                                    <p>We’re here when you need us. For everyday care or life-changing care, you can count on us to keep you and your loved ones safe and healthy.</p>
-                                    <div>
-                                      <a href="https://www.dhruthiclinics.com/"  ><button class="btn">Visit Website</button></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row card-row mt-5 mb-5">
-                        <div class="col-lg-6 col-md-6 col-12 branches d-flex justify-content-center">
-                            <div class="card  wow slideInLeft " data-wow-delay="1.6">
-                                <div class="card-body"  style="display: flex;flex-direction:column;justify-content:space-between;align-items: center;">
-                                  <img src="{% static 'images/dh-images/dhruthi-clinics-logo-250x115.png' %}" class="logo"/>
-                                    <h5 class="card-title" style="font-size:22px ;font-weight:800;">Dhruthi Clinics</h5>
-                                    <p>We’re here when you need us. For everyday care or life-changing care, you can count on us to keep you and your loved ones safe and healthy.</p>
-                                    <div>
-                                      <a href="https://www.dhruthiclinics.com/"  ><button class="btn">Visit Website</button></a>
-                                    </div>
-                                  
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-12 branches d-flex justify-content-center">
-                            <div class="card  wow slideInRight" data-wow-delay="1.8" >
-                                <div class="card-body"  style="display: flex;flex-direction:column;justify-content:space-between;align-items: center;">
-                                  <img src="{% static 'images/dh-images/dhruthi-clinics-logo-250x115.png' %}" class="logo"/>
-                                  <h5 class="card-title" style="font-size:22px ;font-weight:800;">Dhruthi Clinics</h5>
-                                  <p>We’re here when you need us. For everyday care or life-changing care, you can count on us to keep you and your loved ones safe and healthy.</p>
-                                  <div>
-                                    <a href="https://www.dhruthiclinics.com/"  ><button class="btn">Visit Website</button></a>
-                                  </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+<body id="top">
 
-            <section class="about-section">
-                <h2 class="text-center" style="color: #ffff; margin-bottom: 10px;">About</h2>
-                <div class=" about-container " >
-                    <div class="row">
-                        <div class="col-sm-12  col-lg-6 about-image d-flex justify-content-center align-items-center wow fadeInUpBig" data-wow-delay="0.7s">
-                            <img src="{% static 'images/dh-images/Dhruthi-Hospital-building.webp' %}" class="about-img"/>
-                        </div>
-                        <div class="col-sm-12  col-lg-6  about-text wow slideInRight" data-wow-delay="0.1s">
-                            <h4 style="color:#ffff">Dhruthi Health Care </h4>
-                            <p style="color:#ffff; font-weight: 500;">Dhruthi Health Care is a medical center that offers clinical and hospital care. Ranked among the top hospitals in Guntur, we provide specialized medical care to thousands of patients every year.
-                                We offer advanced technology, the latest treatments and are among the safest places in healthcare today. Our renowned medical experts work as a team to deliver comprehensive care across a broad range of specialties, and we always put our patients at the center of everything we do.</p>
-                            
-                            <p style="color:#ffff; font-weight: 500;">
-                                Our healthcare system includes hospitals, outpatient clinics and wellness centers in three major locations in and around Guntur District, with state-of-the-art facilities in the following locations – Lakshmipuram and Kothapet in Guntur and health care center in Chirala.
-                            </p>
-                            <p style="color:#ffff; font-weight: 500;">
-                                Whether you’re seeking a diagnosis, a second opinion, or beyond, our medical representatives are here to help answer your questions and support you every step of the way. For more information or to speak with our local representative, please contact us on our helpline number
-                            </p >
-                            <button type="button" class="about-btn"> Learn More </button>
-                        </div>
-                    </div>
-                </div>
-            </section>
-           
-
-
-
-            <section class="section-padding pb-0" id="timeline">
-                <div class="container">
-                    <div class="row">
-
-                        <h2 class="text-center mb-lg-5 mb-4"  style="color:#006d95">Our Timeline</h2>
-                        
-                        <div class="timeline">
-                            <div class="row g-0 justify-content-end justify-content-md-around align-items-start timeline-nodes" >
-                                <div class="col-9 col-md-5 me-md-4 me-lg-0 order-3 order-md-1 timeline-content bg-white shadow-lg  wow  slideInLeft" data-wow-delay="0.6s">
-                                   <img src="{% static 'images/dh-images/dhruthi-hospital-timeline-card-399x190.png' %}"  class="timeline-card"/>
-
-                                    <h2>Lakshmipuram</h2>
-                                    <p>Guntur</p>
-                                    <a href="https://www.google.com/maps/search/%235-89-19,+1st+cross,+behind+Chaitanya+college,+3rd+line,+lakshmipuram,+Guntur/@16.310384,80.431403,10z?hl=en-US" ><button class="location-button" >view location</button></a>
-                                </div>
-
-                                <div class="col-3 col-sm-1 order-1 timeline-icons text-md-center">
-                                    <i class="bi bi-calendar-check timeline-icon"></i>
-                                </div>
-
-                                <div class="col-9 col-md-5 ps-md-3 ps-lg-0 order-1 order-md-3 py-4 timeline-date">
-                                    <time>2018-07-31 Saturday</time>
-                                </div>
-                            </div>
-
-                            <div class="row g-0 justify-content-end justify-content-md-around align-items-start timeline-nodes my-lg-5 my-4" >
-                                <div class="col-9 col-md-5 ms-md-4 ms-lg-0 order-3 order-md-1 timeline-content bg-white shadow-lg  wow slideInRight" data-wow-delay="0.6s">
-                                    <img src="{% static 'images/dh-images/dhruthi-hospitals-kothapet-branch-200x150.png' %}"  class="timeline-card"/>
-
-                                  <h2>Kothapet</h2>
-                                    <p>Guntur</p>
-                                  <a href="https://www.google.com/maps?ll=16.295203,80.449945&z=10&t=m&hl=en-US&gl=US&mapclient=embed&cid=7550184175581018102"  ><button class="location-button" >view location</button></a>
-                                </div>
-
-                                <div class="col-3 col-sm-1 order-1 timeline-icons text-md-center">
-                                    <i class="bi bi-calendar-check timeline-icon"></i>
-                                </div>
-
-                                <div class="col-9 col-md-5 pe-md-3 pe-lg-0 order-1 order-md-3 py-4 timeline-date">
-                                    <time>2020-07-15 Thursday</time>
-                                </div>
-                            </div>
-
-                            <div class="row g-0 justify-content-end justify-content-md-around align-items-start timeline-nodes " >
-                                <div class="col-9 col-md-5 me-md-4 me-lg-0 order-3 order-md-1 timeline-content bg-white shadow-lg  wow slideInLeft" data-wow-delay="0.6s">
-                                    <img src="{% static 'images/dh-images/dhruthi-hospital-main-page-doctors-image-1024x266 (1).webp' %}"  class="timeline-card"/>
-                                    <h2>Churuch Road</h2>
-                                    <p>chirala</p>
-                                   <a href="https://www.google.com/maps?ll=15.824922,80.363014&z=10&t=m&hl=en-US&gl=US&mapclient=embed&q=C/o+Chinnari+hospital+Church+Road,+Chirala"> <button class="location-button" >view location</button></a>
-                                </div>
-
-                                <div class="col-3 col-sm-1 order-1 timeline-icons text-md-center">
-                                    <i class="bi bi-calendar-check timeline-icon"></i>
-                                </div>
-
-                                <div class="col-9 col-md-5 ps-md-3 ps-lg-0 order-1 order-md-3 py-4 timeline-date">
-                                    <time>2022-06-28 Monday</time>
-                                </div>
-                            </div>
-
-                            <div class="row g-0 justify-content-end justify-content-md-around align-items-start timeline-nodes my-lg-5 my-4 " >
-                                <div class="col-9 col-md-5 ms-md-4 ms-lg-0 order-3 order-md-1 timeline-content bg-white shadow-lg  wow slideInRight" data-wow-delay="0.6s">
-                                    <img src="{% static 'images/dh-images/dhruthi-hospital-timeline-card-399x190.png' %}"  class="timeline-card"/>
-
-
-                                    <p class="mb-0 pb-0">Fusce vestibulum euismod nulla sed ultrices. Praesent rutrum nulla vel sapien euismod, quis tempus dui placerat.</p>
-                                    
-                                    <button class="location-button" >view location</button>
-                                </div>
-
-                                <div class="col-3 col-sm-1 order-1 timeline-icons text-md-center">
-                                    <i class="bi bi-calendar-check timeline-icon"></i>
-                                </div>
-
-                                <div class="col-9 col-md-5 pe-md-3 pe-lg-0 order-1 order-md-3 py-4 timeline-date">
-                                    <time>2021-05-30 Sunday</time>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </section>
-
-      <section class="meet-doctor" id="">
-              <h2 class=" text-center mb-5  mt-5" style="color:#006d95">Meet Ur Doctors</h2>
-          <div class="container-fluid  wow slideInLeft" data-wow-delay="0.6s">
-                <div class="row mb-5  meet-row">
-                  <div class="col-sm-12  col-lg-7  row-text order-1 order-sm-1 order-col-2 order-lg-1 order-md-2">
-                    <h2>Meet Dr. Revuri Hari Krishna</h2>
-                    <span>M.D (General Medicine)</span>
-            
-                    <p>Dr. Revuri Hari Krishna is an extremely committed and passionate doctor in General Medicine. After
-                      completing post graduation and MD (internal medicine), he started his career as a faculty in NRI
-                      medical college. He is proficient in evaluating and treating infectious as well as chronic issues
-                      such as hypertension, diabetes and thyroid abnormalities. He is one of the best general medicine
-                      doctors in Guntur, India and he is an active participant in various national and international
-                      medical societies and also in academic research activities.</p>
-            
-                    <p>Dr. Harikrishna has established Dhruthi Hospitals one of the best general hospital in guntur which is
-                      providing best general medicine in Guntur City with its core principle as patient welfare and quick
-                      recovery. He has extensive experience of 10-15 years as a renowned doctor and has the capacity to
-                      evaluate root cause of the patient problems. He is an exceptionally compassionate doctor and is
-                      available 24/7 for patient welfare</p>
+  <main>
+    <section class="slider-banner">
+      <div class="container-fluid carousel-section">
+        <div class="row">
+          <div class="col-12">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                {% for slider_item in slider%}
+                <div class="swiper-slide" style="background-image: url({{slider_item.Image}});">
+                  <div class='slider-image'>
                   </div>
-            
-                  <div class="col-sm-12  col-lg-5 order-1 order-sm-2  order-lg-2 order-md-1">
-                    <div class="featured-circle dr-img g-white shadow-lg d-flex justify-content-center align-items-center"
-                      style="background-image: linear-gradient(-225deg, #B7F8DB 0%, #50A7C2 100%);">
-                      <img src="{% static 'images/dh-images/dhruthi-hospital-meet-our-doctors-500x500.jpg' %}" class="doctor-one" />
-                    </div>
+
+                </div>
+                {% endfor %}
+                
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="logo-banner animated  flip">
+        <img src="{% static 'images/dh-images/dhruthi-hospital-logo-250x115.png' %}" class="animated "
+          style="width:300px;height:150px;" />
+      </div>
+    </section>
+
+    <section class="" id="branchs-card">
+      <div class="container">
+        <div class="row card-row">
+          <div class="col-lg-6 col-md-6 col-12 branches d-flex justify-content-center">
+            <div class="card wow " data-aos="fade-right" data-wow-delay="0.9s">
+              <div class="card-body"
+                style="display: flex;flex-direction:column;justify-content:space-between;align-items: center;">
+                <img src="{% static 'images/dh-images/dhruthi-hospital-logo-250x115.png' %}" class="logo" />
+                <h5 class="card-title" style="font-size:22px ;font-weight:800;">Dhruthi Hospital</h5>
+                <p>Dhruthi Hospital is a multispeciality, tertiary care Hospital that lays its foundation on a
+                  ‘Patient’s Health care first’ ideology.</p>
+                <div>
+                  <a href="https://dhruthihospital.com/dhruthi-hospitals/"><button class="btn">Visit
+                      Website</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-12 branches d-flex justify-content-center">
+            <div class="card wow" data-aos="fade-left" data-wow-delay="1.4s">
+              <div class="card-body"
+                style="display: flex;flex-direction:column;justify-content:space-between;align-items: center;">
+                <img src="{% static 'images/dh-images/dhruthi-clinics-logo-250x115.png' %}" class="logo" />
+                <h5 class="card-title" style="font-size:22px ;font-weight:800;">Dhruthi Clinics</h5>
+                <p>We’re here when you need us. For everyday care or life-changing care, you can count on us to keep you
+                  and your loved ones safe and healthy.</p>
+                <div>
+                  <a href="https://www.dhruthiclinics.com/"><button class="btn">Visit Website</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row card-row mt-5 mb-5">
+          <div class="col-lg-6 col-md-6 col-12 branches d-flex justify-content-center">
+            <div class="card  wow" data-aos="fade-right" data-wow-delay="1.6">
+              <div class="card-body"
+                style="display: flex;flex-direction:column;justify-content:space-between;align-items: center;">
+                <img src="{% static 'images/dh-images/dhruthi-clinics-logo-250x115.png' %}" class="logo" />
+                <h5 class="card-title" style="font-size:22px ;font-weight:800;">Dhruthi Clinics</h5>
+                <p>We’re here when you need us. For everyday care or life-changing care, you can count on us to keep you
+                  and your loved ones safe and healthy.</p>
+                <div>
+                  <a href="https://www.dhruthiclinics.com/"><button class="btn">Visit Website</button></a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-12 branches d-flex justify-content-center">
+            <div class="card  wow" data-aos="fade-left" data-wow-delay="1.8">
+              <div class="card-body"
+                style="display: flex;flex-direction:column;justify-content:space-between;align-items: center;">
+                <img src="{% static 'images/dh-images/dhruthi-clinics-logo-250x115.png' %}" class="logo" />
+                <h5 class="card-title" style="font-size:22px ;font-weight:800;">Dhruthi Clinics</h5>
+                <p>We’re here when you need us. For everyday care or life-changing care, you can count on us to keep you
+                  and your loved ones safe and healthy.</p>
+                <div>
+                  <a href="https://www.dhruthiclinics.com/"><button class="btn">Visit Website</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section">
+      <h2 class="text-center" style="color: #ffff; margin-bottom: 10px;">About</h2>
+      <div class=" about-container ">
+        <div class="row">
+          <div class="col-sm-12  col-lg-6 about-image d-flex justify-content-center align-items-center wow fadeInUpBig"
+            data-wow-delay="0.7s">
+            <img src="{% static 'images/dh-images/Dhruthi-Hospital-building.webp' %}" class="about-img" />
+          </div>
+          <div class="col-sm-12  col-lg-6  about-text wow slideInRight" data-wow-delay="0.1s">
+            <h4 style="color:#ffff">Dhruthi Health Care </h4>
+            <p style="color:#ffff; font-weight: 500;">Dhruthi Health Care is a medical center that offers clinical and
+              hospital care. Ranked among the top hospitals in Guntur, we provide specialized medical care to thousands
+              of patients every year.
+              We offer advanced technology, the latest treatments and are among the safest places in healthcare today.
+              Our renowned medical experts work as a team to deliver comprehensive care across a broad range of
+              specialties, and we always put our patients at the center of everything we do.</p>
+
+            <p style="color:#ffff; font-weight: 500;">
+              Our healthcare system includes hospitals, outpatient clinics and wellness centers in three major locations
+              in and around Guntur District, with state-of-the-art facilities in the following locations – Lakshmipuram
+              and Kothapet in Guntur and health care center in Chirala.
+            </p>
+            <p style="color:#ffff; font-weight: 500;">
+              Whether you’re seeking a diagnosis, a second opinion, or beyond, our medical representatives are here to
+              help answer your questions and support you every step of the way. For more information or to speak with
+              our local representative, please contact us on our helpline number
+            </p>
+            <button type="button" class="about-btn"> Learn More </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <section class="section-padding pb-0" id="timeline">
+      <div class="container">
+        <div class="row">
+
+          <h2 class="text-center mb-lg-5 mb-4" style="color:#006d95">Our Timeline</h2>
+
+          <div class="timeline">
+            <div class="row g-0 justify-content-end justify-content-md-around align-items-start timeline-nodes">
+              <div class="col-9 col-md-5 me-md-4 me-lg-0 order-3 order-md-1 timeline-content bg-white shadow-lg  wow "
+                data-aos="fade-left" data-wow-delay="0.6s">
+                <img src="{% static 'images/dh-images/dhruthi-hospital-timeline-card-399x190.png' %}"
+                  class="timeline-card" />
+
+                <h2>Lakshmipuram</h2>
+                <p>Guntur</p>
+                <a
+                  href="https://www.google.com/maps/search/%235-89-19,+1st+cross,+behind+Chaitanya+college,+3rd+line,+lakshmipuram,+Guntur/@16.310384,80.431403,10z?hl=en-US"><button
+                    class="location-button">view location</button></a>
+              </div>
+
+              <div class="col-3 col-sm-1 order-1 timeline-icons text-md-center">
+                <i class="bi bi-calendar-check timeline-icon"></i>
+              </div>
+
+              <div class="col-9 col-md-5 ps-md-3 ps-lg-0 order-1 order-md-3 py-4 timeline-date">
+                <time>2018-07-31 Saturday</time>
+              </div>
+            </div>
+
+            <div
+              class="row g-0 justify-content-end justify-content-md-around align-items-start timeline-nodes my-lg-5 my-4">
+              <div class="col-9 col-md-5 ms-md-4 ms-lg-0 order-3 order-md-1 timeline-content bg-white shadow-lg  wow"
+                data-aos="fade-right" data-wow-delay="0.6s">
+                <img src="{% static 'images/dh-images/dhruthi-hospitals-kothapet-branch-200x150.png' %}"
+                  class="timeline-card" />
+
+                <h2>Kothapet</h2>
+                <p>Guntur</p>
+                <a
+                  href="https://www.google.com/maps?ll=16.295203,80.449945&z=10&t=m&hl=en-US&gl=US&mapclient=embed&cid=7550184175581018102"><button
+                    class="location-button">view location</button></a>
+              </div>
+
+              <div class="col-3 col-sm-1 order-1 timeline-icons text-md-center">
+                <i class="bi bi-calendar-check timeline-icon"></i>
+              </div>
+
+              <div class="col-9 col-md-5 pe-md-3 pe-lg-0 order-1 order-md-3 py-4 timeline-date">
+                <time>2020-07-15 Thursday</time>
+              </div>
+            </div>
+
+            <div class="row g-0 justify-content-end justify-content-md-around align-items-start timeline-nodes ">
+              <div class="col-9 col-md-5 me-md-4 me-lg-0 order-3 order-md-1 timeline-content bg-white shadow-lg  wow"
+                data-aos="fade-left" data-wow-delay="0.6s">
+                <img src="{% static 'images/dh-images/dhruthi-hospital-main-page-doctors-image-1024x266 (1).webp' %}"
+                  class="timeline-card" />
+                <h2>Churuch Road</h2>
+                <p>chirala</p>
+                <a
+                  href="https://www.google.com/maps?ll=15.824922,80.363014&z=10&t=m&hl=en-US&gl=US&mapclient=embed&q=C/o+Chinnari+hospital+Church+Road,+Chirala">
+                  <button class="location-button">view location</button></a>
+              </div>
+
+              <div class="col-3 col-sm-1 order-1 timeline-icons text-md-center">
+                <i class="bi bi-calendar-check timeline-icon"></i>
+              </div>
+
+              <div class="col-9 col-md-5 ps-md-3 ps-lg-0 order-1 order-md-3 py-4 timeline-date">
+                <time>2022-06-28 Monday</time>
+              </div>
+            </div>
+
+            <div
+              class="row g-0 justify-content-end justify-content-md-around align-items-start timeline-nodes my-lg-5 my-4 ">
+              <div class="col-9 col-md-5 ms-md-4 ms-lg-0 order-3 order-md-1 timeline-content bg-white shadow-lg  wow "
+                data-aos="fade-right" data-wow-delay="0.6s">
+                <img src="{% static 'images/dh-images/dhruthi-hospital-timeline-card-399x190.png' %}"
+                  class="timeline-card" />
+
+
+                <p class="mb-0 pb-0">Ongole</p>
+
+                <button class="location-button">view location</button>
+              </div>
+
+              <div class="col-3 col-sm-1 order-1 timeline-icons text-md-center">
+                <i class="bi bi-calendar-check timeline-icon"></i>
+              </div>
+
+              <div class="col-9 col-md-5 pe-md-3 pe-lg-0 order-1 order-md-3 py-4 timeline-date">
+                <time>2021-05-30 Sunday</time>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="meet-doctor" id="">
+      <h2 class=" text-center mb-5  mt-5" style="color:#006d95">Meet Ur Doctors</h2>
+      <div class="container-fluid  wow slideInLeft" data-wow-delay="0.6s">
+        <div class="row mb-5  meet-row">
+          <div class="col-sm-12  col-lg-7  row-text order-1 order-sm-1 order-col-2 order-lg-1 order-md-2">
+            <h2>Meet Dr. Revuri Hari Krishna</h2>
+            <span class="deg-sign mb-2">M.D (General Medicine)</span>
+
+            <p>Dr. Revuri Hari Krishna is an extremely committed and passionate doctor in General Medicine. After
+              completing post graduation and MD (internal medicine), he started his career as a faculty in NRI
+              medical college. He is proficient in evaluating and treating infectious as well as chronic issues
+              such as hypertension, diabetes and thyroid abnormalities. He is one of the best general medicine
+              doctors in Guntur, India and he is an active participant in various national and international
+              medical societies and also in academic research activities.</p>
+
+            <p>Dr. Harikrishna has established Dhruthi Hospitals one of the best general hospital in guntur which is
+              providing best general medicine in Guntur City with its core principle as patient welfare and quick
+              recovery. He has extensive experience of 10-15 years as a renowned doctor and has the capacity to
+              evaluate root cause of the patient problems. He is an exceptionally compassionate doctor and is
+              available 24/7 for patient welfare</p>
+          </div>
+
+          <div class="col-sm-12  col-lg-5 order-1 order-sm-2  order-lg-2 order-md-1">
+            <div class="featured-circle dr-img g-white shadow-lg d-flex justify-content-center align-items-center"
+              style="background-image: linear-gradient(-225deg, #B7F8DB 0%, #50A7C2 100%);">
+              <img src="{% static 'images/dh-images/dhruthi-hospital-meet-our-doctors-500x500.jpg' %}"
+                class="doctor-one" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid wow slideInRight" data-wow-delay="0.6s">
+        <div class="row ">
+          <div class="col-sm-12  col-lg-6">
+            <div class="featured-circle  shadow-lg d-flex justify-content-center align-items-center"
+              style=" background-image: linear-gradient(-225deg, #B7F8DB 0%, #50A7C2 100%);">
+              <img src="{% static 'images/dh-images/dhruthi-hospitals-meet-our-doctors-508x508.jpg' %}"
+                class="doctor-two" />
+            </div>
+          </div>
+          <div class="col-sm-12  row-text  col-lg-6">
+            <h2 class="mb-lg-3 mt-3">Meet Dr. Lakshmi Nimmaraju</h2>
+            <span class="mb-5 deg-sign">M.D (General Medicine)</span>
+            <p>Dr. Lakshmi Nimmaraju has special
+              care for Dental Implant treatments. She did her BDS from SIBAR Institute of dental sciences, Guntur
+              in 2006.
+              She completed her MDS from SIBAR Institute of dental sciences, Dr. NTR University of Health
+              Sciences, Guntur
+              in 2012. She presented paper at 15th IOS PG Students convention at Manali in Himachal Pradesh, March
+              2011.
+              She also presented paper at 3rd AP state Inter Collegiate PG Academic Excellence Program held on
+              March 2011
+              at CKS Theja Institute of Dental Science Tirupathi in AP. She ensures that her patients have a full
+              range of
+              latest options available in her specialization. She handles the most complicated cases with utmost
+              ease and
+              stands as best dental doctor in Guntur, AP. She has started Dhruthi Clinics Which is One of the Best
+              Dental
+              Hospital in Guntur Offers all types of Dental Treatments through out Andhra Pradesh.</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section class="ftco-section 
+             ftco-no-pt ftco-intro "
+      style="margin-top:130px;padding:30px;background-image: linear-gradient(to top, #37ecba 0%, #72afd3 100%);">
+      <div class="container">
+        <div class="row">
+          <h1 class="text-center" style="color:#fff ;margin-top: 20px;">services</h1>
+          <div class="col-md-3 d-flex align-self-stretch px-4 ftco-animate  wow pulse " data-wow-delay="0.6s">
+            <div class="d-block services active text-center">
+              <div class="icon d-flex align-items-center justify-content-center">
+                <img src="{% static 'images/dh-images/fever.png' %}" class="icon-image" />
+              </div>
+              <div class="media-body">
+                <h3 class="heading">Fever</h3>
+
+                <a href="https://dhruthihospital.com/fever-2/"
+                  class="btn-custom d-flex align-items-center justify-content-center"><span
+                    class="fa fa-chevron-right"></span><i class="sr-only">Read more</i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 d-flex align-self-stretch px-4 ftco-animate wow pulse " data-wow-delay="0.6s">
+            <div class="d-block services text-center">
+              <div class="icon d-flex align-items-center justify-content-center">
+                <img src="{% static 'images/dh-images/cardiac.png' %}" class="icon-image" />
+              </div>
+              <div class="media-body">
+                <h4 class="heading">cardiac</h4>
+
+                <a href="https://dhruthihospital.com/cardiac/"
+                  class="btn-custom d-flex align-items-center justify-content-center"><span
+                    class="fa fa-chevron-right"></span><i class="sr-only">Read more</i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 d-flex align-self-stretch px-4 ftco-animate wow pulse " data-wow-delay="0.6s">
+            <div class="d-block services text-center">
+              <div class="icon d-flex align-items-center justify-content-center">
+                <img src="{% static 'images/dh-images/hypertension.png' %}" class="icon-image" />
+              </div>
+              <div class="media-body">
+                <h4 class="heading">hypertension</h4>
+
+                <a href="https://dhruthihospital.com/hypertension/"
+                  class="btn-custom d-flex align-items-center justify-content-center"><span
+                    class="fa fa-chevron-right"></span><i class="sr-only">Read more</i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 d-flex align-self-stretch px-4 ftco-animate wow pulse " data-wow-delay="0.6s">
+            <div class="d-block services active text-center">
+              <div class="icon d-flex align-items-center justify-content-center">
+                <img src="{% static 'images/dh-images/thyroid.png' %}" class="icon-image" />
+              </div>
+              <div class="media-body">
+                <h4 class="heading">Thyroid</h4>
+
+                <a href="https://dhruthihospital.com/thyroid/"
+                  class="btn-custom d-flex align-items-center justify-content-center"><span
+                    class="fa fa-chevron-right"></span><i class="sr-only">Read more</i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 d-flex align-self-stretch px-4 ftco-animate wow pulse " data-wow-delay="0.6s">
+            <div class="d-block services active text-center">
+              <div class="icon d-flex align-items-center justify-content-center">
+                <img src="{% static 'images/dh-images/diabates.png' %}" class="icon-image" />
+              </div>
+              <div class="media-body">
+                <h4 class="heading">Diabetes</h4>
+
+                <a href="https://dhruthihospital.com/diabetic/"
+                  class="btn-custom d-flex align-items-center justify-content-center"><span
+                    class="fa fa-chevron-right"></span><i class="sr-only">Read more</i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 d-flex align-self-stretch px-4 ftco-animate wow pulse " data-wow-delay="0.6s">
+            <div class="d-block services active text-center">
+              <div class="icon d-flex align-items-center justify-content-center">
+                <img src="{% static 'images/dh-images/dental.png' %}" class="icon-image" />
+              </div>
+              <div class="media-body">
+                <h4 class="heading">Dental</h4>
+
+                <a href="https://dhruthihospital.com/dental/"
+                  class="btn-custom d-flex align-items-center justify-content-center"><span
+                    class="fa fa-chevron-right"></span><i class="sr-only">Read more</i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 d-flex align-self-stretch px-4 ftco-animate wow pulse " data-wow-delay="0.6s">
+            <div class="d-block services active text-center">
+              <div class="icon d-flex align-items-center justify-content-center">
+                <img src="{% static 'images/dh-images/general.png' %}" class="icon-image" />
+              </div>
+              <div class="media-body">
+                <h4 class="heading">Other General</h4>
+
+                <a href="https://dhruthihospital.com/othergeneral/"
+                  class="btn-custom d-flex align-items-center justify-content-center"><span
+                    class="fa fa-chevron-right"></span><i class="sr-only">Read more</i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 d-flex align-self-stretch px-4 ftco-animate wow pulse " data-wow-delay="0.6s">
+            <div class="d-block services active text-center">
+              <div class="icon d-flex align-items-center justify-content-center">
+                <img src="{% static 'images/dh-images/pharmacy.png' %}" class="icon-image" />
+              </div>
+              <div class="media-body">
+                <h4 class="heading">Pharmacy</h4>
+
+                <a href="https://dhruthihospital.com/pharmacy/"
+                  class="btn-custom d-flex align-items-center justify-content-center"><span
+                    class="fa fa-chevron-right"></span><i class="sr-only">Read more</i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 d-flex align-self-stretch px-4 ftco-animate  wow pulse " data-wow-delay="0.6s">
+            <div class="d-block services active text-center">
+              <div class="icon d-flex align-items-center justify-content-center">
+                <img src="{% static 'images/dh-images/lab.png' %}" class="icon-image" />
+              </div>
+              <div class="media-body">
+                <h4 class="heading">Lab</h4>
+
+                <a href="https://dhruthihospital.com/lab/"
+                  class="btn-custom d-flex align-items-center justify-content-center"><span
+                    class="fa fa-chevron-right"></span><i class="sr-only">Read more</i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 d-flex align-self-stretch px-4 ftco-animate wow pulse " data-wow-delay="0.6s">
+            <div class="d-block services active text-center">
+              <div class="icon d-flex align-items-center justify-content-center">
+                <img src="{% static 'images/dh-images/ICU.png' %}" class="icon-image" />
+              </div>
+              <div class="media-body">
+                <h4 class="heading">ICU</h4>
+
+                <a href="https://dhruthihospital.com/icu/"
+                  class="btn-custom d-flex align-items-center justify-content-center"><span
+                    class="fa fa-chevron-right"></span><i class="sr-only">Read more</i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 d-flex align-self-stretch px-4 ftco-animate  wow pulse " data-wow-delay="0.6s">
+            <div class="d-block services active text-center">
+              <div class="icon d-flex align-items-center justify-content-center">
+                <img src="{% static 'images/dh-images/emergency.png' %}" class="icon-image" />
+              </div>
+              <div class="media-body">
+                <h4 class="heading">Emergencies</h4>
+
+                <a href="https://dhruthihospital.com/emergencies/"
+                  class="btn-custom d-flex align-items-center justify-content-center"><span
+                    class="fa fa-chevron-right"></span><i class="sr-only">Read more</i></a>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <div class="col-md-3 d-flex align-self-stretch px-4 ftco-animate wow pulse " data-wow-delay="0.6s">
+            <div class="d-block services active text-center">
+              <div class="icon d-flex align-items-center justify-content-center">
+                <img src="{% static 'images/dh-images/sunday clinics .png' %}" class="icon-image" />
+              </div>
+              <div class="media-body">
+                <h4 class="heading">Sunday Clinics</h4>
+
+                <a href="https://dhruthihospital.com/sunday-clinics/"
+                  class="btn-custom d-flex align-items-center justify-content-center"><span
+                    class="fa fa-chevron-right"></span><i class="sr-only">Read more</i></a>
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section-padding pb-0 pt-0" id="reviews">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-12">
+            <h2 class="text-center mb-lg-5 mb-4  mt-5 " style="color:#006d95">Our Patients</h2>
+
+            <div class="owl-carousel reviews-carousel  mb-5">
+
+              <figure class="reviews-thumb d-flex flex-wrap align-items-center rounded" style="background-image: linear-gradient(to right,rgb(81, 235, 150),rgb(56, 155, 236));">
+                <div class="reviews-stars">
+                  <i class="bi-star-fill"></i>
+                  <i class="bi-star-fill"></i>
+                  <i class="bi-star-fill"></i>
+                  <i class="bi-star-fill"></i>
+                  <i class="bi-star-fill"></i>
+                </div>
+
+                <p class="text-primary d-block mt-2 mb-0 w-100"><strong>Best Health Care</strong></p>
+
+                <p class="reviews-text w-100">Thankfull to Dr.Harikrishna sir ,treatment is very focused. My mother in
+                  law recovered quickly.well mannered staff, with lowest costs. Good hospitality and professional staff
+                  with well organised pharmacy @affordable prices</p>
+
+                <img src="{% static 'images/dh-images/dhruthi -review-image.png' %}" class="img-fluid reviews-image"
+                  alt="">
+
+                <figcaption class="ms-4">
+                  <strong>datthu yerra</strong>
+
+                  <span class="text-muted">Patient</span>
+                </figcaption>
+              </figure>
+
+              <figure class="reviews-thumb d-flex flex-wrap align-items-center rounded" style="background-image: linear-gradient(to right,rgb(81, 235, 150),rgb(56, 155, 236));">
+                <div class="reviews-stars">
+                  <i class="bi-star-fill"></i>
+                  <i class="bi-star-fill"></i>
+                  <i class="bi-star-fill"></i>
+                  <i class="bi-star-fill"></i>
+                  <i class="bi-star-fill"></i>
+                </div>
+
+                <p class="text-primary d-block mt-2 mb-0 w-100"><strong>Doctor cares everyone!</strong></p>
+
+                <p class="reviews-text w-100">Excellent treatment given by dr harikrishna garu, here price is very
+                  economical and treatment is corporate level, best diabetologist in costal andhrapradesh
+                  Thanks to hospital management</p>
+
+                <img src="{% static 'images/dh-images/dhruthi -review2-image.png' %}" class="img-fluid reviews-image"
+                  alt="">
+
+                <figcaption class="ms-4">
+                  <strong>Siva Reddy udumula</strong>
+
+                  <span class="text-muted">Recovered</span>
+                </figcaption>
+              </figure>
+
+              <figure class="reviews-thumb d-flex flex-wrap align-items-center rounded" style="background-image: linear-gradient(to right,rgb(81, 235, 150),rgb(56, 155, 236));">
+                <div class="reviews-stars">
+                  <i class="bi-star-fill"></i>
+                  <i class="bi-star-fill"></i>
+                  <i class="bi-star-fill"></i>
+                  <i class="bi-star-fill"></i>
+                  <i class="bi-star-fill"></i>
+                </div>
+
+                <p class="text-primary d-block mt-2 mb-0 w-100"><strong>Great services!</strong></p>
+
+                <p class="reviews-text w-100">All was good
+                  Consultation and treatment for patients was so perfect
+                  Communication between Staff and patient was excellent.</p>
+
+                <img src="{% static 'images/dh-images/dhruthi -review3-image.png' %}" class="img-fluid reviews-image"
+                  alt="">
+
+                <figcaption class="ms-4">
+                  <strong>SUBBA RAO M</strong>
+
+                  <span class="text-muted">New Patient</span>
+                </figcaption>
+              </figure>
+
+              <figure class="reviews-thumb d-flex flex-wrap align-items-center rounded" style="background-image: linear-gradient(to right,rgb(81, 235, 150),rgb(56, 155, 236));">
+                <div class="reviews-stars">
+                  <i class="bi-star-fill"></i>
+                  <i class="bi-star-fill"></i>
+                  <i class="bi-star-fill"></i>
+                  <i class="bi-star-fill"></i>
+                  <i class="bi-star-fill"></i>
+                </div>
+
+                <p class="text-primary d-block mt-2 mb-0 w-100"><strong>Best Advices</strong></p>
+
+                <p class="reviews-text w-100">Very good in treatment in all aspects like doctors, nursing and hygienic
+                </p>
+
+                <img src="{% static 'images/dh-images/dhruthi -review3-image.png' %}" class="img-fluid reviews-image"
+                  alt="">
+
+                <figcaption class="ms-4">
+                  <strong>Ramesh</strong>
+
+                  <span class="text-muted">Almost Recovered</span>
+                </figcaption>
+              </figure>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section-padding" id="booking">
+      <div class="container-fluid">
+        <div class="row">
+
+          <div class="col-lg-6 col-12  mb-5 wow slideInLeft" data-wow-delay="0.6s">
+            <div class="booking-form">
+
+              <h2 class="text-center mb-lg-3 mb-2" style="color: #ffff;">Book an appointment</h2>
+
+              <form role="form" action="#booking" method="post" class="book-apponintment">
+                <div class="row">
+                  <div class="col-lg-6 col-12">
+                    <input type="text" name="name" id="name" class="form-control" placeholder="Full name" required>
+                  </div>
+
+                  <div class="col-lg-6 col-12">
+                    <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control"
+                      placeholder="Email address" required>
+                  </div>
+
+                  <div class="col-lg-6 col-12">
+                    <input type="telephone" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                      class="form-control" placeholder="Phone: 123-456-7890">
+                  </div>
+
+                  <div class="col-lg-6 col-12">
+                    <input type="date" name="date" id="date" value="" class="form-control">
+
+                  </div>
+
+                  <div class="col-12">
+                    <textarea class="form-control" rows="5" id="message" name="message"
+                      placeholder="Additional Message"></textarea>
+                  </div>
+
+                  <div class="col-lg-3 col-md-4 col-6 mx-auto">
+                    <button type="submit" class="form-control form-btn" id="submit-button">Book Now</button>
+                  </div>
+                </div>
+              </form>
+
+            </div>
+          </div>
+          <div class="col-sm-11  col-lg-6  wow slideInRight" data-wow-delay="0.6s">
+            <div class=" d-flex justify-content-center align-items-center">
+              <img src="{% static 'images/dh-images/Dhruthi-Hospital-building-and-reception-image.webp' %}"
+                class="form-image" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="ftco-section ftco-no-pt anything-section ftco-faqs p-5">
+      <div class="container">
+        <div class="row">
+          <p class="text-center">We have great Answers</p>
+          <h1 class="text-center" style="color:#006d95">Ask Us Anything</h1>
+          <div class="col-lg-6  wow slideInLeft" data-wow-delay="0.6s">
+            <div id="accordion" class="myaccordion w-100 mb-5 mt-5" aria-multiselectable="true">
+              <div class="card">
+                <div class="card-header p-0" id="headingOne">
+                  <h2 class="mb-0">
+                    <button href="#collapseOne"
+                      class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link collapsed"
+                      data-parent="#accordion" data-toggle="collapse" aria-expanded="false" aria-controls="collapseOne">
+                      <p class="mb-0 question" style="color:#006d95; font-weight:600;">How To Get In Touch The Dhruthi
+                        Hospital ?</p>
+                      <i class="fa" aria-hidden="true" style="color:#006d95;"></i>
+                    </button>
+                  </h2>
+                </div>
+                <div class="collapse" id="collapseOne" role="tabpanel" aria-labelledby="headingOne">
+                  <div class="card-body py-3 px-0">
+                    <ol>
+                      <li style="list-style-type:none;">Pan India -1800 123 6896</li>
+                      <li style="list-style-type:none;">Mobile Phone - (+91) 9348 235 235 , (+91) 9858 190 190</li>
+                      <li style="list-style-type:none;">Email : dhruthihospital@gmail.com</li>
+
+                    </ol>
                   </div>
                 </div>
               </div>
-              <div class="container-fluid wow slideInRight" data-wow-delay="0.6s">
-                <div class="row ">
-                  <div class="col-sm-12  col-lg-6" >
-                    <div class="featured-circle  shadow-lg d-flex justify-content-center align-items-center"
-                    style=" background-image: linear-gradient(-225deg, #B7F8DB 0%, #50A7C2 100%);">
-                    <img src="{% static 'images/dh-images/dhruthi-hospitals-meet-our-doctors-508x508.jpg' %}" class="doctor-two" />
-                  </div>
-                  </div>
-                  <div class="col-sm-12  row-text  col-lg-6" >
-                    <h2 class="mb-lg-3 mt-3">Meet Dr. Lakshmi Nimmaraju</h2>
-                                  <span class="mb-5">M.D (General Medicine)</span>
-                                  <p>Dr. Lakshmi Nimmaraju has special
-                                    care for Dental Implant treatments. She did her BDS from SIBAR Institute of dental sciences, Guntur
-                                    in 2006.
-                                    She completed her MDS from SIBAR Institute of dental sciences, Dr. NTR University of Health
-                                    Sciences, Guntur
-                                    in 2012. She presented paper at 15th IOS PG Students convention at Manali in Himachal Pradesh, March
-                                    2011.
-                                    She also presented paper at 3rd AP state Inter Collegiate PG Academic Excellence Program held on
-                                    March 2011
-                                    at CKS Theja Institute of Dental Science Tirupathi in AP. She ensures that her patients have a full
-                                    range of
-                                    latest options available in her specialization. She handles the most complicated cases with utmost
-                                    ease and
-                                    stands as best dental doctor in Guntur, AP. She has started Dhruthi Clinics Which is One of the Best
-                                    Dental
-                                    Hospital in Guntur Offers all types of Dental Treatments through out Andhra Pradesh.</p>
-                  </div>
-                  <!-- <div class="col-sm-12 col-md-6 col-lg-5 ">
-                                  <div class="featured-circle  shadow-lg d-flex justify-content-center align-items-center"
-                                    style=" background-image: linear-gradient(120deg, #84fab0 10%, #8fd3f4 90%);">
-                                    <img src="images/dh-images/dhruthi-hospital-meet-our-doctors-two-300x300.png" class="doctor-two" />
-                                  </div>
-                                </div>
-                          
-                                <div class="col-sm-12 col-md-6 col-lg-7  row-text">
-                                  <h2 class="mb-lg-3 mt-3">Meet Dr. Lakshmi Nimmaraju</h2>
-                                  <span class="mb-5">M.D (General Medicine)</span>
-                                  <p>Dr. Lakshmi Nimmaraju has special
-                                    care for Dental Implant treatments. She did her BDS from SIBAR Institute of dental sciences, Guntur
-                                    in 2006.
-                                    She completed her MDS from SIBAR Institute of dental sciences, Dr. NTR University of Health
-                                    Sciences, Guntur
-                                    in 2012. She presented paper at 15th IOS PG Students convention at Manali in Himachal Pradesh, March
-                                    2011.
-                                    She also presented paper at 3rd AP state Inter Collegiate PG Academic Excellence Program held on
-                                    March 2011
-                                    at CKS Theja Institute of Dental Science Tirupathi in AP. She ensures that her patients have a full
-                                    range of
-                                    latest options available in her specialization. She handles the most complicated cases with utmost
-                                    ease and
-                                    stands as best dental doctor in Guntur, AP. She has started Dhruthi Clinics Which is One of the Best
-                                    Dental
-                                    Hospital in Guntur Offers all types of Dental Treatments through out Andhra Pradesh.</p>
-                                </div> -->
+
+              <div class="card">
+                <div class="card-header p-0" id="headingTwo" role="tab">
+                  <h2 class="mb-0">
+                    <button href="#collapseTwo"
+                      class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link collapsed"
+                      data-parent="#accordion" data-toggle="collapse" aria-expanded="false" aria-controls="collapseTwo">
+                      <p class="mb-0 question" style="color:#006d95; font-weight:600;">How To Book An Appointment?</p>
+                      <i class="fa" aria-hidden="true" style="color:#006d95;"></i>
+                    </button>
+                  </h2>
                 </div>
-              
+                <div class="collapse" id="collapseTwo" role="tabpanel" aria-labelledby="headingTwo">
+                  <div class="card-body py-3 px-0">
+                    <ol>
+                      <li style="list-style-type:none;">You can schedule an appointment online at</li>
+                      <li style="list-style-type:none;">www.dhruthihospital.com to schedule a medical appointment</li>
+                      <li style="list-style-type:none;">or Online Consultation at https://dhruthihospital.com/ online-
+                      </li>
+                      <li style="list-style-type:none;">doctors-consultation.</li>
+
+                    </ol>
+                  </div>
+                </div>
               </div>
-      </section>
 
-
-
-
-
-            <!-- <section class="ourservices mt-5 ">
-                <div class="container">
-                    <div class="row">
-                        <h3 class="text-center" >Service section</h3>
-                        <div class="service-card mb-5">
-                         <div class="service-image"> 
-<img src="images/dh-images/dhruthi-hospital-meet-our-doctors-two-300x300.png"  class="s-image"/>
-</div> 
-                            <div class="service-content">
-                            <p>Fever</p>
-                        </hr>
-                        <button class="btn  btn-success">view more</button>
-                    </div>
-                        </div>
-            
-
-                    </div>
+              <div class="card">
+                <div class="card-header p-0" id="headingThree" role="tab">
+                  <h2 class="mb-0">
+                    <button href="#collapseThree"
+                      class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link collapsed"
+                      data-parent="#accordion" data-toggle="collapse" aria-expanded="false"
+                      aria-controls="collapseThree">
+                      <p class="mb-0 question" style="color:#006d95; font-weight:600;">Is Out Side Food Allowed In
+                        Dhruthi Hospital ?</p>
+                      <i class="fa" aria-hidden="true" style="color:#006d95;"></i>
+                    </button>
+                  </h2>
                 </div>
-            </section> -->
-            <section class="ftco-section 
-             ftco-no-pt ftco-intro " style="margin-top:130px;padding:30px;background-image: linear-gradient(to top, #37ecba 0%, #72afd3 100%);">
-                <div class="container">
-                    <div class="row">
-                        <h1 class="text-center" style="color:#fff ;margin-top: 20px;">services</h1>
-                  <div class="col-md-3 d-flex align-self-stretch px-4 ftco-animate  wow pulse " data-wow-delay="0.6s">
-                    <div class="d-block services active text-center">
-                      <div class="icon d-flex align-items-center justify-content-center">
-                        <img src="{% static 'images/dh-images/fever.png' %}"  class="icon-image"/>
-                      </div>
-                      <div class="media-body">
-                        <h3 class="heading" >Fever</h3>
-                        
-                        <a href="https://dhruthihospital.com/fever-2/" class="btn-custom d-flex align-items-center justify-content-center"><span class="fa fa-chevron-right"></span><i class="sr-only">Read more</i></a>
-                      </div>
-                    </div>      
+                <div class="collapse" id="collapseThree" role="tabpanel" aria-labelledby="headingTwo">
+                  <div class="card-body py-3 px-0">
+                    <ol>
+                      <li style="list-style-type:none;">Diet is an integral part of your medication. Therefore food from
+                      </li>
+                      <li style="list-style-type:none;">outside sources is discouraged. Our dieticians, in association
+                      </li>
+                      <li style="list-style-type:none;">with your doctor, will assess your diet needs. You are advised
+                        to</li>
+                      <li style="list-style-type:none;">follow the diet instructions specified by them for a speedy</li>
+                      <li style="list-style-type:none;">recovery. You will be given a choice of Indian and Continental
+                        cuisines</li>
+                    </ol>
                   </div>
-                  <div class="col-md-3 d-flex align-self-stretch px-4 ftco-animate wow pulse "  data-wow-delay="0.6s">
-                    <div class="d-block services text-center">
-                      <div class="icon d-flex align-items-center justify-content-center">
-                        <img src="{% static 'images/dh-images/cardiac.png' %}"  class="icon-image"/>
-                      </div>
-                      <div class="media-body">
-                        <h4 class="heading" >cardiac</h4>
-                       
-                        <a href="https://dhruthihospital.com/cardiac/" class="btn-custom d-flex align-items-center justify-content-center"><span class="fa fa-chevron-right"></span><i class="sr-only">Read more</i></a>
-                      </div>
-                    </div>    
-                  </div>
-                  <div class="col-md-3 d-flex align-self-stretch px-4 ftco-animate wow pulse " data-wow-delay="0.6s">
-                    <div class="d-block services text-center">
-                      <div class="icon d-flex align-items-center justify-content-center">
-                        <img src="{% static 'images/dh-images/hypertension.png' %}"  class="icon-image"/>
-                      </div>
-                      <div class="media-body">
-                        <h4 class="heading">hypertension</h4>
-                        
-                        <a href="https://dhruthihospital.com/hypertension/" class="btn-custom d-flex align-items-center justify-content-center"><span class="fa fa-chevron-right"></span><i class="sr-only">Read more</i></a>
-                      </div>
-                    </div>      
-                  </div>
-                  <div class="col-md-3 d-flex align-self-stretch px-4 ftco-animate wow pulse " data-wow-delay="0.6s">
-                    <div class="d-block services active text-center">
-                      <div class="icon d-flex align-items-center justify-content-center">
-                        <img src="{% static 'images/dh-images/thyroid.png' %}"  class="icon-image"/>
-                      </div>
-                      <div class="media-body">
-                        <h4 class="heading" >Thyroid</h4>
-                        
-                        <a href="https://dhruthihospital.com/thyroid/" class="btn-custom d-flex align-items-center justify-content-center"><span class="fa fa-chevron-right"></span><i class="sr-only">Read more</i></a>
-                      </div>
-                    </div>      
-                  </div>
-                  <div class="col-md-3 d-flex align-self-stretch px-4 ftco-animate wow pulse " data-wow-delay="0.6s">
-                    <div class="d-block services active text-center">
-                      <div class="icon d-flex align-items-center justify-content-center">
-                        <img src="{% static 'images/dh-images/diabates.png' %}"  class="icon-image"/>
-                      </div>
-                      <div class="media-body">
-                        <h4 class="heading" >Diabetes</h4>
-                        
-                        <a href="https://dhruthihospital.com/diabetic/" class="btn-custom d-flex align-items-center justify-content-center"><span class="fa fa-chevron-right"></span><i class="sr-only">Read more</i></a>
-                      </div>
-                    </div>      
-                  </div>
-                  <div class="col-md-3 d-flex align-self-stretch px-4 ftco-animate wow pulse " data-wow-delay="0.6s">
-                    <div class="d-block services active text-center">
-                      <div class="icon d-flex align-items-center justify-content-center">
-                        <img src="{% static 'images/dh-images/dental.png' %}"  class="icon-image"/>
-                      </div>
-                      <div class="media-body">
-                        <h4 class="heading" >Dental</h4>
-                        
-                        <a href="https://dhruthihospital.com/dental/" class="btn-custom d-flex align-items-center justify-content-center"><span class="fa fa-chevron-right"></span><i class="sr-only">Read more</i></a>
-                      </div>
-                    </div>      
-                  </div>
-                  <div class="col-md-3 d-flex align-self-stretch px-4 ftco-animate wow pulse " data-wow-delay="0.6s">
-                    <div class="d-block services active text-center">
-                      <div class="icon d-flex align-items-center justify-content-center">
-                        <img src="{% static 'images/dh-images/general.png' %}"  class="icon-image"/>
-                      </div>
-                      <div class="media-body">
-                        <h4 class="heading">Other General</h4>
-                        
-                        <a href="https://dhruthihospital.com/othergeneral/" class="btn-custom d-flex align-items-center justify-content-center"><span class="fa fa-chevron-right"></span><i class="sr-only">Read more</i></a>
-                      </div>
-                    </div>      
-                  </div>
-                  <div class="col-md-3 d-flex align-self-stretch px-4 ftco-animate wow pulse " data-wow-delay="0.6s">
-                    <div class="d-block services active text-center">
-                      <div class="icon d-flex align-items-center justify-content-center">
-                        <img src="{% static 'images/dh-images/pharmacy.png' %}"  class="icon-image"/>
-                      </div>
-                      <div class="media-body">
-                        <h4 class="heading" >Pharmacy</h4>
-                        
-                        <a href="https://dhruthihospital.com/pharmacy/" class="btn-custom d-flex align-items-center justify-content-center"><span class="fa fa-chevron-right"></span><i class="sr-only">Read more</i></a>
-                      </div>
-                    </div>      
-                  </div>
-                  <div class="col-md-3 d-flex align-self-stretch px-4 ftco-animate  wow pulse " data-wow-delay="0.6s">
-                    <div class="d-block services active text-center">
-                      <div class="icon d-flex align-items-center justify-content-center">
-                        <img src="{% static 'images/dh-images/lab.png' %}"  class="icon-image"/>
-                      </div>
-                      <div class="media-body">
-                        <h4 class="heading">Lab</h4>
-                        
-                        <a href="https://dhruthihospital.com/lab/" class="btn-custom d-flex align-items-center justify-content-center"><span class="fa fa-chevron-right"></span><i class="sr-only">Read more</i></a>
-                      </div>
-                    </div>      
-                  </div>
-                
-                  <div class="col-md-3 d-flex align-self-stretch px-4 ftco-animate wow pulse " data-wow-delay="0.6s">
-                    <div class="d-block services active text-center">
-                      <div class="icon d-flex align-items-center justify-content-center">
-                        <img src="{% static 'images/dh-images/ICU.png' %}"  class="icon-image"/>
-                      </div>
-                      <div class="media-body">
-                        <h4 class="heading" >ICU</h4>
-                        
-                        <a href="https://dhruthihospital.com/icu/" class="btn-custom d-flex align-items-center justify-content-center"><span class="fa fa-chevron-right"></span><i class="sr-only">Read more</i></a>
-                      </div>
-                    </div>      
-                  </div>
-                
-                  <div class="col-md-3 d-flex align-self-stretch px-4 ftco-animate  wow pulse " data-wow-delay="0.6s">
-                    <div class="d-block services active text-center">
-                      <div class="icon d-flex align-items-center justify-content-center">
-                        <img src="{% static 'images/dh-images/emergency.png' %}"  class="icon-image"/>
-                      </div>
-                      <div class="media-body">
-                        <h4 class="heading" >Emergencies</h4>
-                        
-                        <a href="https://dhruthihospital.com/emergencies/" class="btn-custom d-flex align-items-center justify-content-center"><span class="fa fa-chevron-right"></span><i class="sr-only">Read more</i></a>
-                      </div>
-                    </div>      
-                  </div>
-                
-
-                  
-                  
-                  <div class="col-md-3 d-flex align-self-stretch px-4 ftco-animate wow pulse " data-wow-delay="0.6s">
-                    <div class="d-block services active text-center">
-                      <div class="icon d-flex align-items-center justify-content-center">
-                        <img src="images/dh-images/sunday clinics .png"  class="icon-image"/>
-                      </div>
-                      <div class="media-body">
-                        <h4 class="heading" >Sunday Clinics</h4>
-                        
-                        <a href="https://dhruthihospital.com/sunday-clinics/" class="btn-custom d-flex align-items-center justify-content-center"><span class="fa fa-chevron-right"></span><i class="sr-only">Read more</i></a>
-                      </div>
-                    </div>      
-                  </div>
-                
-
-
                 </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header p-0" id="headingFour" role="tab">
+                  <h2 class="mb-0">
+                    <button href="#collapseFour"
+                      class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link collapsed"
+                      data-parent="#accordion" data-toggle="collapse" aria-expanded="false"
+                      aria-controls="collapseFour">
+                      <p class="mb-0 question" style="color:#006d95; font-weight:600;">What Makes Dhruthi Hospital®
+                        Special?</p>
+                      <i class="fa" aria-hidden="true" style="color:#006d95;"></i>
+                    </button>
+                  </h2>
                 </div>
-            </section>
-
-            <section class="section-padding pb-0 pt-0" id="reviews" >
-                <div class="container">
-                    <div class="row">
-
-                        <div class="col-12">
-                            <h2 class="text-center mb-lg-5 mb-4  mt-5 "  style="color:#006d95">Our Patients</h2>
-
-                            <div class="owl-carousel reviews-carousel  mb-5">
-
-                                <figure class="reviews-thumb d-flex flex-wrap align-items-center rounded">
-                                    <div class="reviews-stars">
-                                        <i class="bi-star-fill"></i>
-                                        <i class="bi-star-fill"></i>
-                                        <i class="bi-star-fill"></i>
-                                        <i class="bi-star-fill"></i>
-                                        <i class="bi-star-fill"></i>
-                                    </div>
-
-                                    <p class="text-primary d-block mt-2 mb-0 w-100"><strong>Best Health Care</strong></p>
-
-                                    <p class="reviews-text w-100">Thankfull to Dr.Harikrishna sir ,treatment is very focused. My mother in law recovered quickly.well mannered staff, with lowest costs. Good hospitality and professional staff with well organised pharmacy @affordable prices</p>
-
-                                    <img src="{% static 'images/dh-images/dhruthi -review-image.png' %}" class="img-fluid reviews-image" alt="">
-
-                                    <figcaption class="ms-4">
-                                        <strong>datthu yerra</strong>
-
-                                        <span class="text-muted">Patient</span>
-                                    </figcaption>
-                                </figure>
-
-                                <figure class="reviews-thumb d-flex flex-wrap align-items-center rounded">
-                                    <div class="reviews-stars">
-                                        <i class="bi-star-fill"></i>
-                                        <i class="bi-star-fill"></i>
-                                        <i class="bi-star-fill"></i>
-                                        <i class="bi-star-fill"></i>
-                                        <i class="bi-star-fill"></i>
-                                    </div>
-
-                                    <p class="text-primary d-block mt-2 mb-0 w-100"><strong>Doctor cares everyone!</strong></p>
-
-                                    <p class="reviews-text w-100">Excellent treatment given by dr harikrishna garu, here price is very economical and treatment is corporate level, best diabetologist in costal andhrapradesh
-                                      Thanks to hospital management</p>
-
-                                    <img src="{% static 'images/dh-images/dhruthi -review2-image.png' %}" class="img-fluid reviews-image" alt="">
-
-                                    <figcaption class="ms-4">
-                                        <strong>Siva Reddy udumula</strong>
-
-                                        <span class="text-muted">Recovered</span>
-                                    </figcaption>
-                                </figure>
-
-                                <figure class="reviews-thumb d-flex flex-wrap align-items-center rounded">
-                                    <div class="reviews-stars">
-                                        <i class="bi-star-fill"></i>
-                                        <i class="bi-star-fill"></i>
-                                        <i class="bi-star-fill"></i>
-                                        <i class="bi-star-fill"></i>
-                                        <i class="bi-star-fill"></i>
-                                    </div>
-
-                                    <p class="text-primary d-block mt-2 mb-0 w-100"><strong>Great services!</strong></p>
-
-                                    <p class="reviews-text w-100">All was good
-                                      Consultation and treatment for patients was so perfect
-                                      Communication between Staff and patient was excellent.</p>
-
-                                    <img src="{% static 'images/dh-images/dhruthi -review3-image.png' %}" class="img-fluid reviews-image" alt="">
-
-                                    <figcaption class="ms-4">
-                                        <strong>SUBBA RAO M</strong>
-
-                                        <span class="text-muted">New Patient</span>
-                                    </figcaption>
-                                </figure>
-
-                                <figure class="reviews-thumb d-flex flex-wrap align-items-center rounded">
-                                    <div class="reviews-stars">
-                                        <i class="bi-star-fill"></i>
-                                        <i class="bi-star-fill"></i>
-                                        <i class="bi-star-fill"></i>
-                                        <i class="bi-star-fill"></i>
-                                        <i class="bi-star-fill"></i>
-                                    </div>
-
-                                    <p class="text-primary d-block mt-2 mb-0 w-100"><strong>Best Advices</strong></p>
-
-                                    <p class="reviews-text w-100">Very good in treatment in all aspects like doctors, nursing and hygienic</p>
-
-                                    <img src="{% static 'images/dh-images/dhruthi -review3-image.png' %}" class="img-fluid reviews-image" alt="">
-
-                                    <figcaption class="ms-4">
-                                        <strong>Ramesh</strong>
-
-                                        <span class="text-muted">Almost Recovered</span>
-                                    </figcaption>
-                                </figure>
-                               
-                            </div>
-                        </div>
-
-                    </div>
+                <div class="collapse" id="collapseFour" role="tabpanel" aria-labelledby="headingTwo">
+                  <div class="card-body py-3 px-0">
+                    <ol>
+                      <li style="list-style-type:none;">Dhruthi Hospital® is available through a network of selected
+                      </li>
+                      <li style="list-style-type:none;">private physical therapy and multidisciplinary clinics that are
+                      </li>
+                      <li style="list-style-type:none;">qualified to deliver Dhruthi Hospital® treatment. Treatment is
+                      </li>
+                      <li style="list-style-type:none;">administered and monitored by specially trained Dhruthi</li>
+                      <li style="list-style-type:none;">Hospital® clinicians.</li>
+                    </ol>
+                  </div>
                 </div>
-            </section>
+              </div>
+            </div>
 
-            <section class="section-padding" id="booking">
-                <div class="container-fluid">
-                    <div class="row">
-                    
-                        <div class="col-lg-6 col-12  mb-5 wow slideInLeft" data-wow-delay="0.6s">
-                            <div class="booking-form">
-                                
-                                <h2 class="text-center mb-lg-3 mb-2" style="color: #ffff;">Book an appointment</h2>
-                            
-                                <form role="form" action="#booking" method="post">
-                                    <div class="row">
-                                        <div class="col-lg-6 col-12">
-                                            <input type="text" name="name" id="name" class="form-control" placeholder="Full name" required>
-                                        </div>
+          </div>
+          <div class="col-lg-6 pl-lg-5  wow slideInRight" data-wow-delay="0.6s">
 
-                                        <div class="col-lg-6 col-12">
-                                            <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Email address" required>
-                                        </div>
-
-                                        <div class="col-lg-6 col-12">
-                                            <input type="telephone" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" class="form-control" placeholder="Phone: 123-456-7890">
-                                        </div>
-
-                                        <div class="col-lg-6 col-12">
-                                            <input type="date" name="date" id="date" value="" class="form-control">
-                                            
-                                        </div>
-
-                                        <div class="col-12">
-                                            <textarea class="form-control" rows="5" id="message" name="message" placeholder="Additional Message"></textarea>
-                                        </div>
-
-                                        <div class="col-lg-3 col-md-4 col-6 mx-auto">
-                                            <button type="submit" class="form-control form-btn" id="submit-button">Book Now</button>
-                                        </div>
-                                    </div>
-                                </form>
-
-                            </div>
-                        </div>
-                        <div class="col-sm-11  col-lg-6  wow slideInRight" data-wow-delay="0.6s" >
-                          <div class=" d-flex justify-content-center align-items-center">
-                          <img src="{% static 'images/dh-images/Dhruthi-Hospital-building-and-reception-image.webp' %}" class="form-image" />
-                        </div>
-                        </div>
-                    </div>
+            <div id="accordion" class="myaccordion w-100 mt-5" aria-multiselectable="true">
+              <div class="card">
+                <div class="card-header p-0" id="headingFive">
+                  <h2 class="mb-0">
+                    <button href="#collapseFive"
+                      class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link collapsed"
+                      data-parent="#accordion" data-toggle="collapse" aria-expanded="false"
+                      aria-controls="collapseFive">
+                      <p class="mb-0 question" style="color:#006d95; font-weight:600;">When Will I Get The Reports?</p>
+                      <i class="fa" aria-hidden="true" style="color:#006d95;"></i>
+                    </button>
+                  </h2>
                 </div>
-            </section>
+                <div class="collapse" id="collapseFive" role="tabpanel" aria-labelledby="headingOne">
+                  <div class="card-body py-3 px-0">
+                    <ol>
+                      <li style="list-style-type:none;">Your reports will usually be available either on the evening of
+                      </li>
+                      <li style="list-style-type:none;">the check-up or on the following day and may also depend on</li>
+                      <li style="list-style-type:none;">the additional tests /consults which are required to customize
+                      </li>
+                      <li style="list-style-type:none;">your package.</li>
 
-
-            <section class="ftco-section ftco-no-pt anything-section ftco-faqs p-5">
-                <div class="container">
-                    <div class="row">
-                        <p class="text-center">We have great Answers</p>
-                        <h1 class="text-center" style="color:#006d95">Ask Us Anything</h1>
-                        <div class="col-lg-6  wow slideInLeft" data-wow-delay="0.6s">
-                            <div id="accordion" class="myaccordion w-100 mb-5 mt-5" aria-multiselectable="true">
-                                <div class="card">
-                                  <div class="card-header p-0" id="headingOne">
-                                    <h2 class="mb-0">
-                                      <button href="#collapseOne" class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link collapsed" data-parent="#accordion" data-toggle="collapse" aria-expanded="false" aria-controls="collapseOne">
-                                          <p class="mb-0 question" style="color:#006d95; font-weight:600;">How To Get In Touch The Dhruthi Hospital ?</p>
-                                        <i class="fa" aria-hidden="true"></i>
-                                      </button>
-                                    </h2>
-                                  </div>
-                                  <div class="collapse show" id="collapseOne" role="tabpanel" aria-labelledby="headingOne">
-                                    <div class="card-body py-3 px-0">
-                                        <ol>
-                                            <li style="list-style-type:none;">Pan India -1800 123 6896</li>
-                                            <li style="list-style-type:none;">Mobile Phone - (+91) 9348 235 235 , (+91) 9858 190 190</li>
-                                            <li style="list-style-type:none;">Email : dhruthihospital@gmail.com</li>
-                                           
-                                        </ol>
-                                    </div>
-                                  </div>
-                                </div>
-      
-                                <div class="card">
-                                  <div class="card-header p-0" id="headingTwo" role="tab">
-                                    <h2 class="mb-0">
-                                      <button href="#collapseTwo" class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link collapsed" data-parent="#accordion" data-toggle="collapse" aria-expanded="false" aria-controls="collapseTwo">
-                                          <p class="mb-0 question" style="color:#006d95; font-weight:600;">How To Book An Appointment?</p>
-                                        <i class="fa" aria-hidden="true"></i>
-                                      </button>
-                                    </h2>
-                                  </div>
-                                  <div class="collapse" id="collapseTwo" role="tabpanel" aria-labelledby="headingTwo">
-                                    <div class="card-body py-3 px-0">
-                                        <ol>
-                                            <li style="list-style-type:none;">You can schedule an appointment online at</li>
-                                            <li style="list-style-type:none;">www.dhruthihospital.com to schedule a medical appointment</li>
-                                            <li style="list-style-type:none;">or Online Consultation at https://dhruthihospital.com/ online-</li>
-                                            <li style="list-style-type:none;">doctors-consultation.</li>
-                                            
-                                        </ol>
-                                    </div>
-                                  </div>
-                                </div>
-      
-                                <div class="card">
-                                  <div class="card-header p-0" id="headingThree" role="tab">
-                                    <h2 class="mb-0">
-                                      <button href="#collapseThree" class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link collapsed" data-parent="#accordion" data-toggle="collapse" aria-expanded="false" aria-controls="collapseThree">
-                                          <p class="mb-0 question" style="color:#006d95; font-weight:600;">Is Out Side Food Allowed In Dhruthi Hospital ?</p>
-                                        <i class="fa" aria-hidden="true"></i>
-                                      </button>
-                                    </h2>
-                                  </div>
-                                  <div class="collapse" id="collapseThree" role="tabpanel" aria-labelledby="headingTwo">
-                                    <div class="card-body py-3 px-0">
-                                        <ol>
-                                            <li style="list-style-type:none;">Diet is an integral part of your medication. Therefore food from</li>
-                                            <li style="list-style-type:none;">outside sources is discouraged. Our dieticians, in association</li>
-                                            <li style="list-style-type:none;">with your doctor, will assess your diet needs. You are advised to</li>
-                                            <li style="list-style-type:none;">follow the diet instructions specified by them for a speedy</li>
-                                            <li style="list-style-type:none;">recovery. You will be given a choice of Indian and Continental cuisines</li>
-                                        </ol>
-                                    </div>
-                                  </div>
-                                </div>
-      
-                                <div class="card">
-                                  <div class="card-header p-0" id="headingFour" role="tab">
-                                    <h2 class="mb-0">
-                                      <button href="#collapseFour" class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link collapsed" data-parent="#accordion" data-toggle="collapse" aria-expanded="false" aria-controls="collapseFour">
-                                          <p class="mb-0 question"style="color:#006d95; font-weight:600;">What Makes Dhruthi Hospital® Special?</p>
-                                        <i class="fa" aria-hidden="true"></i>
-                                      </button>
-                                    </h2>
-                                  </div>
-                                  <div class="collapse" id="collapseFour" role="tabpanel" aria-labelledby="headingTwo">
-                                    <div class="card-body py-3 px-0">
-                                        <ol>
-                                            <li style="list-style-type:none;">Dhruthi  Hospital® is available through a network of selected</li>
-                                            <li style="list-style-type:none;">private physical therapy and multidisciplinary clinics that are</li>
-                                            <li style="list-style-type:none;">qualified to deliver Dhruthi Hospital® treatment. Treatment is</li>
-                                            <li style="list-style-type:none;">administered and monitored by specially trained Dhruthi</li>
-                                            <li style="list-style-type:none;">Hospital® clinicians.</li>
-                                        </ol>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                  
-                        </div>
-                        <div class="col-lg-6 pl-lg-5  wow slideInRight"  data-wow-delay="0.6s">
-                            <!-- <div class="heading-section mb-5 mt-5 mt-lg-0">
-                                <span class="subheading">FAQs</span>
-                        <h2 class="mb-3">Frequently Asks Questions</h2>
-                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                            </div> -->
-                            <div id="accordion" class="myaccordion w-100 mt-5" aria-multiselectable="true">
-                                  <div class="card">
-                                    <div class="card-header p-0" id="headingFive">
-                                      <h2 class="mb-0">
-                                        <button href="#collapseFive" class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link collapsed" data-parent="#accordion" data-toggle="collapse" aria-expanded="false" aria-controls="collapseFive">
-                                            <p class="mb-0 question" style="color:#006d95; font-weight:600;">When Will I Get The Reports?</p>
-                                          <i class="fa" aria-hidden="true"></i>
-                                        </button>
-                                      </h2>
-                                    </div>
-                                    <div class="collapse show" id="collapseFive" role="tabpanel" aria-labelledby="headingOne">
-                                      <div class="card-body py-3 px-0">
-                                          <ol>
-                                              <li style="list-style-type:none;">Your reports will usually be available either on the evening of</li>
-                                              <li style="list-style-type:none;">the check-up or on the following day and may also depend on</li>
-                                              <li style="list-style-type:none;">the additional tests /consults which are required to customize</li>
-                                              <li style="list-style-type:none;">your package.</li>
-                                             
-                                          </ol>
-                                      </div>
-                                    </div>
-                                  </div>
-        
-                                  <div class="card">
-                                    <div class="card-header p-0" id="headingSix" role="tab">
-                                      <h2 class="mb-0">
-                                        <button href="#collapseSix" class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link collapsed" data-parent="#accordion" data-toggle="collapse" aria-expanded="false" aria-controls="collapseTwo">
-                                            <p class="mb-0 question" style="color:#006d95 ; font-weight:600;">How Many Doctor's Can I Concern?</p>
-                                          <i class="fa" aria-hidden="true"></i>
-                                        </button>
-                                      </h2>
-                                    </div>
-                                    <div class="collapse" id="collapseSix" role="tabpanel" aria-labelledby="headingTwo">
-                                      <div class="card-body py-3 px-0">
-                                          <ol>
-                                              <li style="list-style-type:none;">During the entire process, you will meet the General Physician</li>
-                                              <li style="list-style-type:none;">twice, once before the process starts and once when all the</li>
-                                              <li style="list-style-type:none;">test results are available. You may get a consultation with a</li>
-                                              <li style="list-style-type:none;">Surgeon/Gynecologist and other Specialists depending on your</li>
-                                              <li style="list-style-type:none;">requirements.</li>
-                                          </ol>
-                                      </div>
-                                    </div>
-                                  </div>
-        
-                                  <div class="card">
-                                    <div class="card-header p-0" id="headingSeven" role="tab">
-                                      <h2 class="mb-0">
-                                        <button href="#collapseSeven" class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link collapsed" data-parent="#accordion" data-toggle="collapse" aria-expanded="false" aria-controls="collapseThree">
-                                            <p class="mb-0 decoration question" style="color:#006d95; font-weight:600;">Who Will Provides The Treatment?</p>
-                                          <i class="fa" aria-hidden="true"></i>
-                                        </button>
-                                      </h2>
-                                    </div>
-                                    <div class="collapse" id="collapseSeven" role="tabpanel" aria-labelledby="headingTwo">
-                                      <div class="card-body py-3 px-0">
-                                          <ol>
-                                              <li style="list-style-type:none;">Dhruthi Hospital® is available through a network of selected</li>
-                                              <li style="list-style-type:none;">private physical therapy and multidisciplinary clinics that are</li>
-                                              <li style="list-style-type:none;">qualified to deliver Dhruthi Hospital® treatment. Treatment is</li>
-                                              <li style="list-style-type:none;">administered and monitored by specially trained Dhruthi</li>
-                                              <li style="list-style-type:none;">Hospital® clinicians.</li>
-                                          </ol>
-                                      </div>
-                                    </div>
-                                  </div>
-        
-                                  <div class="card">
-                                    <div class="card-header p-0" id="headingEight" role="tab">
-                                      <h2 class="mb-0">
-                                        <button href="#collapseEight" class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link collapsed" data-parent="#accordion" data-toggle="collapse" aria-expanded="false" aria-controls="collapseFour">
-                                            <p class="mb-0 question" style="color:#006d95 ; font-weight:600;">How Can I Keep Track Of My Medications?</p>
-                                          <i class="fa" style="color:#006d95;" aria-hidden="true"></i>
-                                        </button>
-                                      </h2>
-                                    </div>
-                                    <div class="collapse" id="collapseEight" role="tabpanel" aria-labelledby="headingTwo">
-                                      <div class="card-body py-3 px-0">
-                                        <ol>
-                                            <li style="list-style-type:none;">Drug names can be long and difficult to pronounce, but the</li>
-                                            <li style="list-style-type:none;">good news is that you don’t have to be a pharmacist to</li>
-                                            <li style="list-style-type:none;">accurately keep track of your medications. Keep an updated list</li>
-                                            <li style="list-style-type:none;">of your prescriptions, with dosages, frequencies, side effects,</li>
-                                            <li style="list-style-type:none;">and your reasons for taking them. Carry the list with you,</li>
-                                            <li style="list-style-type:none;"> especially when seeing a doctor or another medical provider.</li>
-                                        </ol>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                    </div>
+                    </ol>
+                  </div>
                 </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header p-0" id="headingSix" role="tab">
+                  <h2 class="mb-0">
+                    <button href="#collapseSix"
+                      class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link collapsed"
+                      data-parent="#accordion" data-toggle="collapse" aria-expanded="false" aria-controls="collapseTwo">
+                      <p class="mb-0 question" style="color:#006d95 ; font-weight:600;">How Many Doctor's Can I Concern?
+                      </p>
+                      <i class="fa" aria-hidden="true" style="color:#006d95;"></i>
+                    </button>
+                  </h2>
                 </div>
-            </section>
-
-           
-
-
-        </main>
-
-        <section class="section-padding" id="contact" style ="padding-bottom:20px;">
-           
-                    <div class="maps" >
-                    <!-- <div clas="footer_card"> -->
-                      <div class="card" style="width: 19rem;">
-                        
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div>
-                        <div class="card-footer">
-                          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d490143.19164011977!2d79.90425734999997!3d16.310488400000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4a75c9a0149001%3A0x14d802faf04d4dab!2sDhruthi%20Clinics!5e0!3m2!1sen!2sus!4v1668505922182!5m2!1sen!2sus" width="270" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </div>
-                      </div>
-                      <div class="card" style="width: 19rem;">
-                        
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div>
-                        <div class="card-footer">
-                          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d490143.19164011977!2d79.90425734999997!3d16.310488400000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4a75c9a0149001%3A0x14d802faf04d4dab!2sDhruthi%20Clinics!5e0!3m2!1sen!2sus!4v1668505922182!5m2!1sen!2sus" width="270" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </div>
-                      </div>
-                      <div class="card" style="width: 19rem;">
-                        
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div>
-                        <div class="card-footer">
-                          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d490143.19164011977!2d79.90425734999997!3d16.310488400000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4a75c9a0149001%3A0x14d802faf04d4dab!2sDhruthi%20Clinics!5e0!3m2!1sen!2sus!4v1668505922182!5m2!1sen!2sus" width="270" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </div>
-                      </div>
-                       <div class="card" style="width: 19rem;">
-                        
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div>
-                        <div class="card-footer">
-                          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d490143.19164011977!2d79.90425734999997!3d16.310488400000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4a75c9a0149001%3A0x14d802faf04d4dab!2sDhruthi%20Clinics!5e0!3m2!1sen!2sus!4v1668505922182!5m2!1sen!2sus" width="270" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </div>
-                      </div>
-                    <!-- </div> -->
-                    <!-- <div class="   location-container shadow   bg-white rounded wow rollIn" data-wow-delay="0.4s">
-                        <div class="map-details">
-                            <i class="bi bi-geo-alt"></i>
-                            <h2 style="color: #0aac7f;">Lakshmipuram, Guntur</h2>
-                            <p style="color:#006d95;font-weight: 500;">#5-89-19, 1st cross,behind Chaitanya college, 3rd line,Lakshmipuram, Guntur</p>
-                            <!-- <p  style="color:#006d95;font-weight: 500;"></p>
-                            <p  style="color:#006d95;font-weight: 500;"></p> -->
-
-                        <!-- </div> -->
-                        <!-- <div class="map">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d490143.19164011977!2d79.90425734999997!3d16.310488400000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4a75c9a0149001%3A0x14d802faf04d4dab!2sDhruthi%20Clinics!5e0!3m2!1sen!2sus!4v1668505922182!5m2!1sen!2sus" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </div>
-
-                        </div>
-                        
-                    <div class="   location-container shadow   bg-white rounded wow wobble" data-wow-delay="0.6">
-                        <div class="map-details">
-                            <i class="bi bi-geo-alt"></i>
-                            <h2 style="color: #0aac7f;">Kothapeta, Guntur </h2>
-                             <p style="color:#006d95;font-weight: 500;">#12-21-30, Besides Lalitha Hospital(Main), Building), Opp. Andhra Bank, Gowrishankar Theater Road</p>
-                            
-                             
-
-
-                        </div>
-                        <div class="map">
-                            
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d490181.4372792953!2d80.44994500000001!3d16.295203!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x68c7a4814e4837f6!2sDhruthi%20Hospital%20-%20General%20Medicine%20in%20Guntur!5e0!3m2!1sen!2sus!4v1668505991419!5m2!1sen!2sus" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        
-                    </div>
-                    </div>
-                    
-                    <div class="  location-container shadow    bg-white rounded wow rotateInUpRight"  data-wow-delay="0.6s">
-                        <div class="map-details">
-                            <i class="bi bi-geo-alt" ></i>
-                            <h2 style="color: #0aac7f;">Chirala Hospital</h2>
-                            <p style="color:#006d95;font-weight: 500;">C/o Chinnari hospital,Church Road,Chirala</p>
-                          
-
-
-                        </div>
-                        <div class="map">
-                            
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d490181.4372792953!2d80.44994500000001!3d16.295203!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x68c7a4814e4837f6!2sDhruthi%20Hospital%20-%20General%20Medicine%20in%20Guntur!5e0!3m2!1sen!2sus!4v1668505991419!5m2!1sen!2sus" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        
-                    </div>
-                    </div>
-                    <div class="   location-container shadow   bg-white rounded wow rollIn" data-wow-delay="0.4s">
-                      <div class="map-details">
-                          <i class="bi bi-geo-alt"></i>
-                          <h2 style="color: #0aac7f;">Lakshmipuram, Guntur</h2>
-                          <p style="color:#006d95;font-weight: 500;">#5-89-19, 1st cross,behind Chaitanya college, 3rd line,Lakshmipuram, Guntur</p> -->
-                          <!-- <p  style="color:#006d95;font-weight: 500;"></p>
-                          <p  style="color:#006d95;font-weight: 500;"></p> -->
-
-                      <!-- </div>
-                      <div class="map">
-                          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d490143.19164011977!2d79.90425734999997!3d16.310488400000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4a75c9a0149001%3A0x14d802faf04d4dab!2sDhruthi%20Clinics!5e0!3m2!1sen!2sus!4v1668505922182!5m2!1sen!2sus" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                      </div>
-
-                      </div> -->
+                <div class="collapse" id="collapseSix" role="tabpanel" aria-labelledby="headingTwo">
+                  <div class="card-body py-3 px-0">
+                    <ol>
+                      <li style="list-style-type:none;">During the entire process, you will meet the General Physician
+                      </li>
+                      <li style="list-style-type:none;">twice, once before the process starts and once when all the</li>
+                      <li style="list-style-type:none;">test results are available. You may get a consultation with a
+                      </li>
+                      <li style="list-style-type:none;">Surgeon/Gynecologist and other Specialists depending on your
+                      </li>
+                      <li style="list-style-type:none;">requirements.</li>
+                    </ol>
+                  </div>
                 </div>
-            
-            </section>
-           
-    
+              </div>
 
-        <!-- JAVASCRIPT FILES -->
-        <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-        <script src="{% static 'js/jquery.min.js' %}"></script>
-        <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
-        <script src="{% static 'js/owl.carousel.min.js' %}"></script>
-        <script src="{% static 'js/scrollspy.min.js' %}"></script>
-        <script src="{% static 'js/custom.js' %}"></script>
-        <script src="{% static 'js/swiper.js' %}"></script>
-        <script src="{% static 'js/wow.js' %}"></script>
-        <script src="{% static 'js/wow.min.js' %}"></script>
-        <script>
-          new WOW().init();
-          </script>
-        <script>
-            $('.collapse').collapse()
-        
-        </script>
-      
+              <div class="card">
+                <div class="card-header p-0" id="headingSeven" role="tab">
+                  <h2 class="mb-0">
+                    <button href="#collapseSeven"
+                      class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link collapsed"
+                      data-parent="#accordion" data-toggle="collapse" aria-expanded="false"
+                      aria-controls="collapseThree">
+                      <p class="mb-0 decoration question" style="color:#006d95; font-weight:600;">Who Will Provides The
+                        Treatment?</p>
+                      <i class="fa" aria-hidden="true" style="color:#006d95;"></i>
+                    </button>
+                  </h2>
+                </div>
+                <div class="collapse" id="collapseSeven" role="tabpanel" aria-labelledby="headingTwo">
+                  <div class="card-body py-3 px-0">
+                    <ol>
+                      <li style="list-style-type:none;">Dhruthi Hospital® is available through a network of selected
+                      </li>
+                      <li style="list-style-type:none;">private physical therapy and multidisciplinary clinics that are
+                      </li>
+                      <li style="list-style-type:none;">qualified to deliver Dhruthi Hospital® treatment. Treatment is
+                      </li>
+                      <li style="list-style-type:none;">administered and monitored by specially trained Dhruthi</li>
+                      <li style="list-style-type:none;">Hospital® clinicians.</li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
 
-    </body>
+              <div class="card">
+                <div class="card-header p-0" id="headingEight" role="tab">
+                  <h2 class="mb-0">
+                    <button href="#collapseEight"
+                      class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link collapsed"
+                      data-parent="#accordion" data-toggle="collapse" aria-expanded="false"
+                      aria-controls="collapseFour">
+                      <p class="mb-0 question" style="color:#006d95 ; font-weight:600;">How Can I Keep Track Of My
+                        Medications?</p>
+                      <i class="fa" style="color:#006d95;" aria-hidden="true"></i>
+                    </button>
+                  </h2>
+                </div>
+                <div class="collapse" id="collapseEight" role="tabpanel" aria-labelledby="headingTwo">
+                  <div class="card-body py-3 px-0">
+                    <ol>
+                      <li style="list-style-type:none;">Drug names can be long and difficult to pronounce, but the</li>
+                      <li style="list-style-type:none;">good news is that you don’t have to be a pharmacist to</li>
+                      <li style="list-style-type:none;">accurately keep track of your medications. Keep an updated list
+                      </li>
+                      <li style="list-style-type:none;">of your prescriptions, with dosages, frequencies, side effects,
+                      </li>
+                      <li style="list-style-type:none;">and your reasons for taking them. Carry the list with you,</li>
+                      <li style="list-style-type:none;"> especially when seeing a doctor or another medical provider.
+                      </li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+  </main>
+
+  <section id="footer-location-cards" style="padding-bottom:20px;">
+
+    <div class="maps">
+      <!-- <div clas="footer_card"> -->
+      <div class="card" style="width: 19rem; border-radius: 10px !important;">
+
+        <div class="card-body"
+          style="background:linear-gradient(rgba(40, 188, 207, 0.7), rgba(17, 180, 91, 0.7)) !important; height:150px ">
+          <h5 class="card-title">Lakshmipuram, Guntur</h5>
+          <p class="card-text">#5-89-19, 1st cross,
+            behind Chaitanya college, 3rd line,
+            Lakshmipuram, Guntur</p>
+        </div>
+        <div class="card-footer">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13067.570261653147!2d80.42599561786723!3d16.306900434480802!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x14d802faf04d4dab!2sDhruthi%20Clinics!5e0!3m2!1sen!2sus!4v1669035902107!5m2!1sen!2sus"
+            width="270" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+      <div class="card" style="width: 19rem;">
+
+        <div class="card-body"
+          style="background:linear-gradient(rgba(40, 188, 207, 0.7), rgba(17, 180, 91, 0.7)) !important; height:150px ">
+          <h5 class="card-title">Kothapeta, Guntur</h5>
+          <p class="card-text mb-5" style="font-size:16px !important;">#12-21-30, Besides Lalitha Hospital(Main
+            Building),
+            Opp. Andhra Bank, Gowrishankar Theater Road,
+            Kothapeta, Guntur</p>
+        </div>
+        <div class="card-footer">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d18750.078564456773!2d80.44222541949588!3d16.297087637740866!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x68c7a4814e4837f6!2sDhruthi%20Hospital%20-%20General%20Medicine%20in%20Guntur!5e0!3m2!1sen!2sus!4v1669036020683!5m2!1sen!2sus"
+            width="270" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+      <div class="card" style="width: 19rem;">
+
+        <div class="card-body"
+          style="background:linear-gradient(rgba(40, 188, 207, 0.7), rgba(17, 180, 91, 0.7)) !important; height:150px ">
+          <h5 class="card-title">Chirala Hospital</h5>
+          <p class="card-text">C/o Chinnari hospital,
+            Church Road,
+            Chirala</p>
+        </div>
+        <div class="card-footer">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d490143.19164011977!2d79.90425734999997!3d16.310488400000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4a75c9a0149001%3A0x14d802faf04d4dab!2sDhruthi%20Clinics!5e0!3m2!1sen!2sus!4v1668505922182!5m2!1sen!2sus"
+            width="270" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+      <div class="card" style="width: 19rem;">
+
+        <div class="card-body"
+          style="background:linear-gradient(rgba(40, 188, 207, 0.7), rgba(17, 180, 91, 0.7)); height:150px ">
+          <h5 class="card-title">Ongole
+          </h5>
+          <p class="card-text">C/o Chinnari hospital,
+            Church Road,
+            Chirala</p>
+        </div>
+        <div class="card-footer">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d490143.19164011977!2d79.90425734999997!3d16.310488400000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4a75c9a0149001%3A0x14d802faf04d4dab!2sDhruthi%20Clinics!5e0!3m2!1sen!2sus!4v1668505922182!5m2!1sen!2sus"
+            width="270" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+
+  <!-- JAVASCRIPT FILES -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    crossorigin="anonymous"></script>
+  <script src="{% static 'js/jquery.min.js' %}"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+  <script src="{% static 'js/scrollspy.min.js' %}"></script>
+  <script src="{% static 'js/custom.js' %}"></script>
+  <script src="{% static 'js/swiper.js' %}"></script>
+  <script src="{% static 'js/wow.js' %}"></script>
+  <script src="{% static 'js/wow.min.js' %}"></script>
+
+  <script>
+    new WOW().init();
+  </script>
+  <script>
+    $('.collapse').collapse()
+
+  </script>
+  <script>
+    AOS.init({
+      duration: 2000,
+    });
+
+  </script>
+
+
+</body>
+
 </html>
