@@ -4,3 +4,6 @@ from .models import HomeSlider
 def home(request):
     slider = HomeSlider.objects.all()
     return render( request,'uifiles/index.html',{'slider':slider})
+
+def page_not_found_view(request, exception):
+    return render(request, 'uifiles/404.html', status=404)
