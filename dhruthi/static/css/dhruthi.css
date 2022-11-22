@@ -1,12 +1,14 @@
 .logo-banner{
     position: absolute !important;
-    top: 100px !important;
-    left: 20px !important;
+    top: 120px !important;
+    left: 50px !important;
     z-index: 10; 
 }
 
 .logo-banner img{
   border-radius: 10px !important;
+  height: 100px !important;
+  width: 100% !important;
 }
 html,body {
   margin: 0 !important;
@@ -353,10 +355,14 @@ html,body {
   }
 
   .ftco-faqs button[aria-expanded="true"] {
+    color: white !important;
     background-color:  #0aac7f;
-    color: #fff !important;
-}
+    
 
+}
+.card-header .collapsed p{
+  color: #20afd3 !important;
+}
 
 
 .myaccordion .btn-link:hover,
@@ -632,3 +638,9 @@ input[type=date].form-control{
   }
 }
 
+
+/* @media (max-width:490px){
+  .swiper-slide{
+    display: none;
+  }
+} */
