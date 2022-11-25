@@ -1023,8 +1023,8 @@ strong {
   border-radius: 10px !important;
 } 
 .maps .card:hover{
-  transform: scale(1.2);
-  transition: all 0.5s;
+  transform: scale(1.1);
+  transition: all 0.3s;
 } 
 
 .deg-sign{
@@ -1048,3 +1048,4 @@ strong {
 /* .accordion button[aria-expanded="true"]{
   color: white !important;
 } */
+

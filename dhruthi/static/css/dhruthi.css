@@ -18,30 +18,40 @@ html,body {
 
 #branchs-card{
     /* background-color: #0eaa7e; */
-    background:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/dh-images//dhruthi-hospitals-hospitals-background-image-1920x1080.jpeg);
+    background:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/dh-images//back-banner.png) ;
     opacity: 8;
     background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+    background-size:cover;
+    height:50vh;
+    background-attachment: local;
+    
     object-fit: contain;
-    width: 100%!important;
-    height: auto;
+   
     border: none;
     background-blend-mode:darken !important;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
     
 
 }
-#branchs-card .card{
+#branchs-card .take{
     margin-top: 30px !important;
     margin-bottom: 40px !important;
     z-index: 11;
 }
+
 .card-title{
-   color: whitesmoke !important;
-   text-align: center !important;
+   color: #0aac7f !important;
+  
+}
+.take-care{
+  background:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/dh-images//back-banner.png) ;
+  background-size: 100%;
 }
 .card-body p{
-    color: whitesmoke !important;
+   color: #006d95;
     font-weight: 500;
 }
 .card-body .btn{
@@ -64,18 +74,25 @@ html,body {
    }
 
 .branches .card{
- height: 450px !important;
- width: 25rem !important;
+ height: 150px !important;
+ width: 45rem !important;
  /* background-image: url(../images//dh-images/dhruti-hospital-chirch-road-hospital-image-1-1024x436.webp); */
  background:linear-gradient(0deg, rgba(37, 162, 216, 0.3), #016c94),url(../images//dh-images/Untitled-design-11.webp);
  background-size: cover;
  border-radius: 15px;
  border: none !important;
 }
+.background-border{
+  background-color: #006d95;
+  width:70%;
+  border-radius: 10px;
+  padding: 20px;
+ 
+}
 .branches .card:hover{
     border: none;
-    height: 450px !important;
-    width: 25rem !important;
+    height: 150px !important;
+    width: 45rem !important;
     background:linear-gradient(0deg, rgba(189, 171, 181, 0.3), #0eaa7e),url(../images//dh-images/Untitled-design-11.webp);
 }
 .about-section{
@@ -126,6 +143,7 @@ html,body {
     font-size: 16px;
     text-align: justify;
     text-justify: inter-word;
+   
     
   }
   .about-text .about-btn{
@@ -164,6 +182,14 @@ html,body {
   @media (max-width:772px){
     .about-img{
       width:500px;
+      height:400px;
+      margin-top: 10px !important;
+      margin-bottom: 4px !important;
+    }
+  }
+  @media (max-width:562px){
+    .about-img{
+      width:420px;
       height:400px;
       margin-top: 10px !important;
       margin-bottom: 4px !important;
@@ -361,7 +387,7 @@ html,body {
 
 }
 .card-header .collapsed p{
-  color: #20afd3 !important;
+  color: #006D95 !important;
 }
 
 
@@ -394,6 +420,15 @@ html,body {
     
    
     border-radius: 4px;
+}
+.ftco-intro{
+  
+  width:100%;
+  background: linear-gradient(rgba(0,109,149,.9), rgba(0, 109, 149, .9)),  url(../images/dh-images//transparent.png) ;
+  background-size: 20%;
+  background-attachment: fixed;
+  object-fit: contain;
+  
 }
 
 .ftco-intro .services:hover{
@@ -516,7 +551,8 @@ html,body {
 }
 
 #booking{
-  background-image: linear-gradient(to top, #37ecba 0%, #72afd3 100%);
+  background: linear-gradient( rgb(10,172,127,.7) , rgb(10,172,127,7) 100%), url(../images/dh-images//dhruthi-hospitals-appointment-background-shade-1080x600.png) center left no-repeat;
+  background-size: cover;
 }
 .form-image{
   width: 100%;
@@ -638,9 +674,21 @@ input[type=date].form-control{
   }
 }
 
-
+.card-footer{
+  background-color: transparent!important;
+}
 /* @media (max-width:490px){
   .swiper-slide{
     display: none;
   }
 } */
+
+.take-care{
+  background-color: #006d95;
+  border-radius: 10px;
+}
+.loaction-view{
+  display: flex!important;
+  
+ 
+}
