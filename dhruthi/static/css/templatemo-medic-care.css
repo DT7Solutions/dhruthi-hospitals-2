@@ -622,6 +622,7 @@ strong {
     position: absolute;
     left: 0%;
     top: 60px;
+    
   }
 
   .timeline-nodes:nth-child(odd) h3::after {
@@ -666,7 +667,7 @@ strong {
 
   .timeline-icons {
     position: absolute;
-    left: -10px;
+   
   }
 
   .timeline-icons::before {

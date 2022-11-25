@@ -84,11 +84,12 @@ html,body {
 }
 .background-border{
   background-color: #006d95;
-  width:70%;
+ 
   border-radius: 10px;
   padding: 20px;
  
 }
+
 .branches .card:hover{
     border: none;
     height: 150px !important;
@@ -190,7 +191,7 @@ html,body {
   @media (max-width:562px){
     .about-img{
       width:420px;
-      height:400px;
+      height:300px;
       margin-top: 10px !important;
       margin-bottom: 4px !important;
     }
