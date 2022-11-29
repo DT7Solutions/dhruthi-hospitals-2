@@ -982,3 +982,108 @@ i.bi-youtube:hover{
   font-weight: 600;
   font-size: 16px !important;
 }
+
+
+
+/* mobial responce  */
+
+@media (max-width:560px){
+
+  .enquery-section{
+    height: 150vh !important;
+  }
+  .enquery-text h3{
+    margin-top: 100px !important;
+    font-size: 25px !important;
+    
+  }
+
+  .link-text{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    margin-left: 35px !important;
+    
+  }
+  .link1{
+    border: none !important;
+    margin-left: 25px !important;
+  }
+  .link2{
+    border: none !important;
+    margin-left:65px !important;
+  }
+  .link3{
+    margin-left:65px !important;
+  }
+
+
+  .award-section{
+    height: 110vh !important;
+  }
+  .carousel-img img{
+    height: 300px;
+    width: 400px !important;
+    border-radius: 5px !important;
+    margin-top: 20px !important;
+    padding-right: 5px !important;
+  }
+  .award-content h3 {
+    padding-left: 20px !important;
+    font-size: 25px !important;
+    margin-top: -20px !important;
+   }
+   .award-content p {
+    padding: 15px !important;
+   }
+
+
+   .our-team img {
+    height: 330px !important;
+    width: 600px !important;
+    margin-left: 0px !important;
+    padding: 8px !important;
+}
+ 
+.staf-review-item .card{
+  width: 10%;
+  height: 350px !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.staff-card{
+  height: 100px;
+  width: 60% !important;
+  margin-top: 25px !important;
+  align-items: center !important;
+  border-radius: 50% !important;
+  
+  
+}
+
+
+.staff-card .card-text {
+  color: red !important;
+  text-align: justify !important;
+  margin-left: -90px !important;
+  margin-right:80px !important;
+  font-size: 14px !important;
+  padding: 10px !important;
+}
+
+.staff-card .card-title{
+  color: rgb(155, 15, 15) !important;
+  text-align: justify !important;
+} 
+.staff-card img{
+height: 100px !important;
+width: 100px !important;
+margin-top: -250px !important;
+z-index: 2000;
+}
+
+
+}
