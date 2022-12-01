@@ -98,7 +98,6 @@ html,body {
     background:linear-gradient(0deg, rgba(189, 171, 181, 0.3), #0eaa7e),url(../images//dh-images/Untitled-design-11.webp);
 }
 .about-section{
-  
     background-color:#0aac7f !important;
 }
 .meet-our-doctor{
@@ -217,20 +216,22 @@ html,body {
 
    /*--meet-our-doctors--*/
    .doctor-one{
-    border-radius: 200px;
-    width:450px;
-    height:450px;
+    border-radius: 20px;
+    width:350px;
+    height:350px;
    }
    .doctor-two{
-    border-radius: 200px;
-    width:450px;
-    height:450px;
+    border-radius: 20px;
+    width:350px;
+    height:350px;
+
    }
 
    .row-text{
     text-align: justify;
     text-justify: inter-word;
     font-size: 14px !important;
+    
    }
    .row-text h2{
       background: #121FCF;
@@ -238,14 +239,43 @@ html,body {
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
    }
+.row-text .doc1 p{
+    color: rgb(9,82,109) !important;
+    font-weight: 400;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 8;
+    -webkit-box-orient: vertical;
+}
+
    .row-text p{
-    color: black !important;
+    color: rgb(9,82,109) !important;
+    font-weight: 400;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    
+
    }
    .featured-circle {
     margin-top: 0px !important;
     height: 450px ;
     width: 450px ;
    }
+
+
+.pop-up-doctor{
+  height: 100vh !important;
+  width: 80%;
+  background-color: #016c94;
+  position: absolute;
+  top: 0;
+  left: 10%;
+}
+
+
+
 
    /*--anything us--*/
     /* .myaccordion {
@@ -554,7 +584,7 @@ html,body {
 }
 
 #booking{
-  background: linear-gradient( rgb(10,172,127,.7) , rgb(10,172,127,7) 100%), url(../images/dh-images//dhruthi-hospitals-appointment-background-shade-1080x600.png) center left no-repeat;
+  background: linear-gradient( rgba(6, 173, 48, 0.7) , rgb(14,56,71) 100%), url(../images/dh-images//dhruthi-hospitals-appointment-background-shade-1080x600.png) center left no-repeat;
   background-size: cover;
 }
 .form-image{
@@ -706,8 +736,8 @@ input[type=date].form-control{
 
 /* for appointments */
 .enquery-section{
-  height: 100vh !important;
-  width: 100% !important;
+  min-height: 550px !important;
+  min-width: 100% !important;
   background-color: #071f2b;
 }
 
@@ -715,7 +745,7 @@ input[type=date].form-control{
   color: rgb(218, 233, 13);
   text-align: center !important;
   /* margin-top: -80px !important; */
-  font-size: 40px !important;
+  
 }
 .hr-line{
   color: white !important;
@@ -729,8 +759,9 @@ input[type=date].form-control{
 
 .link-text{
   color: whitesmoke !important;
-  display: flex;
-  justify-content: center;
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: center !important;
   align-items: center !important;
   font-weight: 600;
   font-size: 22px !important;
@@ -863,29 +894,24 @@ i.bi-youtube:hover{
 
 /* award-section */
 .award-section{
- height: 65vh !important;
- width: 100%;
- background: rgb(43,70,91);
- background: linear-gradient(90deg, rgba(43,70,91,1) 38%, rgba(57,112,70,1) 100%);
+    min-height: 500px !important;
+    min-width: 100%;
+    background: rgb(43,70,91);
+    background: linear-gradient(90deg, rgba(43,70,91,1) 38%, rgba(57,112,70,1) 100%); 
 }
+
 .award-text h2{
  text-align: center !important;
- padding-top: 10px !important;
+ padding-top: 15px !important;
  color: white !important;
 }
 .carousel-img img{
-  height: 350px;
+  min-height: 350px;
   width: 480px !important;
-  border-radius: 5px !important;
-  margin-top: 40px !important;
+  border-radius: 15px !important;
+  margin-top: 55px !important;
 }
-.col-img{
- align-items: auto !important;
- margin-left: 35px !important;
 
-
-
-}
 
 .owl-award-slider .owl-dot{
   display: none;
@@ -906,8 +932,12 @@ i.bi-youtube:hover{
 
 
 /* testmonial-section */
+
+.team-section{
+  min-height: 600px !important;
+}
 .testmonial-section {
-  height: 100vh !important;
+  /* min-height: 100vh !important; */
   width: 100%;
   background-color: #18303a !important;
 }
@@ -955,17 +985,24 @@ i.bi-youtube:hover{
   width: 50px;
 }
 .our-team img {
-   height: 330px !important;
-   width: 600px !important;
-   margin-left: 350px !important;
+   min-height: 330px !important;
+   min-width: 650px !important;
+   margin-left: max(350px);
 }
-
+.carousel-insurance {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: center !important;
+  align-items:  center !important;
+}
 .carousel-insurance .item {
   color: whitesmoke !important;
-  height: 100px !important;
-  width: 365px !important;
-  background-color: #0d3c47 !important;
- 
+  min-height: 100px !important;
+  min-width: 365px !important;
+  padding: 25px !important;
+}
+.carousel-insurance .item  img{
+  border-radius: 10px !important;
 }
 
 .footer-links{
@@ -976,24 +1013,179 @@ i.bi-youtube:hover{
 
 .footer-link-text{
   color: whitesmoke !important;
-  display: flex;
-  justify-content: center;
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: center !important;
   align-items: center !important;
   font-weight: 600;
   font-size: 16px !important;
 }
 
+/* footer-section */
+
+.footer-section{
+  min-height: 400px !important;
+}
+
+
+/* .footer-link-text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 35px !important;
+  
+} 
+.link1{
+  border: none !important;
+  margin-left: 25px !important;
+}
+.link2{
+  border: none !important;
+  margin-left:25px !important;
+}
+.link3{
+  margin-left:25px !important;
+} */
+
+/* .carousel-insurance .item {
+  color: whitesmoke !important;
+  min-height: 100px !important;
+  min-width: 250px !important;
+  margin-left: 100px !important;
+}
+.carousel-insurance .item  img{
+  border-radius: 10px !important;
+  min-height: 100px !important;
+  min-width: 505px !important;
+  margin: 25px !important;
+} 
+
+
+
+
+
+/* @media screen and (max-width: 320px) and (min-width: 600px) {
+
+} */
+/* 
+@media (min-width:320px)  { 
+  
+  .enquery-section{
+    height: 125vh !important;
+  }
+  .enquery-text h3{
+    margin-top: -20px !important;
+    font-size: 25px !important;
+    
+  }
+
+  .link-text{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    margin-left: 35px !important;
+    
+  }
+  .link1{
+    border: none !important;
+    margin-left: 25px !important;
+  }
+  .link2{
+    border: none !important;
+    margin-left:65px !important;
+  }
+  .link3{
+    margin-left:65px !important;
+  }
+  .carousel-img img {
+    height: 350px;
+    width: 400px !important;
+    border-radius: 10px !important;
+    margin-top: -30px !important;
+    padding-right: 5px !important;
+}
+.award-section  {
+    min-height: 120vh;
+}
+.award-section h3{   
+font-size: 25px !important;
+padding: 10px !important;
+}
+.award-section p{ 
+  padding: 10px !important;
+}
+.footer-section{
+  height: 75vh !important;
+}
+.our-team img {
+  margin-left: 0px !important;
+  padding: 8px !important;
+}
+
+.staff-card{
+  width: 60% !important;
+  margin-top: 25px !important;
+
+}
+.staff-card .card-text {
+  text-align: justify !important;
+  margin-left: -170px !important;
+  margin-right:40px !important;
+  font-size: 14px !important;
+  padding: 10px !important;
+}
+
+.staff-card .card-title{
+  color: rgb(6, 97, 125) !important;
+  text-align: justify !important;
+ 
+}  */
+
+/* .footer-link-text{
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  margin-left: 35px !important;
+  
+} */
+/* .link1{
+  border: none !important;
+  margin-left: 25px !important;
+}
+.link2{
+  border: none !important;
+  margin-left:25px !important;
+}
+.link3{
+  margin-left:25px !important;
+} */
+
+/* .carousel-insurance .item {
+  color: whitesmoke !important;
+  min-height: 100px !important;
+  min-width: 250px !important;
+  margin-left: 100px !important;
+}
+.carousel-insurance .item  img{
+  border-radius: 10px !important;
+  min-height: 100px !important;
+  min-width: 505px !important;
+  margin: 25px !important;
+} */
+
+
+ /* } */
 
 
 /* mobial responce  */
 
-@media (max-width:560px){
+/* @media (max-width:481px){
 
   .enquery-section{
     height: 150vh !important;
   }
   .enquery-text h3{
-    margin-top: 100px !important;
+    margin-top: -20px !important;
     font-size: 25px !important;
     
   }
@@ -1086,4 +1278,18 @@ z-index: 2000;
 }
 
 
-}
+} */
+
+
+
+
+/* 
+@media (min-width:1025px) { 
+  .footer-section{
+    min-height: 53vh !important;
+  }
+  .footer-section h1{
+   padding-top: max(25px);
+  }
+  
+} */

@@ -1,0 +1,60 @@
+@media screen and (max-width: 945px)  {
+    .enquery-section{
+        min-height: 800px !important;
+        min-width: 100% !important;
+        padding-bottom: 200px !important;
+        padding-top: 180px !important;
+    
+    }
+
+    /* award section */
+    .award-section{
+        height: 125vh !important;
+      }
+      .carousel-img img{
+        height: 300px;
+        width: 400px !important;
+        border-radius: 5px !important;
+        margin-top: 20px !important;
+        padding-right: 5px !important;
+      }
+      .award-content h3 {
+        padding-left: 20px !important;
+        font-size: 25px !important;
+       }
+       .award-content p {
+        padding: 15px !important;
+       }
+
+   /* staff card */
+
+       .staff-card{
+        height: 100px;
+        width: 80% !important;
+        margin-top: 25px !important;
+        align-items: center !important;
+        border-radius: 50% !important;
+        
+        
+      }
+      
+      
+      .staff-card .card-text {
+        text-align: justify !important;
+        margin-left: -100px !important;
+        margin-right:90px !important;
+        font-size: 14px !important;
+        padding: 10px !important;
+      }
+      
+      .staff-card .card-title{
+        color: rgb(15, 155, 57) !important;
+        text-align: justify !important;
+      }
+
+      .team-doctors .card{
+        width: 20rem !important;
+        margin-left: calc(15%);
+        margin-top: 10px;
+      } 
+}
