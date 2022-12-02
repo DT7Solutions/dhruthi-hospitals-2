@@ -722,7 +722,8 @@
 
               <h2 class="text-center mb-lg-3 mb-2" style="color: #ffff;">Book an appointment</h2>
 
-              <form role="form" action="#booking" method="post" class="book-apponintment">
+              <form role="form" action=" " method="post" class="book-apponintment">
+                {% csrf_token %}
                 <div class="row">
                   <div class="col-lg-6 col-12">
                     <input type="text" name="name" id="name" class="form-control" placeholder="Full name" required>
@@ -734,13 +735,26 @@
                   </div>
 
                   <div class="col-lg-6 col-12">
-                    <input type="telephone" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-                      class="form-control" placeholder="Phone: 123-456-7890">
+                    <input type="telephone" name="phone" id="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
+                      class="form-control" placeholder="your Phone Number " required>
                   </div>
 
                   <div class="col-lg-6 col-12">
-                    <input type="date" name="date" id="date" value="" class="form-control">
+                    <input type="date" name="date" id="date" value="" class="form-control" required>
 
+                  </div>
+                  <div class="col-lg-6 col-12 mt-4">
+                    <!-- <input type="text" name="branch" id="branch" class="form-control" placeholder="Select Branch" required> -->
+                    <!-- <select class="custom-select" style="background:transparent !important; color:whitesmoke; border:none; border-bottom:1px solid white" placeholder="Select Branch" required>
+                       -->
+                      <select class="form-select form-select-lg mb-3" id="branch_item" aria-label=".form-select-lg example"
+                      style="background:transparent !important; color:whitesmoke; border:none; border-bottom:1px solid white; outline:none;" placeholder="Select Branch" required>
+                      <option value="" >Select Branch</option>  
+                      <option value="1" style="color:black">Lakshmipuram</option>
+                        <option value="2" style="color:black">Kothapeta</option>
+                        <option value="3" style="color:black">Cherila</option>
+                        <option value="4" style="color:black">Inkolu</option>
+                      </select>
                   </div>
 
                   <div class="col-12">
@@ -1325,6 +1339,7 @@
   <script src="{% static 'js/scrollspy.min.js' %}"></script>
   <script src="{% static 'js/custom.js' %}"></script>
   <script src="{% static 'js/swiper.js' %}"></script>
+  <script src="{% static 'js/contact.js' %}"></script>
   <script src="{% static 'js/wow.js' %}"></script>
   <script src="{% static 'js/wow.min.js' %}"></script>
 

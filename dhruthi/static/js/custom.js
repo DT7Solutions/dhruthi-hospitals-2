@@ -138,9 +138,3 @@ $('.carousel-insurance').owlCarousel({
         }
     }
 })
-
-
-// let doc1 = document.querySelector('#lakshmi');
-// doc1.addEventListener('click',function(){
-  
-// });

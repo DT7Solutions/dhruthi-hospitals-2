@@ -1293,3 +1293,16 @@ z-index: 2000;
   }
   
 } */
+
+.book-apponintment input:focus { 
+  outline: none !important;
+  box-shadow: 0 0 10px #000000;
+}
+.book-apponintment select:focus { 
+  outline: none !important;
+  box-shadow: 0 0 10px #000000;
+}
+.book-apponintment textarea:focus { 
+  outline: none !important;
+  box-shadow: 0 0 10px #000000;
+}
