@@ -669,6 +669,9 @@ strong {
     position: absolute;
    
   }
+  
+  
+    
 
   .timeline-icons::before {
     width: 70px;
@@ -1050,3 +1053,32 @@ strong {
   color: white !important;
 } */
 
+.close{
+  position: absolute !important;
+  top: 20px !important;
+  right: 20px !important;
+  z-index:10;
+  
+
+}
+.bi-x-lg{
+  color:#fff!important;
+
+}
+
+button.close{
+  position:fixed!important;
+  top:20px!important;
+  right:20px !important;
+  width:20px!important;
+  height:20px!important;
+  z-index:9999!important;
+  background:#ffff,url(../images/dh-images//close-image.png)!important;
+  background: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.image-effect{
+  width:200px;
+  height:500px;
+}
