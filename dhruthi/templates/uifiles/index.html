@@ -44,19 +44,19 @@
 <body id="top">
 
   <main>
-    <section class="slider-banner">
+     <section class="slider-banner">
       <div class="container-fluid carousel-section">
         <div class="row">
           <div class="col-12">
             <div class="swiper mySwiper">
-              <div class="swiper-wrapper">
+              <div class="swiper-wrapper"> 
                 {% for slider_item in slider%}
-                <div class="swiper-slide" style="background-image: url({{slider_item.Image}});">
+                 <div class="swiper-slide" style="background-image: url({{slider_item.Image}});">
                   <div class='slider-image'> </div>
-                </div>
+                </div> 
                 {% endfor %}
 
-              </div>
+               </div>
             </div>
 
           </div>
@@ -66,12 +66,12 @@
         <img src="{% static 'images/dh-images/dhruthi-hospital-logo-250x115.png' %}" class="animated "
           style="width:300px;height:150px;" />
       </div>
-    </section>
+    </section> 
 
     <section class="enquery-section" id="branchs-card">
-      <div class="container mb-4">
+      <div class="container pb-5 ">
         <div class="col-sm-12 col-lg-12 enquery-text ">
-          <h3>For Appointments</h3>
+          <h3 class="mb-5">For Appointments</h3>
           <hr class="hr-line">
         </div>
         <div class="row enquery-info">
@@ -133,7 +133,7 @@
     <!-- about us ===================================================================== -->
     <section class="about-section">
       <h2 class="text-center" style="color: #ffff; margin-bottom: 40px; margin-top:20px;">About</h2>
-      <div class=" about-container ">
+      <div class=" about-container mb-5">
         <div class="row">
           <div class="col-sm-12  col-lg-6 about-image d-flex justify-content-center align-items-center wow fadeInUpBig"
             data-wow-delay="0.7s">
@@ -167,12 +167,13 @@
 
 
     <!-- our joyrney ============================================================== -->
-    <section class="section-padding pb-0" id="timeline">
-      <div class="container">
+    <section class=" pb-0  pt-3" id="timeline">
+      <h2 class="text-center mb-lg-5 mb-3" style="color:#006d95; margin-bottom: 20px; margin-top:10px;">Our Journey</h2>
+      <div class="container mb-0">
         <div class="row">
 
-          <h2 class="text-center mb-lg-5 mb-4" style="color:#006d95; margin-bottom: 30px; margin-top:10px;">Our Journey
-          </h2>
+          
+          
 
           <div class="timeline">
             <div class="row g-0 justify-content-end justify-content-md-around align-items-start timeline-nodes">
@@ -186,8 +187,8 @@
                 <div class="loaction-view mt-2">
                   <a
                     href="https://www.google.com/maps/search/%235-89-19,+1st+cross,+behind+Chaitanya+college,+3rd+line,+lakshmipuram,+Guntur/@16.310384,80.431403,10z?hl=en-US"><button
-                      class="location-button me-3">Get Directions</button></a>
-                  <a href="https://www.dhruthiclinics.com/"><button class="location-button">More info</button></a>
+                      class="btn btn-info btn-md me-3">Get Directions</button></a>
+                  <a href="https://www.dhruthiclinics.com/"><button class="btn btn-info btn-md">More info</button></a>
                 </div>
               </div>
 
@@ -212,8 +213,8 @@
                 <div class="loaction-view mt-2">
                   <a
                     href="https://www.google.com/maps?ll=16.295203,80.449945&z=10&t=m&hl=en-US&gl=US&mapclient=embed&cid=7550184175581018102"><button
-                      class="location-button me-3">Get Directions</button></a>
-                  <a href="https://dhruthihospital.com/dhruthi-hospitals/"><button class="location-button">More
+                      class="btn btn-info btn-md me-3">Get Directions</button></a>
+                  <a href="https://dhruthihospital.com/dhruthi-hospitals/"><button class="btn btn-info btn-md">More
                       info</button></a>
                 </div>
               </div>
@@ -237,8 +238,8 @@
                 <div class="loaction-view mt-2">
                   <a
                     href="https://www.google.com/maps?ll=15.824922,80.363014&z=10&t=m&hl=en-US&gl=US&mapclient=embed&q=C/o+Chinnari+hospital+Church+Road,+Chirala">
-                    <button class="location-button me-3">Get Directions</button></a>
-                  <button class="location-button">More info</button>
+                    <button class="btn btn-info btn-md me-3">Get Directions</button></a>
+                  <button class="btn btn-info btn-md">More info</button>
                 </div>
               </div>
 
@@ -262,8 +263,8 @@
                 <p class="mb-3 pb-0" style="color:#006d95 ;font-weight:400;">Inkolu</p>
                 <div class="loaction-view mt-2">
 
-                  <button class="location-button me-2 ">Get Directions</button>
-                  <button class="location-button">More info</button>
+                  <button class="btn btn-info btn-md me-3 ">Get Directions</button>
+                  <button class="btn btn-info btn-md">More info</button>
                 </div>
               </div>
 
@@ -287,8 +288,8 @@
       <div class="container-fluid  wow" data-wow-delay="0.6s">
         <div class="row mb-5  meet-row px-5">
           <div class="col-sm-12  col-lg-7  row-text order-1 order-sm-2 order-2  order-col-2 order-lg-1 order-md-2"
-          data-aos="fade-left" data-aos-duration="1000">
-            <h2>Meet Dr. Revuri Hari Krishna</h2>
+          data-aos="fade-left" data-aos-duration="1000" style="display: flex;flex-direction:column;justify-content: center;">
+            <h2 > Dr. Revuri Hari Krishna</h2>
             <span class="deg-sign mb-2">M.D (General Medicine)</span>
             <p class="doc1">Dr. Revuri Hari Krishna is an extremely committed and passionate doctor in General Medicine. After
               completing post graduation and MD (internal medicine), he started his career as a faculty in NRI
@@ -296,7 +297,7 @@
               such as hypertension, diabetes and thyroid abnormalities. He is one of the best general medicine
               doctors in Guntur, India and he is an active participant in various national and international
               medical societies and also in academic research activities.</p>
-              <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#doctor">Know More</button>
+              <button type="button" class="btn  btn-info  btn-md" style="width:20%;"  data-toggle="modal" data-target="#doctor">Know More</button>
           </div>
           
 
@@ -318,9 +319,9 @@
                 class="doctor-two" />
             </div>
           </div>
-          <div class="col-sm-12 col-lg-7  row-text  col-lg-6"  data-aos="fade-left" data-aos-duration="1000">
+          <div class="col-sm-12 col-lg-7  row-text  col-lg-6"  data-aos="fade-left" data-aos-duration="1000" style="display: flex;flex-direction:column;justify-content: center;">
             <h2 class="mb-lg-3 mt-3">Meet Dr. Lakshmi Nimmaraju</h2>
-            <span class="mb-5 deg-sign">M.D (General Medicine)</span>
+            <span class="mb-2 deg-sign">M.D (General Medicine)</span>
             <p class="meet-text">Dr. Lakshmi Nimmaraju has special
               care for Dental Implant treatments. She did her BDS from SIBAR Institute of dental sciences, Guntur
               in 2006.
@@ -337,7 +338,7 @@
               stands as best dental doctor in Guntur, AP. She has started Dhruthi Clinics Which is One of the Best
               Dental
               Hospital in Guntur Offers all types of Dental Treatments through out Andhra Pradesh.</p>
-              <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Know More</button>
+              <button type="button" class="btn btn-info btn-md" style="width:20%;" data-toggle="modal" data-target="#myModal">Know More</button>
           </div>
          
         </div>
@@ -415,7 +416,7 @@
     <!-- ==========================services ============================================================== -->
     <section class="ftco-section 
              ftco-no-pt ftco-intro " style="margin-top:130px;padding:30px;">
-      <div class="container">
+      <div class="container mb-5">
         <div class="row">
           <h1 class="text-center" style="color:#fff ;margin-top: 20px;">Services</h1>
           <div class="col-md-3 d-flex align-self-stretch px-4 ftco-animate  wow pulse " data-wow-delay="0.6s">
@@ -713,7 +714,7 @@
 
 
     <!-- ================================== appoint ment booking  ============================================================== -->
-    <section class="section-padding" id="booking">
+    <section class="pt-5 pb-5"  id="booking">
       <div class="container-fluid">
         <div class="row">
 

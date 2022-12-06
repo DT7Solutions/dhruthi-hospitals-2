@@ -196,6 +196,18 @@ html,body {
       margin-top: 10px !important;
       margin-bottom: 4px !important;
     }
+    #booking{
+      padding-bottom: 50px!important;
+    }
+    #branchs-card{
+      padding-top: 50px!important;
+      padding-bottom: 50px!important;
+    }
+    .link1,.link2{
+      border-right: none!important;
+
+    }
+    
   }
   
 
@@ -446,7 +458,7 @@ html,body {
   .ftco-intro .services {
     padding-top: 80px;
     padding-bottom:60px;
-    margin-top: 160px;
+    margin-top: 140px;
     background: #fff;
     border-top-left-radius: 50px!important;
     border-top-right-radius:50px!important;
@@ -457,10 +469,11 @@ html,body {
 .ftco-intro{
   
   width:100%;
-  background: linear-gradient(rgba(0,109,149,.9), rgba(0, 109, 149, .9)),  url(../images/dh-images//transparent.png) ;
+  background: linear-gradient(rgba(0,109,149,.9), rgba(0, 109, 149, .9)),  url(../images/dh-images//medical-technology-icon-set-health-wellness.jpg)  no-repeat;
   background-size: 20%;
   background-attachment: fixed;
   object-fit: contain;
+  background-size: cover;
   
 }
 
@@ -916,10 +929,17 @@ i.bi-youtube:hover{
 .owl-award-slider .owl-dot{
   display: none;
 }
+.award-content{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  
+  align-items: center;
+}
 .award-content h3{
   color: rgb(243, 231, 62) !important;
-  margin-top: 85PX !important;
-  padding-top: 40px !important;
+  margin-top: 50PX !important;
+  padding-top: 20px !important;
 }
 .award-content P{
   color: whitesmoke !important;
@@ -944,7 +964,7 @@ i.bi-youtube:hover{
 .staf-review-item .card{
   /* background-color: #006d95 !important; */
   width: 70%;
-  height: 350px !important;
+  min-height: 270px !important;
   margin-left: 150px !important;
   display: flex;
   flex-direction: column;
@@ -1305,4 +1325,41 @@ z-index: 2000;
 .book-apponintment textarea:focus { 
   outline: none !important;
   box-shadow: 0 0 10px #000000;
+}
+
+.btn-test{
+  cursor:pointer;
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  position: middle;
+  position:relative;
+  border:0;
+  color: #fff;
+  background-color: #006D95;
+  border-radius: 4px;
+  width:140px;
+  height: 38px;
+}  
+  
+button.close{
+  position:absolute!important;
+  top:20px!important;
+  right:20px !important;
+  width:20px!important;
+  height:20px!important;
+  z-index:9999!important;
+  background:#ffff,url(../images/dh-images//close-image.png)!important;
+  background: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.pop-img{
+  width:100%;
+  height:100%;
+  background-size: cover;
+  object-fit: contain;
+  background: no-repeat;
 }
