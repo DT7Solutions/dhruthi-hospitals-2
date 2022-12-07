@@ -44,7 +44,7 @@ def home(request):
 
 
         aos = [[name,email,phone,name_sheet,message,date]]
-        print(type(aos))
+        # print(type(aos))
         request1 = sheet.values().append(spreadsheetId=SAMPLE_SPREADSHEET_ID, 
                                     range=name_sheet,valueInputOption="USER_ENTERED",insertDataOption="INSERT_ROWS", body={"values":aos}).execute()
 
