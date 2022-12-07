@@ -1,7 +1,7 @@
 
 let bookingform = document.querySelector('.book-apponintment');
 
-// let select_value  = document.querySelector('#branch_item');
+let select_value  = document.querySelector('#branch_item');
 // let submit_btn = document.querySelector('#submit');
 let inputs = document.querySelectorAll('input')
 let textariea = document.querySelector('textarea')
@@ -25,11 +25,12 @@ bookingform.addEventListener('submit', function(event){
             
             },
             error: function(xhr, status, error) {
-              swal("error!", "Please Try Agian", "error");
+              swal("error!", "Please Refresh Browser And Try Agian ", "error");
             
             },
             dataType: 'text'
         })
         inputs.forEach(input => input.value = '');
         textariea.value =''
+        select_value.value = ""
 }) 

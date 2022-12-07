@@ -4,7 +4,11 @@ from .models import HomeSlider
 
 from googleapiclient.discovery import build
 from google.oauth2 import service_account
+
+from django.views.decorators.csrf import csrf_exempt
+
 # Create your views here.
+@csrf_exempt
 def home(request):
     slider = HomeSlider.objects.all()
 

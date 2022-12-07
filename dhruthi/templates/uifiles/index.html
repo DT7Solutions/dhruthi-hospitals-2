@@ -753,12 +753,14 @@
                 {% csrf_token %}
                 <div class="row">
                   <div class="col-lg-6 col-12">
-                    <input type="text" name="name" id="name" class="form-control" placeholder="Full name" required>
+                    <input type="text" name="name" id="name" class="form-control" placeholder="Full name" required
+                    style="background-color: transparent;">
                   </div>
 
                   <div class="col-lg-6 col-12">
                     <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control"
-                      placeholder="Email address" required>
+                      placeholder="Email address" required
+                      style="background:transparent !important; color:whitesmoke; border:none; border-bottom:1px solid white; outline:none;" >
                   </div>
 
                   <div class="col-lg-6 col-12">
@@ -786,7 +788,8 @@
 
                   <div class="col-12">
                     <textarea class="form-control" rows="5" id="message" name="message"
-                      placeholder="Additional Message"></textarea>
+                      placeholder="Additional Message"
+                      style="color:whitesmoke !important;" ></textarea>
                   </div>
 
                   <div class="col-lg-3 col-md-4 col-6 mx-auto">
@@ -925,55 +928,7 @@
       </div>
     </section>
 
-    <!-- <section class="testmonial-section1">
-    <div class="owl-carousel carousel-staff  col-img  mx-5">
-        <div class="item staf-review-item">
-          <div class="card staff-card" style="width: 60rem; background-color:rgb(255, 254, 254)">
-            <div class="card-body">
-              <div>
-                <p class="card-text"><span class=""><i class="fa fab fa-solid fa-quote-left"></i></span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione expedita impedit porro
-                  dignissimos libero eveniet placeat officia laboriosam at eum cumque nam nobis est, adipisci minima ut quisquam
-                  labore rem provident reiciendis architecto! Est aspernatur sit reprehenderit consequatur, quia aperiam placeat
-                  doloremque, minima labore at, eaque provident tempora natus suscipit.<span class=""><i class="fa fab fa-solid fa-quote-right"></i></span></p>
-              </div>
-              <div>
-                <h5 class="card-title mt-4">Staf Name</h5>
-              </div>
-              <!-- <div>
-                <img
-                  src="{% static 'images/dh-images/Dhruthi-hospital-awards-and-recognations-page-times-icons-of-healthcare-award-frame-image.jpg' %}"
-                  class="card-img-top mt-4" alt="...">
-              </div> 
-            </div>
-          </div>
-        </div>
-
-        <div class="item staf-review-item">
-          <div class="card staff-card" style="width: 60rem; background-color:rgb(255, 254, 254)">
-            <div class="card-body">
-              <div>
-                <p class="card-text"><span class=""><i class="fa fab fa-solid fa-quote-left"></i></span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione expedita impedit porro
-                  dignissimos libero eveniet placeat officia laboriosam at eum cumque nam nobis est, adipisci minima ut quisquam
-                  labore rem provident reiciendis architecto! Est aspernatur sit reprehenderit consequatur, quia aperiam placeat
-                  doloremque, minima labore at, eaque provident tempora natus suscipit.<span class=""><i class="fa fab fa-solid fa-quote-right"></i></span></p>
-              </div>
-              <div>
-                <h5 class="card-title mt-4">Staf Name2</h5>
-              </div>
-              <!-- <div>
-                <img
-                  src="{% static 'images/dh-images/Dhruthi-hospital-awards-and-recognations-page-times-icons-of-healthcare-award-frame-image.jpg' %}"
-                  class="card-img-top mt-4" alt="...">
-              </div>
-            </div>
-          </div>
-        </div>-->
-
-
-    <!-- </div>
-    </section> -->
-
-
+    
     <!-- ================= Ask Us Anything ========================= -->
     <section class="ftco-section ftco-no-pt anything-section ftco-faqs p-5">
       <div class="container">
