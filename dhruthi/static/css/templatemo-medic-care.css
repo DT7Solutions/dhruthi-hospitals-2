@@ -35,6 +35,7 @@ https://templatemo.com/tm-566-medic-care
   --font-weight-bold:             700;
 }
 
+
 body {
     background: var(--white-color);
     font-family: var(--body-font-family);    
@@ -1029,6 +1030,7 @@ strong {
 .maps .card:hover{
   transform: scale(1.1);
   transition: all 0.3s;
+  filter: drop-shadow(0 10px 10px  rgb(2, 17, 27));
 } 
 
 .deg-sign{

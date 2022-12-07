@@ -1,3 +1,5 @@
+
+
 @media screen and (max-width: 945px)  {
     .enquery-section{
         min-height: 800px !important;
@@ -8,9 +10,6 @@
     }
 
     /* award section */
-    .award-section{
-        
-      }
       .carousel-img img{
         height: 300px;
         width: 400px !important;
@@ -57,4 +56,19 @@
         margin-left: calc(15%);
         margin-top: 10px;
       } 
+}
+
+@media screen and (min-width: 450px) {
+  .column2{
+    margin-top: -90px !important;
+  }
+  .card .staff-card .card-title {
+    margin-top: 50px !important;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .column2{
+    margin-top: 0px !important;
+  }
+  
 }

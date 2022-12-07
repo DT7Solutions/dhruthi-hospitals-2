@@ -138,3 +138,12 @@ $('.carousel-insurance').owlCarousel({
         }
     }
 })
+
+
+
+
+// vinela js 
+// VanillaTilt.init(document.querySelector(".timeline-content"), {
+//   max: 25,
+//   speed: 400
+// });

@@ -9,8 +9,9 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Dhruthi</title>
-
+  <title>Dhruthi Hospital</title>
+  <link href="{% static 'images/dh-images/logo.png' %}" rel="icon">
+  
   <!-- CSS FILES -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
 
@@ -32,6 +33,7 @@
   <link href="{% static 'css/animate.min.css' %}" rel="stylesheet">
   <link href="{% static 'css/dhruthi.css' %}" rel="stylesheet">
   <link href="{% static 'css/responces.css' %}" rel="stylesheet">
+  <link rel="stylesheet" href="sweetalert2.min.css">
   
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
@@ -77,48 +79,48 @@
         <div class="row enquery-info">
           <div class="col-md-4">
             <h3><i class="bi bi-phone"></i></h3>
-            <h3>9858 190 190</h3>
-            <h3>0863 2352354</h3>
+            <h3><a href="tel:9858 190 190">9858 190 190</a></h3>
+            <h3><a href="tel:0863 2352354">0863 2352354</a></h3>
           </div>
           <div class="col-md-4">
             <h3><i class="bi bi-telephone"></i></h3>
-            <h3>9348 235 235</h3>
-            <h3>0863 2212354</h3>
+            <h3><a href="tel:9348 235 235">9348 235 235</a></h3>
+            <h3><a href="tel:0863 2212354">0863 2212354</a></h3>
           </div>
           <div class="col-md-4">
             <h3><i class="bi bi-headset"></i></h3>
             <h3>Toll Free No</h3>
-            <h3>1800 123 6896</h3>
+            <h3><a href="tel:1800 123 6896">1800 123 6896</a></h3>
           </div>
         </div>
         <div class="enquery-link mt-5">
           <div class="link-text">
             <div>
-              <span class="link1 px-2"><i class="bi bi-globe px-2"></i><a href="#">www.dhruthihealthcare.com</a></span>
+              <span class="link1 px-2"><i class="bi bi-globe px-2"></i><a href="https://dhruthihealthcare.com/">www.dhruthihealthcare.com</a></span>
             </div>
             <div>
-              <span class="link2 px-2"><a href="#">www.dhruthihealthcare.com</a></span>
+              <span class="link2 px-2"><a href="https://dhruthihospital.com/dhruthi-hospitals/">www.dhruthihospital.com</a></span>
             </div>
             <div>
-              <span class="link3 px-2"><a href="#">www.dhruthihealthcare.com</a></span>
+              <span class="link3 px-2"><a href="https://www.dhruthiclinics.com/">www.dhruthiclinics.com</a></span>
             </div>
           </div>
         </div>
-        <div class="enquery-social-link mt-5">
+        <div class="enquery-social-link mt-5 ">
           <div>
             <h3>Follow Us On </h3>
           </div>
           <div class="fb-account">
-            <i class="bi bi-facebook"></i>
+            <a href="https://www.facebook.com/dhruthihospital/"><i class="bi bi-facebook"></i></a>
           </div>
           <div>
-            <i class="bi bi-twitter px-2"></i>
+            <a href="https://twitter.com/dhruthihospital?lang=en"><i class="bi bi-twitter px-2"></i></a>
           </div>
           <div>
-            <i class="bi bi-instagram px-2"></i>
+            <a href="https://www.instagram.com/dhruthihealthcare/"><i class="bi bi-instagram px-2"></i></a>
           </div>
           <div>
-            <i class="bi bi-youtube px-2"></i>
+            <a href="https://www.youtube.com/@dhruthihospital-generalhos8244/featured"><i class="bi bi-youtube px-2"></i></a>
           </div>
 
         </div>
@@ -127,19 +129,19 @@
       </div>
     </section>
     <!-- whates app ===================================================================== -->
-    <!-- <a href="https://wa.me/+919858190190?text=I'm%20interested%20in%20your%20car%20for%20sale">
+    <a href="https://wa.me/+919858190190?text=Hellow">
     <img src="{% static 'images/dh-images/whatsapp_logo-2x.png' %}" alt="" class="whatsapp">
-   </a> -->
+   </a>
     <!-- about us ===================================================================== -->
     <section class="about-section">
       <h2 class="text-center" style="color: #ffff; margin-bottom: 40px; margin-top:20px;">About</h2>
       <div class=" about-container mb-5">
-        <div class="row">
-          <div class="col-sm-12  col-lg-6 about-image d-flex justify-content-center align-items-center wow fadeInUpBig"
-            data-wow-delay="0.7s">
+        <div class="row no-gutters gap-0">
+          <div class="col-sm-12  col-lg-6 about-image d-flex justify-content-center align-items-center wow "
+            data-wow-delay="0.7s" data-aos="fade-right" data-wow-delay="0.6s" >
             <img src="{% static 'images/dh-images/Dhruthi-Hospital-building.webp' %}" class="about-img" />
           </div>
-          <div class="col-sm-12  col-lg-6  about-text wow slideInRight" data-wow-delay="0.1s">
+          <div class="col-sm-12  col-lg-6  about-text wow" data-wow-delay="0.1s" data-aos="fade-left" data-wow-delay="0.6s" >
             <h4 class="mt-1" style="color:#ffff">Dhruthi Health Care </h4>
             <p style="color:#ffff; font-weight: 350;">Dhruthi Health Care is a medical center that offers clinical and
               hospital care. Ranked among the top hospitals in Guntur, we provide specialized medical care to thousands
@@ -202,7 +204,7 @@
           <div class="timeline">
             <div class="row g-0 justify-content-end justify-content-md-around align-items-start timeline-nodes">
               <div class="col-9 col-md-5 me-md-4 me-lg-0 order-3 order-md-1 timeline-content bg-white shadow-lg  wow "
-                data-aos="fade-left" data-wow-delay="0.6s">
+                data-aos="fade-left" data-wow-delay="0.6s" style="filter: drop-shadow(0 20px 10px  rgb(2, 17, 27));">
                 <img src="{% static 'images/dh-images/dhruthi-hospital-timeline-card-399x190.png' %}"
                   class="timeline-card" />
 
@@ -228,7 +230,7 @@
             <div
               class="row g-0 justify-content-end justify-content-md-around align-items-start timeline-nodes my-lg-5 my-4">
               <div class="col-9 col-md-5 ms-md-4 ms-lg-0 order-3 order-md-1 timeline-content bg-white shadow-lg  wow"
-                data-aos="fade-right" data-wow-delay="0.6s">
+                data-aos="fade-right" data-wow-delay="0.6s" style="filter: drop-shadow(0 20px 10px  rgb(2, 17, 27));">
                 <img src="{% static 'images/dh-images/dhruthi-hospitals-kothapet-branch-200x150.png' %}"
                   class="timeline-card" />
 
@@ -254,11 +256,11 @@
 
             <div class="row g-0 justify-content-end justify-content-md-around align-items-start timeline-nodes ">
               <div class="col-9 col-md-5 me-md-4 me-lg-0 order-3 order-md-1 timeline-content bg-white shadow-lg  wow"
-                data-aos="fade-left" data-wow-delay="0.6s">
+                data-aos="fade-left" data-wow-delay="0.6s" style="filter: drop-shadow(0 20px 10px  rgb(2, 17, 27));">
                 <img src="{% static 'images/dh-images/dhruthi-hospital-main-page-doctors-image-1024x266 (1).webp' %}"
                   class="timeline-card" />
                 <h2 class="mt-3">Churuch Road</h2>
-                <h5 style="color:#006d95 ;font-weight:400">chirala</h5>
+                <h5 style="color:#006d95 ;font-weight:400">Chirala</h5>
                 <div class="loaction-view mt-2">
                   <a
                     href="https://www.google.com/maps?ll=15.824922,80.363014&z=10&t=m&hl=en-US&gl=US&mapclient=embed&q=C/o+Chinnari+hospital+Church+Road,+Chirala">
@@ -279,7 +281,7 @@
             <div
               class="row g-0 justify-content-end justify-content-md-around align-items-start timeline-nodes my-lg-5 my-4 ">
               <div class="col-9 col-md-5 ms-md-4 ms-lg-0 order-3 order-md-1 timeline-content bg-white shadow-lg  wow "
-                data-aos="fade-right" data-wow-delay="0.6s">
+                data-aos="fade-right" data-wow-delay="0.6s" style="filter: drop-shadow(0 20px 10px  rgb(2, 17, 27));">
                 <img src="{% static 'images/dh-images/dhruthi-hospital-timeline-card-399x190.png' %}"
                   class="timeline-card" />
 
@@ -308,7 +310,7 @@
 
     <!-- meet our doctor ============================================================== -->
     <section class="meet-doctor" id="">
-      <h2 class="text-center mb-5  mt-5" style="color:#006d95">Meet Ur Doctors</h2>
+      <h2 class="text-center mb-5  mt-5" style="color:#006d95;">Meet Ur Doctors</h2>
       <div class="container-fluid  wow" data-wow-delay="0.6s">
         <div class="row mb-5  meet-row px-5">
           <div class="col-sm-12  col-lg-7  row-text order-1 order-sm-2 order-2  order-col-2 order-lg-1 order-md-2"
@@ -329,7 +331,7 @@
           data-aos="fade-right" data-aos-duration="1000">
             <div class="d-flex justify-content-center align-items-center">
               <img src="{% static 'images/dh-images/dhruthi-hospital-meet-our-doctors-500x500.jpg' %}"
-                class="doctor-one" />
+                class="doctor-one" style="filter: drop-shadow(0 20px 15px  rgb(2, 17, 27));"/>
             </div>
           </div>
           
@@ -340,11 +342,11 @@
           <div class="col-sm-12  col-lg-5 mb-sm-2"  data-aos="fade-right" data-aos-duration="1000">
             <div class=" d-flex justify-content-center align-items-center">
               <img src="{% static 'images/dh-images/dhruthi-hospitals-meet-our-doctors-508x508.jpg' %}"
-                class="doctor-two" />
+                class="doctor-two" style="filter: drop-shadow(0 20px 15px  rgb(2, 17, 27));" />
             </div>
           </div>
           <div class="col-sm-12 col-lg-7  row-text  col-lg-6"  data-aos="fade-left" data-aos-duration="1000" style="display: flex;flex-direction:column;justify-content: center;">
-            <h2 class="mb-lg-3 mt-3">Meet Dr. Lakshmi Nimmaraju</h2>
+            <h2 class="">Dr.Lakshmi Nimmaraju</h2>
             <span class="mb-2 deg-sign">M.D (General Medicine)</span>
             <p class="meet-text">Dr. Lakshmi Nimmaraju has special
               care for Dental Implant treatments. She did her BDS from SIBAR Institute of dental sciences, Guntur
@@ -797,7 +799,7 @@
           </div>
           <div class="col-sm-11  col-lg-6  wow slideInRight" data-wow-delay="0.6s">
             <div class=" d-flex justify-content-center align-items-center">
-              <img src="{% static 'images/dh-images/Dhruthi-Hospital-building-and-reception-image.webp' %}"
+              <img src="{% static 'images/dh-images/dhruthihealthcare-booking- 650450.png' %}"
                 class="form-image" />
             </div>
           </div>
@@ -831,10 +833,10 @@
 
 
     <!-- ================= our team -section ========================= -->
-    <section class="team-section" style="background:linear-gradient(0deg, rgba(255, 255, 255, 0.3), #fdfdfd);">
+    <section class="team-section " style="background:linear-gradient(0deg, rgba(255, 255, 255, 0.3), #fdfdfd);">
       <div class="container mt-5">
         <div class="row mt-5 mb-5 ">
-          <h2 class="text-center mb-lg-5 mb-4   " style="color:#006d95;">Our Team Is Our Strength. </h2>
+          <h2 class="text-center mb-lg-5 mb-4  mt-5  " style="color:#006d95;">Our Team Is Our Strength. </h2>
 
           <div class="col-sm-12 col-md-3 team-doctors" data-aos="fade-up" data-aos-duration="1000">
             <div class="card shadow-lg  bg-white rounded " style="width: 15rem;">
@@ -873,24 +875,22 @@
         </div>
 
 
-        <div class="row mt-5">
+        <div class="row mt-5 mb-5">
           <div class="col-sm-12 col-md-12">
             <div class="owl-carousel carousel-staff  col-img">
               <div class="item staf-review-item">
                 <div class="card staff-card">
                   <div class="card-body">
                     <div>
-                      <p class="card-text"><span class=""><i class="fa fab fa-solid fa-quote-left"></i></span>Lorem
+                      <p class="card-text mt-4"><span class=""><i class="fa fab fa-solid fa-quote-left"></i></span>Lorem
                         ipsum dolor sit amet consectetur adipisicing elit. Ratione expedita impedit porro
                         dignissimos libero eveniet placeat officia laboriosam at eum cumque nam nobis est, adipisci
                         minima ut quisquam
-                        labore rem provident reiciendis architecto! Est aspernatur sit reprehenderit consequatur, quia
-                        aperiam placeat
-                        doloremque, minima labore at, eaque provident tempora natus suscipit.<span class=""><i
+                        .<span class=""><i
                             class="fa fab fa-solid fa-quote-right"></i></span></p>
                     </div>
                     <div>
-                      <h5 class="card-title mt-2">Staf Name</h5>
+                      <h5 class="card-title mt-3">Staf Name</h5>
                     </div>
                   </div>
                 </div>
@@ -900,17 +900,15 @@
                 <div class="card staff-card">
                   <div class="card-body">
                     <div>
-                      <p class="card-text"><span class=""><i class="fa fab fa-solid fa-quote-left"></i></span>Lorem
+                      <p class="card-text mt-4"><span class=""><i class="fa fab fa-solid fa-quote-left"></i></span>Lorem
                         ipsum dolor sit amet consectetur adipisicing elit. Ratione expedita impedit porro
                         dignissimos libero eveniet placeat officia laboriosam at eum cumque nam nobis est, adipisci
                         minima ut quisquam
-                        labore rem provident reiciendis architecto! Est aspernatur sit reprehenderit consequatur, quia
-                        aperiam placeat
-                        doloremque, minima labore at, eaque provident tempora natus suscipit.<span class=""><i
+                        <span class=""><i
                             class="fa fab fa-solid fa-quote-right"></i></span></p>
                     </div>
                     <div>
-                      <h5 class="card-title mt-4">Staf Name2</h5>
+                      <h5 class="card-title mt-3">Staf Name2</h5>
                     </div>
                     <!-- <div>
                       <img
@@ -1094,7 +1092,7 @@
             </div>
 
           </div>
-          <div class="col-lg-6 pl-lg-5  wow " data-wow-delay="0.6s">
+          <div class="col-lg-6 pl-lg-5  wow column2 " data-wow-delay="0.6s">
 
             <div id="accordion" class="myaccordion w-100 mt-5" aria-multiselectable="true">
               <div class="card m-2 shadow" data-aos="fade-left" data-aos-duration="1000">
@@ -1219,8 +1217,8 @@
 
     <!--=========================================== footer locations cards  ================================= -->
     <section id="footer-location-cards" style="padding-bottom:20px;">
-      <div class="maps">
-        <div class="card  shadow bg-white rounded" style="width: 19rem; border-radius: 10px !important;">
+      <div class="maps mt-5 mb-5">
+        <div class="card  shadow bg-white rounded mb-3" style="width: 19rem; border-radius: 10px !important;">
 
           <div class="card-body" style=" height:150px ">
             <h4 class="card-title">Lakshmipuram, Guntur</h4>
@@ -1313,13 +1311,13 @@
           <div class="enquery-link mt-1">
             <div class="footer-link-text">
               <div>
-                <span class="link1 px-2"><a href="#">www.dhruthihealthcare.com</a></span>
+                <span class="link1 px-2"><a href="https://dhruthihospital.com/">www.dhruthihealthcare.com</a></span>
               </div>
               <div>
-                <span class="link2 px-2"><a href="#">www.dhruthihealthcare.com</a></span>
+                <span class="link2 px-2"><a href="https://dhruthihealthcare.com/">www.dhruthihospital.com</a></span>
               </div>
               <div>
-                <span class="link3 px-2"><a href="#">www.dhruthihealthcare.com</a></span>
+                <span class="link3 px-2"><a href="https://www.dhruthiclinics.com/">www.dhruthiclinics.com</a></span>
               </div>
             </div>
           </div>
@@ -1328,16 +1326,16 @@
               <h3 class="px-3" style="color:#f0f4f5">Follow Us On </h3>
             </div>
             <div class="fb-account">
-              <i class="bi bi-facebook"></i>
+              <a href="https://www.facebook.com/dhruthihospital/"><i class="bi bi-facebook"></i></a>
             </div>
             <div>
-              <i class="bi bi-twitter px-2"></i>
+              <a href="https://twitter.com/dhruthihospital?lang=en"><i class="bi bi-twitter px-2"></i></a>
             </div>
             <div>
-              <i class="bi bi-instagram px-2"></i>
+              <a href="https://www.instagram.com/dhruthihealthcare/"><i class="bi bi-instagram px-2"></i></a>
             </div>
             <div>
-              <i class="bi bi-youtube px-2"></i>
+              <a href="https://www.youtube.com/@dhruthihospital-generalhos8244/featured"><i class="bi bi-youtube px-2"></i></a>
             </div>
 
           </div>
@@ -1350,6 +1348,7 @@
 
 
   <!-- JAVASCRIPT FILES -->
+  <script src="{% static 'js/vinella-title.js' %}"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -1367,6 +1366,9 @@
   <script src="{% static 'js/contact.js' %}"></script>
   <script src="{% static 'js/wow.js' %}"></script>
   <script src="{% static 'js/wow.min.js' %}"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
   <script>
     const close = document.querySelector('close')
     $(document).ready(function(){
