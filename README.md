@@ -1,6 +1,4 @@
-# dhruthi-hospitals-2
-# Apertur
-
+# dhruthi-hospitals
 
 #install env
 #pip install virtualenv
