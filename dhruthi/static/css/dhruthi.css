@@ -172,7 +172,7 @@ html,body {
       
       }  */
 
-  @media (max-width:992px){
+  @media screen and (max-width:992px){
     .about-img{
       width:550px;
       height:400px;
@@ -231,7 +231,7 @@ html,body {
     border-radius: 20px;
     width:350px;
     height:350px;
-    filter: drop-shadow(0 20px 15px  rgb(86, 87, 88));
+    /* filter: drop-shadow(0 20px 15px  rgb(86, 87, 88)); */
    }
    .doctor-two{
     border-radius: 20px;
@@ -1092,11 +1092,11 @@ i.bi-youtube:hover{
   border-radius: 4px;
   width:140px;
   height: 38px;
-  filter: drop-shadow(0 20px 10px  rgb(15, 15, 15));
+  /* filter: drop-shadow(0 20px 10px  rgb(15, 15, 15)); */
 }  
 .btn-test:hover{
   background-color: #009539;
-  filter:none
+  /* filter:none */
 }  
 
 button.close{
@@ -1154,3 +1154,10 @@ button.close{
   width: 50px;
 }
 }
+
+@media (max-width:545px){
+  body {
+     overflow-x: hidden !important;
+  }
+  
+} 

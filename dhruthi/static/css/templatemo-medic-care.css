@@ -35,9 +35,6 @@ https://templatemo.com/tm-566-medic-care
   --font-weight-bold:             700;
 }
 
-*{
-  box-sizing: border-box !important;
-}
 
 
 body {
@@ -47,9 +44,10 @@ body {
     padding-top: 94px;
     margin: 0!important;
     padding: 0!important;
-    overflow-x: hidden;
-    /* overflow: hidden; */
-    
+    overflow-x: hidden !important;
+    width: 100% !important;
+    height: 100% !important;
+  
 }
 
 /*---------------------------------------
@@ -977,6 +975,12 @@ strong {
     font-size: 12px;
   }
   
+  html,body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+   
+  }
 
 }
 

@@ -5,13 +5,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <!-- 
   <meta name="description" content="">
-  <meta name="author" content="">
+  <meta name="author" content=""> -->
 
   <title>Dhruthi Hospital</title>
   <link href="{% static 'images/dh-images/logo.png' %}" rel="icon">
-  
+
   <!-- CSS FILES -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
 
@@ -34,31 +34,34 @@
   <link href="{% static 'css/dhruthi.css' %}" rel="stylesheet">
   <link href="{% static 'css/responces.css' %}" rel="stylesheet">
   <link rel="stylesheet" href="sweetalert2.min.css">
-  
+
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
     integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  
 </head>
 
 <body id="top">
 
   <main>
-     <section class="slider-banner">
+    <section class="slider-banner">
       <div class="container-fluid carousel-section">
         <div class="row">
           <div class="col-12 col-md-12 col-lg-12">
             <div class="swiper mySwiper">
-              <div class="swiper-wrapper"> 
+              <div class="swiper-wrapper">
                 {% for slider_item in slider%}
-                 <div class="swiper-slide" style="background-image: url({{slider_item.Image}});">
+                <div class="swiper-slide" style="background-image: url({{slider_item.Image}});">
+
                   <div class='slider-image'> </div>
-                </div> 
+                </div>
                 {% endfor %}
 
-               </div>
+              </div>
             </div>
 
           </div>
@@ -68,7 +71,7 @@
         <img src="{% static 'images/dh-images/dhruthi-hospital-logo-250x115.png' %}" class="animated "
           style="width:300px;height:150px;" />
       </div>
-    </section> 
+    </section>
 
     <section class="enquery-section" id="branchs-card">
       <div class="container pb-5 ">
@@ -96,13 +99,16 @@
         <div class="enquery-link mt-5">
           <div class="link-text">
             <div>
-              <span class="link1 px-2"><i class="bi bi-globe px-2"></i><a href="https://dhruthihealthcare.com/">www.dhruthihealthcare.com</a></span>
+              <span class="link1 px-2"><i class="bi bi-globe px-2"></i><a
+                  href="https://dhruthihealthcare.com/">www.dhruthihealthcare.com</a></span>
             </div>
             <div>
-              <span class="link2 px-2"><i class="bi bi-globe px-2"></i><a href="https://dhruthihospital.com/dhruthi-hospitals/">www.dhruthihospital.com</a></span>
+              <span class="link2 px-2"><i class="bi bi-globe px-2"></i><a
+                  href="https://dhruthihospital.com/dhruthi-hospitals/">www.dhruthihospital.com</a></span>
             </div>
             <div>
-              <span class="link3 px-2"><i class="bi bi-globe px-2"></i><a href="https://www.dhruthiclinics.com/">www.dhruthiclinics.com</a></span>
+              <span class="link3 px-2"><i class="bi bi-globe px-2"></i><a
+                  href="https://www.dhruthiclinics.com/">www.dhruthiclinics.com</a></span>
             </div>
           </div>
         </div>
@@ -120,12 +126,11 @@
             <a href="https://www.instagram.com/dhruthihealthcare/"><i class="bi bi-instagram px-2"></i></a>
           </div>
           <div>
-            <a href="https://www.youtube.com/@dhruthihospital-generalhos8244/featured"><i class="bi bi-youtube px-2"></i></a>
+            <a href="https://www.youtube.com/@dhruthihospital-generalhos8244/featured"><i
+                class="bi bi-youtube px-2"></i></a>
           </div>
 
         </div>
-
-
       </div>
     </section>
     <!-- whates app ===================================================================== -->
@@ -138,10 +143,11 @@
       <div class=" about-container mb-5">
         <div class="row no-gutters gap-0">
           <div class="col-sm-12  col-lg-6 about-image d-flex justify-content-center align-items-center wow "
-            data-wow-delay="0.7s" data-aos="fade-right" data-wow-delay="0.6s" >
-            <img src="{% static 'images/dh-images/Dhruthi-Hospital-building.webp' %}" class="about-img" />
+            data-wow-delay="0.7s" data-aos="fade-right" data-wow-delay="0.6s">
+            <img src="{% static 'images/dh-images/Dhruthi-Hospital-building.webp' %}" class="about-img " />
           </div>
-          <div class="col-sm-12  col-lg-6  about-text wow" data-wow-delay="0.1s" data-aos="fade-left" data-wow-delay="0.6s" >
+          <div class="col-sm-12  col-lg-6  about-text wow mt-3" data-wow-delay="0.1s" data-aos="fade-left"
+            data-wow-delay="0.6s">
             <h4 class="mt-1" style="color:#ffff">Dhruthi Health Care </h4>
             <p style="color:#ffff; font-weight: 350;">Dhruthi Health Care is a medical center that offers clinical and
               hospital care. Ranked among the top hospitals in Guntur, we provide specialized medical care to thousands
@@ -160,54 +166,41 @@
               help answer your questions and support you every step of the way. For more information or to speak with
               our local representative, please contact us on our helpline number
             </p>
-            <button type="button" class="btn-test  text-center"  style="border:2px solid #fff;"> <a href="https://dhruthihospital.com/about-dhruthi-hospital/" style=" color:white; text-decoration:none">Learn More</a></button>
+            <button type="button" class="btn-test  text-center" style="border:2px solid #fff;"> <a
+                href="https://dhruthihospital.com/about-dhruthi-hospital/"
+                style=" color:white; text-decoration:none">Learn More</a></button>
           </div>
         </div>
       </div>
     </section>
-    <!--popUp-over-->
-    <!-- <div class="modal fade" id="PopOv" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <!--popUp-over-->
+      <!-- <div class="modal fade" id="PopOv" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            
+            <div class="modal-dialog">
+        
+          <button type="button" class="close text-dark bg-light" data-dismiss="modal"  style="border-radius:15px; padding-bottom: 10px;padding-left: 5px;padding-right:5px;position:fixed;text-align-last: right;align-items:right;
+          " aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+            <img src="{% static 'images/dh-images/Dhruthi-Hospital-building.webp' %}" style="width:480px;
+            height:400px;"   />
       
-      <div class="modal-dialog">
-   
-    <button type="button" class="close text-dark bg-light" data-dismiss="modal"  style="border-radius:15px; padding-bottom: 10px;padding-left: 5px;padding-right:5px;position:fixed;text-align-last: right;align-items:right;
-    " aria-label="Close">
-      <span aria-hidden="true">&times;</span>
-    </button>
-
-   
-    
+            </div>
+            </div> -->
       
-     
-     
-      <img src="{% static 'images/dh-images/Dhruthi-Hospital-building.webp' %}" style="width:480px;
-      height:400px;"   />
-    
-      
-   
-    
-  </div>
-  
-</div> -->
-
-<!--pop-end-->
+      <!--pop-end-->
 
     <!-- our joyrney ============================================================== -->
     <section class=" pb-0  pt-3" id="timeline">
       <h2 class="text-center mb-lg-5 mb-3" style="color:#006d95; margin-bottom: 20px; margin-top:10px;">Our Journey</h2>
       <div class="container mb-0">
         <div class="row">
-
-          
-          
-
           <div class="timeline">
             <div class="row g-0 justify-content-end justify-content-md-around align-items-start timeline-nodes">
               <div class="col-9 col-md-5 me-md-4 me-lg-0 order-3 order-md-1 timeline-content bg-white shadow-lg  wow "
-                data-aos="fade-left" data-wow-delay="0.6s" style="filter: drop-shadow(0 20px 10px  rgb(2, 17, 27));">
+                data-aos="fade-left" data-wow-delay="0.6s">
                 <img src="{% static 'images/dh-images/dhruthi-hospital-timeline-card-399x190.png' %}"
                   class="timeline-card" />
-
                 <h2 class="mt-3">Lakshmipuram</h2>
                 <h5 style="color:#006d95 ;font-weight:400;">Guntur</h5>
                 <div class="loaction-view mt-2">
@@ -217,7 +210,6 @@
                   <a href="https://www.dhruthiclinics.com/"><button class="btn-test ">More info</button></a>
                 </div>
               </div>
-
               <div class="col-3 col-sm-1 order-1 timeline-icons text-md-center">
                 <i class="bi bi-calendar-check timeline-icon"></i>
               </div>
@@ -227,10 +219,10 @@
               </div>
             </div>
 
-            <div
-              class="row g-0 justify-content-end justify-content-md-around align-items-start timeline-nodes my-lg-5 my-4">
+
+            <div class="row g-0 justify-content-end justify-content-md-around align-items-start timeline-nodes my-lg-5 my-4">
               <div class="col-9 col-md-5 ms-md-4 ms-lg-0 order-3 order-md-1 timeline-content bg-white shadow-lg  wow"
-                data-aos="fade-right" data-wow-delay="0.6s" style="filter: drop-shadow(0 20px 10px  rgb(2, 17, 27));">
+                data-aos="fade-right" data-wow-delay="0.6s">
                 <img src="{% static 'images/dh-images/dhruthi-hospitals-kothapet-branch-200x150.png' %}"
                   class="timeline-card" />
 
@@ -240,8 +232,7 @@
                   <a
                     href="https://www.google.com/maps?ll=16.295203,80.449945&z=10&t=m&hl=en-US&gl=US&mapclient=embed&cid=7550184175581018102"><button
                       class="btn-test  me-3">Get Directions</button></a>
-                  <a href="https://dhruthihospital.com/dhruthi-hospitals/"><button class="btn-test">More
-                      info</button></a>
+                  <a href="https://dhruthihospital.com/dhruthi-hospitals/"><button class="btn-test">Moreinfo</button></a>
                 </div>
               </div>
 
@@ -256,7 +247,7 @@
 
             <div class="row g-0 justify-content-end justify-content-md-around align-items-start timeline-nodes ">
               <div class="col-9 col-md-5 me-md-4 me-lg-0 order-3 order-md-1 timeline-content bg-white shadow-lg  wow"
-                data-aos="fade-left" data-wow-delay="0.6s" style="filter: drop-shadow(0 20px 10px  rgb(2, 17, 27));">
+                data-aos="fade-left" data-wow-delay="0.6s">
                 <img src="{% static 'images/dh-images/dhruthi-hospital-main-page-doctors-image-1024x266 (1).webp' %}"
                   class="timeline-card" />
                 <h2 class="mt-3">Churuch Road</h2>
@@ -281,7 +272,7 @@
             <div
               class="row g-0 justify-content-end justify-content-md-around align-items-start timeline-nodes my-lg-5 my-4 ">
               <div class="col-9 col-md-5 ms-md-4 ms-lg-0 order-3 order-md-1 timeline-content bg-white shadow-lg  wow "
-                data-aos="fade-right" data-wow-delay="0.6s" style="filter: drop-shadow(0 20px 10px  rgb(2, 17, 27));">
+                data-aos="fade-right" data-wow-delay="0.6s">
                 <img src="{% static 'images/dh-images/dhruthi-hospital-timeline-card-399x190.png' %}"
                   class="timeline-card" />
 
@@ -314,38 +305,41 @@
       <div class="container-fluid  wow" data-wow-delay="0.6s">
         <div class="row mb-5  meet-row px-5">
           <div class="col-sm-12  col-lg-7  row-text order-1 order-sm-2 order-2  order-col-2 order-lg-1 order-md-2"
-          data-aos="fade-left" data-aos-duration="1000" style="display: flex;flex-direction:column;justify-content: center;">
-            <h2 > Dr. Revuri Hari Krishna</h2>
+            data-aos="fade-left" data-aos-duration="1000"
+            style="display: flex;flex-direction:column;justify-content: center;">
+            <h2> Dr. Revuri Hari Krishna</h2>
             <span class="deg-sign mb-2">M.D (General Medicine)</span>
-            <p class="doc1">Dr. Revuri Hari Krishna is an extremely committed and passionate doctor in General Medicine. After
+            <p class="doc1">Dr. Revuri Hari Krishna is an extremely committed and passionate doctor in General Medicine.
+              After
               completing post graduation and MD (internal medicine), he started his career as a faculty in NRI
               medical college. He is proficient in evaluating and treating infectious as well as chronic issues
               such as hypertension, diabetes and thyroid abnormalities. He is one of the best general medicine
               doctors in Guntur, India and he is an active participant in various national and international
               medical societies and also in academic research activities.</p>
-              <button type="button" class="btn-test"   data-toggle="modal" data-target="#doctor">Know More</button>
+            <button type="button" class="btn-test" data-toggle="modal" data-target="#doctor">Know More</button>
           </div>
-          
+
 
           <div class="col-sm-12  col-lg-5 mb-sm-2 order-1 order-sm-1 order-1  order-lg-2 order-md-1"
-          data-aos="fade-right" data-aos-duration="1000">
+            data-aos="fade-right" data-aos-duration="1000">
             <div class="d-flex justify-content-center align-items-center">
               <img src="{% static 'images/dh-images/dhruthi-hospital-meet-our-doctors-500x500.jpg' %}"
-                class="doctor-one" style="filter: drop-shadow(0 20px 15px  rgb(2, 17, 27));"/>
+                class="doctor-one" />
             </div>
           </div>
-          
+
         </div>
       </div>
       <div class="container-fluid wow" data-wow-delay="0.6s">
         <div class="row meet-row px-5 ">
-          <div class="col-sm-12  col-lg-5 mb-sm-2"  data-aos="fade-right" data-aos-duration="1000">
+          <div class="col-sm-12  col-lg-5 mb-sm-2" data-aos="fade-right" data-aos-duration="1000">
             <div class=" d-flex justify-content-center align-items-center">
               <img src="{% static 'images/dh-images/dhruthi-hospitals-meet-our-doctors-508x508.jpg' %}"
-                class="doctor-two" style="filter: drop-shadow(0 20px 15px  rgb(2, 17, 27));" />
+                class="doctor-two" />
             </div>
           </div>
-          <div class="col-sm-12 col-lg-7  row-text  col-lg-6"  data-aos="fade-left" data-aos-duration="1000" style="display: flex;flex-direction:column;justify-content: center;">
+          <div class="col-sm-12 col-lg-7  row-text  col-lg-6" data-aos="fade-left" data-aos-duration="1000"
+            style="display: flex;flex-direction:column;justify-content: center;">
             <h2 class="">Dr.Lakshmi Nimmaraju</h2>
             <span class="mb-2 deg-sign">M.D (General Medicine)</span>
             <p class="meet-text">Dr. Lakshmi Nimmaraju has special
@@ -364,78 +358,81 @@
               stands as best dental doctor in Guntur, AP. She has started Dhruthi Clinics Which is One of the Best
               Dental
               Hospital in Guntur Offers all types of Dental Treatments through out Andhra Pradesh.</p>
-              <button type="button" class="btn-test" data-toggle="modal" data-target="#myModal">Know More</button>
+            <button type="button" class="btn-test" data-toggle="modal" data-target="#myModal">Know More</button>
           </div>
-         
+
         </div>
-        </div>
-        <!-- Modal1 -->
-        <div id="myModal" class="modal fade" role="dialog" >
-          <div class="modal-dialog modal-lg">
-            <div class="modal-content" style=" width:850px !important; color:rgb(255, 250, 250) !important;">
-              <div class="modal-header">
-                <h4 class="modal-title">Dr. Lakshmi Nimmaraju</h4>
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-              </div>
-              <div class="modal-body">
-                <div class=" d-flex justify-content-center align-items-center">
-                  <img src="{% static 'images/dh-images/dhruthi-hospitals-meet-our-doctors-508x508.jpg' %}" class="doctor-one">
-                </div>
-                <div>
-                  <p>Dr. Lakshmi Nimmaraju has special
-                    care for Dental Implant treatments. She did her BDS from SIBAR Institute of dental sciences, Guntur
-                    in 2006.
-                    She completed her MDS from SIBAR Institute of dental sciences, Dr. NTR University of Health
-                    Sciences, Guntur
-                    in 2012. She presented paper at 15th IOS PG Students convention at Manali in Himachal Pradesh, March
-                    2011.</p>
-                    <p>
-                      She also presented paper at 3rd AP state Inter Collegiate PG Academic Excellence Program held on
-                      March 2011
-                      at CKS Theja Institute of Dental Science Tirupathi in AP. She ensures that her patients have a full
-                      range of
-                      latest options available in her specialization. She handles the most complicated cases with utmost
-                      ease and
-                      stands as best dental doctor in Guntur, AP. She has started Dhruthi Clinics Which is One of the Best
-                      Dental
-                      Hospital in Guntur Offers all types of Dental Treatments through out Andhra Pradesh.</p>
-                  </div>
-                </div>
-              </div>
+      </div>
+      <!-- Modal1 -->
+      <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content" style=" width:850px !important; color:rgb(255, 250, 250) !important;">
+            <div class="modal-header">
+              <h4 class="modal-title">Dr. Lakshmi Nimmaraju</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
             </div>
-        </div>
-        <!-- Modal-1 -->
-        
-        <!-- Modal2 -->
-        <div id="doctor" class="modal fade" role="dialog">
-          <div class="modal-dialog modal-lg">
-            <div class="modal-content" style="background-color: rgb(255, 250, 250) !important; width:850px !important; color:rgb(253, 252, 252) !important;">
-              <div class="modal-header">
-                <h4 class="modal-title">Dr. Revuri Hari Krishna</h4>
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <div class="modal-body">
+              <div class=" d-flex justify-content-center align-items-center">
+                <img src="{% static 'images/dh-images/dhruthi-hospitals-meet-our-doctors-508x508.jpg' %}"
+                  class="doctor-one">
               </div>
-              <div class="modal-body">
-                <div class=" d-flex justify-content-center align-items-center">
-                  <img src="{% static 'images/dh-images/dhruthi-hospital-meet-our-doctors-500x500.jpg' %}" class="doctor-one"/>
-                </div>
-                <div style="color: black !important;">
-                  <p>Dr. Revuri Hari Krishna is an extremely committed and passionate doctor in General Medicine. After
-                    completing post graduation and MD (internal medicine), he started his career as a faculty in NRI
-                    medical college. He is proficient in evaluating and treating infectious as well as chronic issues
-                    such as hypertension, diabetes and thyroid abnormalities. He is one of the best general medicine
-                    doctors in Guntur, India and he is an active participant in various national and international
-                    medical societies and also in academic research activities</p>
-                    <p>Dr. Harikrishna has established Dhruthi Hospitals one of the best general hospital in guntur which is
-                      providing best general medicine in Guntur City with its core principle as patient welfare and quick
-                      recovery. He has extensive experience of 10-15 years as a renowned doctor and has the capacity to
-                      evaluate root cause of the patient problems. He is an exceptionally compassionate doctor and is
-                      available 24/7 for patient welfare</p>
-                  </div>
-                </div>
+              <div>
+                <p>Dr. Lakshmi Nimmaraju has special
+                  care for Dental Implant treatments. She did her BDS from SIBAR Institute of dental sciences, Guntur
+                  in 2006.
+                  She completed her MDS from SIBAR Institute of dental sciences, Dr. NTR University of Health
+                  Sciences, Guntur
+                  in 2012. She presented paper at 15th IOS PG Students convention at Manali in Himachal Pradesh, March
+                  2011.</p>
+                <p>
+                  She also presented paper at 3rd AP state Inter Collegiate PG Academic Excellence Program held on
+                  March 2011
+                  at CKS Theja Institute of Dental Science Tirupathi in AP. She ensures that her patients have a full
+                  range of
+                  latest options available in her specialization. She handles the most complicated cases with utmost
+                  ease and
+                  stands as best dental doctor in Guntur, AP. She has started Dhruthi Clinics Which is One of the Best
+                  Dental
+                  Hospital in Guntur Offers all types of Dental Treatments through out Andhra Pradesh.</p>
               </div>
             </div>
           </div>
-      
+        </div>
+      </div>
+      <!-- Modal-1 -->
+
+      <!-- Modal2 -->
+      <div id="doctor" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content"
+            style="background-color: rgb(255, 250, 250) !important; width:850px !important; color:rgb(253, 252, 252) !important;">
+            <div class="modal-header">
+              <h4 class="modal-title">Dr. Revuri Hari Krishna</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+              <div class=" d-flex justify-content-center align-items-center">
+                <img src="{% static 'images/dh-images/dhruthi-hospital-meet-our-doctors-500x500.jpg' %}"
+                  class="doctor-one" />
+              </div>
+              <div style="color: black !important;">
+                <p>Dr. Revuri Hari Krishna is an extremely committed and passionate doctor in General Medicine. After
+                  completing post graduation and MD (internal medicine), he started his career as a faculty in NRI
+                  medical college. He is proficient in evaluating and treating infectious as well as chronic issues
+                  such as hypertension, diabetes and thyroid abnormalities. He is one of the best general medicine
+                  doctors in Guntur, India and he is an active participant in various national and international
+                  medical societies and also in academic research activities</p>
+                <p>Dr. Harikrishna has established Dhruthi Hospitals one of the best general hospital in guntur which is
+                  providing best general medicine in Guntur City with its core principle as patient welfare and quick
+                  recovery. He has extensive experience of 10-15 years as a renowned doctor and has the capacity to
+                  evaluate root cause of the patient problems. He is an exceptionally compassionate doctor and is
+                  available 24/7 for patient welfare</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </section>
 
 
@@ -741,7 +738,7 @@
 
 
     <!-- ================================== appoint ment booking  ============================================================== -->
-    <section class="pt-5 "  id="booking">
+    <section class="pt-5 " id="booking">
       <div class="container-fluid">
         <div class="row">
 
@@ -755,13 +752,13 @@
                 <div class="row">
                   <div class="col-lg-6 col-12">
                     <input type="text" name="name" id="name" class="form-control" placeholder="Full name" required
-                    style="background-color: transparent;">
+                      style="background-color: transparent;">
                   </div>
 
                   <div class="col-lg-6 col-12">
                     <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control"
                       placeholder="Email address" required
-                      style="background:transparent !important; color:whitesmoke; border:none; border-bottom:1px solid white; outline:none;" >
+                      style="background:transparent !important; color:whitesmoke; border:none; border-bottom:1px solid white; outline:none;">
                   </div>
 
                   <div class="col-lg-6 col-12">
@@ -777,24 +774,26 @@
                     <!-- <input type="text" name="branch" id="branch" class="form-control" placeholder="Select Branch" required> -->
                     <!-- <select class="custom-select" style="background:transparent !important; color:whitesmoke; border:none; border-bottom:1px solid white" placeholder="Select Branch" required>
                        -->
-                      <select class="form-select form-select-lg mb-3" id="branch_item" aria-label=".form-select-lg example"
-                      style="background:transparent !important; color:whitesmoke; border:none; border-bottom:1px solid white; outline:none;" placeholder="Select Branch" required>
-                      <option value="" >Select Branch</option>  
+                    <select class="form-select form-select-lg mb-3" id="branch_item"
+                      aria-label=".form-select-lg example"
+                      style="background:transparent !important; color:whitesmoke; border:none; border-bottom:1px solid white; outline:none;"
+                      placeholder="Select Branch" required>
+                      <option value="">Select Branch</option>
                       <option value="1" style="color:black">Lakshmipuram</option>
-                        <option value="2" style="color:black">Kothapeta</option>
-                        <option value="3" style="color:black">Cherila</option>
-                        <option value="4" style="color:black">Inkolu</option>
-                      </select>
+                      <option value="2" style="color:black">Kothapeta</option>
+                      <option value="3" style="color:black">Cherila</option>
+                      <option value="4" style="color:black">Inkolu</option>
+                    </select>
                   </div>
 
                   <div class="col-12">
-                    <textarea class="form-control" rows="5" id="message" name="message"
-                      placeholder="Additional Message"
-                      style="color:whitesmoke !important;" ></textarea>
+                    <textarea class="form-control" rows="5" id="message" name="message" placeholder="Additional Message"
+                      style="color:whitesmoke !important;"></textarea>
                   </div>
 
                   <div class="col-lg-3 col-md-4 col-6 mx-auto">
-                    <button type="submit" class="btn-test  text-center mt-3"  style="border:2px solid #fff;">Book Now</button>
+                    <button type="submit" class="btn-test  text-center mt-3" style="border:2px solid #fff;">Book
+                      Now</button>
                     <!-- <button type="submit" class="form-control form-btn" id="submit-button">Book Now</button> -->
                   </div>
                 </div>
@@ -804,8 +803,7 @@
           </div>
           <div class="col-sm-11  col-lg-6  wow slideInRight" data-wow-delay="0.6s">
             <div class=" d-flex justify-content-center align-items-center">
-              <img src="{% static 'images/dh-images/dhruthihealthcare-booking- 650450.png' %}"
-                class="form-image" />
+              <img src="{% static 'images/dh-images/dhruthihealthcare-booking- 650450.png' %}" class="form-image" />
             </div>
           </div>
         </div>
@@ -891,8 +889,7 @@
                         ipsum dolor sit amet consectetur adipisicing elit. Ratione expedita impedit porro
                         dignissimos libero eveniet placeat officia laboriosam at eum cumque nam nobis est, adipisci
                         minima ut quisquam
-                        .<span class=""><i
-                            class="fa fab fa-solid fa-quote-right"></i></span></p>
+                        .<span class=""><i class="fa fab fa-solid fa-quote-right"></i></span></p>
                     </div>
                     <div>
                       <h5 class="card-title mt-3">Staf Name</h5>
@@ -909,8 +906,8 @@
                         ipsum dolor sit amet consectetur adipisicing elit. Ratione expedita impedit porro
                         dignissimos libero eveniet placeat officia laboriosam at eum cumque nam nobis est, adipisci
                         minima ut quisquam
-                        <span class=""><i
-                            class="fa fab fa-solid fa-quote-right"></i></span></p>
+                        <span class=""><i class="fa fab fa-solid fa-quote-right"></i></span>
+                      </p>
                     </div>
                     <div>
                       <h5 class="card-title mt-3">Staf Name2</h5>
@@ -930,7 +927,7 @@
       </div>
     </section>
 
-    
+
     <!-- ================= Ask Us Anything ========================= -->
     <section class="ftco-section ftco-no-pt anything-section ftco-faqs p-5">
       <div class="container">
@@ -1295,7 +1292,7 @@
               <a href="https://www.youtube.com/@dhruthihospital-generalhos8244/featured"><i
                   class="bi bi-youtube px-2"></i></a>
             </div>
-    
+
           </div>
         </div>
       </div>
@@ -1324,19 +1321,21 @@
   <script src="{% static 'js/wow.js' %}"></script>
   <script src="{% static 'js/wow.min.js' %}"></script>
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"
+    integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
   <script>
     const close = document.querySelector('close')
-    $(document).ready(function(){
-      setTimeout(function(){
-      $('#PopOv').modal('show');
-    },2000);
-    close.addEventLisener('Click',() => {
+    $(document).ready(function () {
+      setTimeout(function () {
+        $('#PopOv').modal('show');
+      }, 2000);
+      close.addEventLisener('Click', () => {
 
-      $('#PopOv').modal('none')
-    })
-  });
+        $('#PopOv').modal('none')
+      })
+    });
   </script>
 
   <script>
