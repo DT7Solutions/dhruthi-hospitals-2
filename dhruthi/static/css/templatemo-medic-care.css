@@ -959,10 +959,12 @@ strong {
   }
 }
 
-@media screen and (max-width: 480px) {
-  .heroText {
+
+/* @media screen and (max-width: 900px) and (min-width: 600px)  */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  /* .heroText {
     padding: 1rem;
-  }
+  } */
 
   .heroLinks .custom-link {
     font-size: 12px;
@@ -981,8 +983,133 @@ strong {
     overflow-x: hidden;
    
   }
+  /* enquery-text */
+  .enquery-section{
+    min-height: 650px !important;
+
+  }
+    .link-text i{
+      display: none;
+  
+    }
+    .enquery-social-link h3{
+      font-size: medium;
+    }
+    .enquery-social-link .bi-facebook { 
+      font-size: 30px !important;
+    }
+    .enquery-social-link .bi-twitter { 
+      font-size: 30px !important;
+    }
+    .enquery-social-link .bi-instagram { 
+      font-size: 30px !important;
+    }
+    .enquery-social-link .bi-youtube { 
+      font-size: 30px !important;
+    }
+    /* .ab-img img{
+      min-width:400px !important;
+      height:380px !important;
+      border-radius: 6px;
+    } */
+    .timeline-icon {
+      /* display: none !important; */
+      overflow: hidden;
+    } 
+
+    .timeline-content {
+      margin-left: auto;
+    }
+    /* .timeline-icons{
+        display:  !important;
+    } */
+    .timeline-content{
+      margin-right: 25px !important;
+      width: 100% !important;
+    }
+    img.timeline-card{
+      max-width:200px;
+      max-height:180px;
+
+     }
+     .btn-test{
+      width:auto !important;
+      padding-left: 10px;
+      padding-right: 10px;
+      height: 38px;
+    } 
+    .timeline-content h2{
+      font-size: large;
+      font-weight: 600;
+    }
+    .doctor-one {
+      padding-left: 20px;
+      padding-right: 20px;
+      border-radius: 10% !important ;
+    }
+    .doctor-two {
+      padding-left: 20px;
+      padding-right: 20px;
+      border-radius: 10% !important ;
+    }
+    .row-text h2{ 
+      font-size: 1.2rem;
+    }
+    .row-text p{ 
+         word-spacing: -4.5px !important;
+         
+    }
+    .team-section .card{
+      margin-left: -8px !important;
+      /* margin-left: -10px !important;
+      padding: 25px !important;
+      width: 15rem ; */
+      
+    }
+    .ftco-faqs .myaccordion .btn {
+      width: 100% !important;
+      font-size: small!important;
+    }
+    .ftco-faqs .myaccordion .question{
+      font-size: small !important;
+    }
+    .column2 {
+           margin-top: -90px !important;
+    }
+
+   
+}
+/* tablet */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  html,body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+   
+  }
+}
+
+/* small laptop screen */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  html,body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+   
+  }
+  .owl-award-slider .owl-carousel   {
+    display: block !important;
+  }
+
+  .carousel-img img{
+   display: block  !important;
+  }
+
 
 }
+
+
+
 
 @media screen and (max-width: 360px) {
   .featured-number {
@@ -992,6 +1119,7 @@ strong {
   .featured-circle {
     width: 235px;
     height: 235px;
+    
   }
 
   .reviews-image {

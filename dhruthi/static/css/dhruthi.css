@@ -97,9 +97,6 @@ html,body {
     width: 45rem !important;
     background:linear-gradient(0deg, rgba(189, 171, 181, 0.3), #0eaa7e),url(../images//dh-images/Untitled-design-11.webp);
 }
-.about-section{
-    background-color:#0aac7f !important;
-}
 .meet-our-doctor{
     padding: 10px;
    
@@ -116,7 +113,7 @@ html,body {
 
 /*--about--*/
 .about-section{
-    /* background-color: #00a97a; */
+    background-color:#0aac7f !important;
     background-image: linear-gradient(to right, rgba(196, 38, 17, 0) 20%,rgb(45,73,96) 80% );
     padding:20px;
     margin-top: -48px;
@@ -134,12 +131,26 @@ html,body {
     border-radius:10px;
     color: #ffff;
   }
-  .about-img{
-    width:600px;
-    height:480px;
+  /* .about-img{
+    align-items: center;
     border-radius: 6px;
-    /* margin-top: -15px !important; */
-  }
+
+  } */
+.ab-img {
+  width: 100%;
+  
+  height:auto;
+}
+.ab-img img{
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+
+.ab-content {
+  padding-right: 10px !important;
+}
+
   .about-text p{
     font-size: 16px;
     text-align: justify;
@@ -230,13 +241,13 @@ html,body {
    .doctor-one{
     border-radius: 20px;
     width:350px;
-    height:350px;
+    height:360px;
     /* filter: drop-shadow(0 20px 15px  rgb(86, 87, 88)); */
    }
    .doctor-two{
     border-radius: 20px;
     width:350px;
-    height:350px;
+    height:360px;
 
    }
 
@@ -360,7 +371,7 @@ html,body {
         margin-left: -0.625rem; } */
 
 
-        /*--map-container--*/
+/*--map-container--*/
         .maps-container{
             display: flex;
             flex-direction: column;
@@ -793,7 +804,7 @@ input[type=date].form-control{
   font-size: 22px !important;
 }
 .link1,.link2{
-  border-right: 1px solid rgb(117, 117, 117) !important;
+  /* border-right: 1px solid rgb(117, 117, 117); */
   padding: 4px !important;
 }
 .link1 a{
