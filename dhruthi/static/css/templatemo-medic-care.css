@@ -1087,6 +1087,10 @@ strong {
     overflow-x: hidden;
    
   }
+    .column2{
+    margin-top: 100px !important;
+  }
+ 
 }
 
 /* small laptop screen */
@@ -1094,9 +1098,17 @@ strong {
   html,body {
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
    
   }
+  .column2{
+    padding-top: 100px !important;
+  }
+  .myaccordion{
+    margin-top: 20px !important;
+  }
+
+/* 
   .owl-award-slider .owl-carousel   {
     display: block !important;
   }
@@ -1105,7 +1117,13 @@ strong {
    display: block  !important;
   }
 
-
+  .owl-carousel {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    z-index: 1;
+} */
 }
 
 
@@ -1135,6 +1153,9 @@ strong {
     left: 42px;
   }
 }
+
+
+
 
 @media screen and (min-width: 773px) and (max-width:992px){
 .map{
