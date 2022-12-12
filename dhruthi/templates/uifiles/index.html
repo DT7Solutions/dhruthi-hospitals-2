@@ -313,12 +313,12 @@
       <h2 class="text-center mb-5  mt-5" style="color:#006d95;">Meet Ur Doctors</h2>
       <div class="container-fluid  wow" data-wow-delay="0.6s">
         <div class="row mb-5  meet-row px-5">
-          <div class="col-sm-12 col-md-7 col-lg-7  row-text order-1 order-sm-2 order-2  order-col-2 order-lg-1 order-md-2"
+          <div class="col-sm-12 col-md-12 col-lg-7  row-text order-1 order-sm-2 order-2  order-col-2 order-lg-1 order-md-2"
             data-aos="fade-left" data-aos-duration="1000"
             style="display: flex; flex-direction:column;justify-content: center;">
-            <h2> Dr.RevuriHariKrishna</h2>
+            <h2 class="doc-name mt-4"> Dr.RevuriHariKrishna</h2>
             <span class="deg-sign mb-2">M.D(GeneralMedicine)</span>
-            <p class="doc1">Dr.Revuri Hari Krishna is an extremely committed and passionate doctor in General Medicine.
+            <p class="">Dr.Revuri Hari Krishna is an extremely committed and passionate doctor in General Medicine.
               After completing post graduation and MD (internal medicine), he started his career as a faculty in NRI
               medical college. He is proficient in evaluating and treating infectious as well as chronic issues
               such as hypertension, diabetes and thyroid abnormalities. He is one of the best general medicine
@@ -328,7 +328,7 @@
           </div>
 
 
-          <div class="col-sm-12 col-md-5 col-lg-5 mb-sm-2 order-1 order-sm-1 order-1  order-lg-2 order-md-1"
+          <div class="col-sm-12 col-md-12 col-lg-5 mb-sm-2 order-1 order-sm-1 order-1  order-lg-2 order-md-1"
             data-aos="fade-right" data-aos-duration="1000">
             <div class="d-flex justify-content-center align-items-center">
               <img src="{% static 'images/dh-images/dhruthi-hospital-meet-our-doctors-500x500.jpg' %}"
@@ -340,15 +340,15 @@
       </div>
       <div class="container-fluid wow" data-wow-delay="0.6s">
         <div class="row meet-row px-5 ">
-          <div class="col-sm-12 col-md-5  col-lg-5 mb-sm-2" data-aos="fade-right" data-aos-duration="1000">
+          <div class="col-sm-12 col-md-12  col-lg-5 mb-sm-2" data-aos="fade-right" data-aos-duration="1000">
             <div class=" d-flex justify-content-center align-items-center">
               <img src="{% static 'images/dh-images/dhruthi-hospitals-meet-our-doctors-508x508.jpg' %}"
                 class="doctor-two" />
             </div>
           </div>
-          <div class="col-sm-12 col-md-7 col-lg-7  row-text " data-aos="fade-left" data-aos-duration="1000"
+          <div class="col-sm-12 col-md-12 col-lg-7  row-text " data-aos="fade-left" data-aos-duration="1000"
             style="display: flex;flex-direction:column;justify-content: center;">
-            <h2 class="">Dr.LakshmiNimmaraju</h2>
+            <h2 class="mt-4">Dr.LakshmiNimmaraju</h2>
             <span class="mb-2 deg-sign">M.D(GeneralMedicine)</span>
             <p class="meet-text">Dr. Lakshmi Nimmaraju has special care for Dental Implant treatments. She did her BDS from SIBAR Institute of dental sciences, Guntur in 2006. She completed her MDS from SIBAR Institute of dental sciences, Dr. NTR University of Health Sciences, Guntur in 2012. She presented paper at 15th IOS PG Students convention at Manali in Himachal Pradesh, March 2011. She also presented paper at 3rd AP state Inter Collegiate PG Academic Excellence Program held on March 2011 at CKS Theja Institute of Dental Science Tirupathi in AP. She ensures that her patients have a full range of latest options available in her specialization. She handles the most complicated cases with utmost ease and stands as best dental doctor in Guntur, AP. She has started Dhruthi Clinics Which is One of the Best Dental Hospital in Guntur Offers all types of Dental Treatments through out Andhra Pradesh.</p>
             <button type="button" class="btn-test" data-toggle="modal" data-target="#myModal">Know More</button>
@@ -730,7 +730,7 @@
 
 
     <!-- ================================== appoint ment booking  ============================================================== -->
-    <section class="pt-5 " id="booking">
+    <section class="pt-5 pb-3" id="booking">
       <div class="container-fluid">
         <div class="row">
 
@@ -805,9 +805,9 @@
     <!-- =========================================== award-section ========================================= -->
     <section class="award-section">
       <div class="container">
-      <div class="row">
-        <div class="col-sm-12 col-md-5  col-lg-5 ">
-          <div class="owl-carousel  owl-award-slider carousel-img  mt-3 " >
+      <div class="row ">
+        <div class="col-sm-12 col-md-12  col-lg-5 ">
+          <div class="owl-carousel  owl-award-slider carousel-img  mt-3 d-flex justify-content-center align-items-center" >
             <div class="item award-1">
               <img
                 src="{% static 'images/dh-images/Dhruthi-hospital-awards-and-recognations-page-times-icons-of-healthcare-award-2022-image.jpg' %}"
@@ -818,7 +818,7 @@
                 alt=""></div>
           </div>
         </div>
-        <div class="col-sm-12 col-md-7  col-lg-7 award-content">
+        <div class="col-sm-12 col-md-12  col-lg-7 award-content">
           <h3>Times Icons Of Healthcare Award 2022</h3>
           <p>Dhruthi Hospitals is proud to receive the Times of India award, for maintaining the medium cost fee with
             hygiene maintenance and eradicating the infectious diseases and taking care of patients with utmost care.
@@ -836,91 +836,99 @@
       <div class="container mt-5">
         <div class="row mt-5 mb-5 ">
           <h2 class="text-center mb-lg-5 mb-4  mt-5  " style="color:#006d95;">Our Team Is Our Strength. </h2>
-
-          <div class="col-sm-12 col-md-3 team-doctors" data-aos="fade-up" data-aos-duration="1000">
-           
-              <div class="card shadow-lg  bg-white rounded " >
-                <img src="{% static 'images/dh-images/dhruthi-hospital-meet-300x300.png' %}" class="doc-img" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title mt-2">Staf Name</h5>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-12 col-md-3 team-doctors" data-aos="fade-up" data-aos-duration="2000">
-              <div class="card shadow-lg  bg-white rounded" >
-                <img src="{% static 'images/dh-images/dhruthi-hospital-meet-our-doctors-two-300x300.png' %}"
-                  class="doc-img" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title mt-2">Staf Name</h5>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-12 col-md-3 team-doctors" data-aos="fade-up" data-aos-duration="3000">
-              <div class="card shadow-lg  bg-white rounded" >
-                <img src="{% static 'images/dh-images/dhruthi-hospital-meet-300x300.png' %}" class="doc-img" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title mt-2">Staf Name</h5>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-12 col-md-3 team-doctors" data-aos="fade-up" data-aos-duration="4000">
-              <div class="card shadow-lg  bg-white rounded">
-                <img src="{% static 'images/dh-images/dhruthi-hospital-meet-our-doctors-two-300x300.png' %}"
-                  class="doc-img" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title mt-2">Staf Name</h5>
-                </div>
-              </div>
-            </div>
-        </div>
-
-
-        <div class="row mt-5 mb-5">
-          <div class="col-sm-12 col-md-12">
-            <div class="owl-carousel carousel-staff  col-img">
-              <div class="item staf-review-item">
-                <div class="card staff-card">
+          <!-- Team Start -->
+    <div class="container-xxl py-5">
+      <div class="container">
+          <div class="row g-4">
+              <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="card shadow-lg  bg-white rounded " >
+                  <img src="{% static 'images/dh-images/dhruthi-hospital-meet-300x300.png' %}" class="doc-img" alt="...">
                   <div class="card-body">
-                    <div>
-                      <p class="card-text mt-4"><span class=""><i class="fa fab fa-solid fa-quote-left"></i></span>Lorem
-                        ipsum dolor sit amet consectetur adipisicing elit. Ratione expedita impedit porro
-                        dignissimos libero eveniet placeat officia laboriosam at eum cumque nam nobis est, adipisci
-                        minima ut quisquam
-                        .<span class=""><i class="fa fab fa-solid fa-quote-right"></i></span></p>
-                    </div>
-                    <div>
-                      <h5 class="card-title mt-3">Staf Name</h5>
-                    </div>
+                    <h5 class="card-title mt-2 text-center">Staff Name</h5>
                   </div>
                 </div>
               </div>
-
-              <div class="item staf-review-item">
-                <div class="card staff-card">
+              <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="card shadow-lg  bg-white rounded" >
+                  <img src="{% static 'images/dh-images/dhruthi-hospital-meet-our-doctors-two-300x300.png' %}"
+                    class="doc-img" alt="...">
                   <div class="card-body">
-                    <div>
-                      <p class="card-text mt-4"><span class=""><i class="fa fab fa-solid fa-quote-left"></i></span>Lorem
-                        ipsum dolor sit amet consectetur adipisicing elit. Ratione expedita impedit porro
-                        dignissimos libero eveniet placeat officia laboriosam at eum cumque nam nobis est, adipisci
-                        minima ut quisquam
-                        <span class=""><i class="fa fab fa-solid fa-quote-right"></i></span>
-                      </p>
-                    </div>
-                    <div>
-                      <h5 class="card-title mt-3">Staf Name2</h5>
-                    </div>
-                    <!-- <div>
-                      <img
-                        src="{% static 'images/dh-images/Dhruthi-hospital-awards-and-recognations-page-times-icons-of-healthcare-award-frame-image.jpg' %}"
-                        class="card-img-top mt-4" alt="...">
-                    </div> -->
+                    <h5 class="card-title mt-2 text-center">Staff Name</h5>
                   </div>
                 </div>
               </div>
-
-            </div>
+              <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="card shadow-lg  bg-white rounded " >
+                  <img src="{% static 'images/dh-images/dhruthi-hospital-meet-300x300.png' %}" class="doc-img" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title mt-2 text-center">Staff Name</h5>
+                  </div>
+                </div>
+              </div>
           </div>
+      </div>
+  </div>
+  <!-- Team End -->
+  <!-- Testimonial Start -->
+  <div class="container-xxl py-5">
+    <div class="container">
+        <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.3s">
+            <div class="testimonial-item">
+                <div class="testimonial-text border rounded p-4 pt-5 mb-5">
+                    <div class="btn-square bg-white border rounded-circle">
+                        <i class="fa fa-quote-right fa-2x text-primary pt-3"></i>
+                    </div>
+                    Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem
+                    lorem magna ut et, nonumy et labore et tempor diam tempor erat.
+                </div>
+                <!-- <img class="rounded-circle mb-3" src="img/testimonial-1.jpg" alt=""> -->
+                <h4>Staff Name</h4>
+                <span>Profession</span>
+            </div>
+            <div class="testimonial-item">
+                <div class="testimonial-text border rounded p-4 pt-5 mb-5">
+                    <div class="btn-square bg-white border rounded-circle">
+                        <i class="fa fa-quote-right fa-2x text-primary pt-3"></i>
+                    </div>
+                    Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem
+                    lorem magna ut et, nonumy et labore et tempor diam tempor erat.
+                </div>
+                <!-- <img class="rounded-circle mb-3" src="img/testimonial-2.jpg" alt=""> -->
+                <h4>Staff Name</h4>
+                <span>cardiologist</span>
+            </div>
+            <div class="testimonial-item">
+                <div class="testimonial-text border rounded p-4 pt-5 mb-5">
+                    <div class="btn-square bg-white border rounded-circle">
+                        <i class="fa fa-quote-right fa-2x text-primary pt-3"></i>
+                    </div>
+                    Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem
+                    lorem magna ut et, nonumy et labore et tempor diam tempor erat.
+                </div>
+                <!-- <img class="rounded-circle mb-3" src="img/testimonial-3.jpg" alt=""> -->
+                <h4>Staff Name</h4>
+                <span>cardiologist</span>
+            </div>
+            <div class="testimonial-item">
+                <div class="testimonial-text border rounded p-4 pt-5 mb-5">
+                    <div class="btn-square bg-white border rounded-circle">
+                        <i class="fa fa-quote-right fa-2x text-primary pt-3"></i>
+                    </div>
+                    Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem
+                    lorem magna ut et, nonumy et labore et tempor diam tempor erat.
+                </div>
+                <!-- <img class="rounded-circle mb-3" src="img/testimonial-4.jpg" alt=""> -->
+                <h4>Staff Name</h4>
+                <span>cardiologist</span>
+            </div>
         </div>
+    </div>
+</div>
+<!-- Testimonial End -->
+
+          
+
+      
       </div>
     </section>
 
@@ -1239,7 +1247,25 @@
       <h2 class="text-center mb-5 pt-5 " style="color:#f0f4f5">Insurance/TPA's</h2>
       <div class="row mx-5">
         <div class="col-sm-12 col-md-12 col-lg-12">
-          <div class="owl-carousel carousel-insurance">
+          <div class="container">
+            <div class="owl-carousel logo-slider">
+         
+              <div class="logo-v1 gsap-reveal">
+                <img src="{% static 'images/dh-images/insurance/2.png' %}" alt="Image" class="img-fluid">
+              </div>
+              <div class="logo-v1 gsap-reveal">
+                <img src="{% static 'images/dh-images/insurance/1.png' %}" alt="Image" class="img-fluid">
+              </div>
+              <div class="logo-v1 gsap-reveal">
+                <img src="{% static 'images/dh-images/insurance/4.png' %}" alt="Image" class="img-fluid">
+              </div>
+              <div class="logo-v1 gsap-reveal">
+                <img src="{% static 'images/dh-images/insurance/1.png' %}" alt="Image" class="img-fluid">
+              </div>
+              
+            </div>
+          </div>
+          <!-- <div class="owl-carousel carousel-insurance">
             <div class="item">
               <img src="{% static 'images/dh-images/insurance/2.png' %}" alt="2">
             </div>
@@ -1255,7 +1281,7 @@
             <div class="item">
               <img src="{% static 'images/dh-images/insurance/1.png' %}" alt="1">
             </div>
-          </div>
+          </div> -->
         </div>
         <div class="col-sm-12 col-md-12 col-lg-12">
           <hr class="hr-line mb-5">
@@ -1274,7 +1300,7 @@
           </div>
           <div class="footer-links mt-3 mb-4">
             <div>
-              <h3 class="px-3" style="color:#f0f4f5">Follow Us On </h3>
+              <h3 class="px-3 foo-text" style="color:#f0f4f5">Follow Us On </h3>
             </div>
             <div class="fb-account">
               <a href="https://www.facebook.com/dhruthihospital/"><i class="bi bi-facebook"></i></a>
@@ -1354,8 +1380,8 @@
   <script>
     $('.owl-award-slider').owlCarousel({
       loop:true,
-      margin:15,
-      padding:10,
+      margin:0,
+   
       nav:false,
       autoplay: true,
       autoplaySpeed: 300,
@@ -1430,6 +1456,57 @@ $('.carousel-insurance').owlCarousel({
     }
 })
 
+ // Testimonials carousel
+ $(".testimonial-carousel").owlCarousel({
+  autoplay: true,
+  smartSpeed: 1000,
+  center: true,
+  margin: 24,
+  dots: true,
+  loop: true,
+  nav : false,
+  responsive: {
+      0:{
+          items:1
+      },
+576:{
+          items:1
+      },
+      768:{
+          items:2
+      },
+      992:{
+          items:3
+      }
+  }
+});
+
+
+
+$('.logo-slider').owlCarousel({
+  center: false,
+  loop: true,
+  stagePadding: 0,
+  margin: 4,
+  smartSpeed: 1000,
+  autoplay: true,
+  autoplayHoverPause: true,
+  dots: false,
+  nav: false,
+  responsive:{
+    400:{
+      items: 2
+    },
+    768:{
+      items: 3
+    },
+    1000:{
+      items: 5
+    }
+  }
+ });
+
+ 
   </script>
 
 
