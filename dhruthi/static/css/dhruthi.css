@@ -944,7 +944,7 @@ i.bi-youtube:hover{
 }
 .carousel-img img{
   min-height: 350px;
-  width: 480px !important;
+  width: 420px !important;
   border-radius: 15px !important;
   margin-top: 55px !important;
 }
@@ -1010,6 +1010,8 @@ i.bi-youtube:hover{
 }
 .staff-card .card-body {
   display: inline-block !important;
+  align-items: center;
+  justify-content: center;
   text-align: center;
 }
 

@@ -27,7 +27,11 @@
 
   <link href="{% static 'css/owl.carousel.min.css' %}" rel="stylesheet">
 
-  <link href="{% static 'css/owl.theme.default.min.css' %}" rel="stylesheet">
+  <!-- <link href="{% static 'css/owl.theme.default.min.css' %}" rel="stylesheet"> -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+
+
 
   <link href="{% static 'css/templatemo-medic-care.css' %}" rel="stylesheet">
   <link href="{% static 'css/animate.min.css' %}" rel="stylesheet">
@@ -336,13 +340,13 @@
       </div>
       <div class="container-fluid wow" data-wow-delay="0.6s">
         <div class="row meet-row px-5 ">
-          <div class="col-sm-12  col-lg-5 mb-sm-2" data-aos="fade-right" data-aos-duration="1000">
+          <div class="col-sm-12 col-md-5  col-lg-5 mb-sm-2" data-aos="fade-right" data-aos-duration="1000">
             <div class=" d-flex justify-content-center align-items-center">
               <img src="{% static 'images/dh-images/dhruthi-hospitals-meet-our-doctors-508x508.jpg' %}"
                 class="doctor-two" />
             </div>
           </div>
-          <div class="col-sm-12 col-lg-7  row-text  col-lg-6" data-aos="fade-left" data-aos-duration="1000"
+          <div class="col-sm-12 col-md-7 col-lg-7  row-text " data-aos="fade-left" data-aos-duration="1000"
             style="display: flex;flex-direction:column;justify-content: center;">
             <h2 class="">Dr.LakshmiNimmaraju</h2>
             <span class="mb-2 deg-sign">M.D(GeneralMedicine)</span>
@@ -790,7 +794,7 @@
             </div>
           </div>
           <div class="col-sm-11  col-lg-6  wow slideInRight" data-wow-delay="0.6s">
-            <div class=" d-flex justify-content-center align-items-center">
+            <div class="d-flex justify-content-center align-items-center">
               <img src="{% static 'images/dh-images/dhruthihealthcare-booking- 650450.png' %}" class="form-image" />
             </div>
           </div>
@@ -800,13 +804,16 @@
 
     <!-- =========================================== award-section ========================================= -->
     <section class="award-section">
-      <div class="row d-flex align-items-center justify-conten-center ">
-        <div class="col-sm-12 col-md-5  col-lg-5">
-          <div class="owl-carousel  owl-award-slider carousel-img col-img mt-3 mx-5">
-            <div class="item"><img
+      <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-5  col-lg-5 ">
+          <div class="owl-carousel  owl-award-slider carousel-img  mt-3 " >
+            <div class="item award-1">
+              <img
                 src="{% static 'images/dh-images/Dhruthi-hospital-awards-and-recognations-page-times-icons-of-healthcare-award-2022-image.jpg' %}"
-                alt=""></div>
-            <div class="item"><img
+                alt="">
+              </div>
+            <div class="item award-2"><img
                 src="{% static 'images/dh-images/Dhruthi-hospital-awards-and-recognations-page-times-icons-of-healthcare-award-frame-image.jpg' %}"
                 alt=""></div>
           </div>
@@ -819,6 +826,7 @@
             health care minister, Mrs. Vidadala Rajini garu.</p>
         </div>
       </div>
+    </div>
     </section>
 
 
@@ -1303,6 +1311,9 @@
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
   <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+   <!-- owl  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
   <script src="{% static 'js/scrollspy.min.js' %}"></script>
   <script src="{% static 'js/custom.js' %}"></script>
   <script src="{% static 'js/swiper.js' %}"></script>
@@ -1338,6 +1349,86 @@
     AOS.init({
       duration: 2000,
     });
+
+  </script>
+  <script>
+    $('.owl-award-slider').owlCarousel({
+      loop:true,
+      margin:15,
+      padding:10,
+      nav:false,
+      autoplay: true,
+      autoplaySpeed: 300,
+      smartSpeed: 500,
+      responsive:{
+          0:{
+              items:1
+          },
+          600:{
+              items:1
+          },
+          1000:{
+              items:1
+          }
+      }
+  })
+
+
+  $('.carousel-staff').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:false,
+    autoplay: true,
+    autoplaySpeed: 300,
+    smartSpeed: 500,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:1
+        }
+    }
+})
+
+
+$('.carousel-insurance').owlCarousel({
+  loop:true,
+    margin:15,
+    nav:false,
+    autoplay: true,
+    autoplaySpeed: 300,
+    smartSpeed: 500,
+    responsive:{
+        0:{
+            items:1
+        },
+        100:{
+          items:1
+        },
+        200:{
+          items:1,
+          margin:60,
+
+         
+        },
+        500:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        900:{
+          items:1
+        },
+        1000:{
+            items:3
+        }
+    }
+})
 
   </script>
 

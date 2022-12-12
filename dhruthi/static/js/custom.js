@@ -64,80 +64,107 @@
         }
       }
     });
+
+
+  //   $('.owl-award-slider').owlCarousel({
+  //     loop:true,
+  //     margin:10,
+  //     nav:false,
+  //     autoplay: true,
+  //     autoplaySpeed: 300,
+  //     smartSpeed: 500,
+  //     responsive:{
+  //         0:{
+  //             items:1
+  //         },
+  //         600:{
+  //             items:1
+  //         },
+  //         1000:{
+  //             items:1
+  //         }
+  //     }
+  // })
     
   })(window.jQuery);
 
 
 
   // awards carousel
-  $('.owl-award-slider').owlCarousel({
-    loop:true,
-    margin:10,
-    nav:false,
-    autoplay: true,
-    autoplaySpeed: 300,
-    smartSpeed: 500,
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:1
-        },
-        1000:{
-            items:1
-        }
-    }
-})
-
+//   $(document).ready(function(){
+//   $('.owl-award-slider').owlCarousel({
+//     loop:true,
+//     margin:10,
+//     nav:false,
+//     autoplay: true,
+//     autoplaySpeed: 300,
+//     smartSpeed: 500,
+//     responsive:{
+//         0:{
+//             items:1
+//         },
+//         600:{
+//             items:1
+//         },
+//         1000:{
+//             items:1
+//         }
+//     }
+// })
+//   });
 
 
 
   // staff testmonial
-  $('.carousel-staff').owlCarousel({
-    loop:true,
-    margin:10,
-    nav:false,
-    autoplay: true,
-    autoplaySpeed: 300,
-    smartSpeed: 500,
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:1
-        },
-        1000:{
-            items:1
-        }
-    }
-})
+//   $(document).ready(function(){
+//   $('.carousel-staff').owlCarousel({
+//     loop:true,
+//     margin:10,
+//     nav:false,
+//     autoplay: true,
+//     autoplaySpeed: 300,
+//     smartSpeed: 500,
+//     responsive:{
+//         0:{
+//             items:1
+//         },
+//         600:{
+//             items:1
+//         },
+//         1000:{
+//             items:1
+//         }
+//     }
+// })
+//   });
 
 
 // insurence slider
-$('.carousel-insurance').owlCarousel({
-  loop:true,
-    margin:10,
-    nav:false,
-    autoplay: true,
-    autoplaySpeed: 300,
-    smartSpeed: 500,
-    responsive:{
-        0:{
-            items:1
-        },
-        500:{
-            items:1
-        },
-        600:{
-            items:2
-        },
-        1000:{
-            items:3
-        }
-    }
-})
+// $(document).ready(function(){
+// $('.carousel-insurance').owlCarousel({
+//   loop:true,
+//     margin:10,
+//     nav:false,
+//     autoplay: true,
+//     autoplaySpeed: 300,
+//     smartSpeed: 500,
+//     responsive:{
+//         0:{
+//             items:1
+//         },
+//         500:{
+//             items:1
+//         },
+//         600:{
+//             items:2
+//         },
+//         1000:{
+//             items:3
+//         }
+//     }
+// })
+
+// });
 
 
 
