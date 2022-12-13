@@ -1,14 +1,14 @@
 .logo-banner{
     position: absolute !important;
     top: 120px !important;
-    left: 50px !important;
+    left: 80px !important;
     z-index: 10; 
 }
 
 .logo-banner img{
   border-radius: 10px !important;
-  height: 100px !important;
-  width: 100% !important;
+  height: 100px;
+  width: 100%;
 }
 html,body {
   margin: 0 !important;
@@ -722,7 +722,6 @@ input[type=date].form-control{
 .form-control{
   background-clip: initial!important;
 }
-
 
 @media (max-width:950px){
   .logo-banner img{

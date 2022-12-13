@@ -296,22 +296,30 @@ strong {
       object-fit: cover !important;
       object-position: center !important;
     }
-    .logo-banner {
+    /* .logo-banner {
       display: none !important;
-    }
+    } */
   }
 
 
-.swiper-slide .slider-image{
+.swiper-slide {
   width: 100%;
-  height: 50vh !important;
+  /* height: 50vh !important; */
   margin: 0 !important;
   padding: 0 !important;
-  background-repeat: no-repeat;
-  background-size:cover;
-  object-fit: cover !important;
-  object-position: bottom !important;
+  /* background-repeat: no-repeat;
+  background-size:cover; */
+  /* object-fit: none;  
+  object-position: right top;   */
 } 
+.swiper-slide .slider-image{
+  width: 100%;
+ padding-top: 30% !important;
+  background-repeat: no-repeat;
+  background-size:100%;
+  object-fit: none;  
+  object-position: right top;  
+}
 
 
 /*---------------------------------------
@@ -592,7 +600,7 @@ strong {
   position: relative !important;
   z-index: 100 !important;
   font-size: var(--h3-font-size) !important;
-  color: var(--primary-color) !important;
+  color: #006b94!important;
   display: block !important;
   text-align: center !important;
   line-height: 80px !important;
@@ -974,9 +982,17 @@ strong {
     display: flex !important;
     justify-content: center !important;
     align-items: center !important;
-
-    
   } 
+  .logo-banner{
+    margin-top: -110px !important;
+    margin-left: -10px;
+    
+   
+  }
+  .logo-banner img{
+    width: 10px !important;
+    height: 30px !important;
+  }
 }
 
 
@@ -1130,7 +1146,20 @@ strong {
   .doc-name{
     margin-top: 100px !important;
   }
-
+  .stf-img{
+    height: 150px;
+    width: 150px;
+    margin-left: 24%;
+  }
+  .logo-banner{
+    margin-top: -80px !important;
+    
+   
+  }
+  .logo-banner img{
+    width: 20px !important;
+    height: 40px !important;
+  }
 
 
 
@@ -1162,7 +1191,15 @@ strong {
     height: 300px;
     min-width: 450px !important;
   }
-
+  .logo-banner{
+    margin-top: -80px !important;
+    
+   
+  }
+  .logo-banner img{
+    width: 20px !important;
+    height: 40px !important;
+  }
     /* .carousel-img img{
       height: 300px;
       min-width: 400px !important;
@@ -1205,6 +1242,16 @@ strong {
     margin-left: 200px !important;
     height: 300px;
     width: 450px !important;
+  } 
+  .logo-banner{
+    margin-top: -50px !important;
+    margin-left: 50px ;
+    
+   
+  }
+  .logo-banner img{
+    width: 100px !important;
+    height: 60px !important;
   }
 
 /* 
