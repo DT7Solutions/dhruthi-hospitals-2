@@ -1236,7 +1236,15 @@ strong {
     
   
 }
-
+@media screen and (min-width:1024px){
+  .carousel-img .item img {
+    margin-left: 0px !important;
+  }
+  .card {
+    min-width:350px !important ;
+  }
+  
+}
 /* small laptop screen */
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   html,body {
@@ -1263,7 +1271,7 @@ strong {
   }
 
   .carousel-img .item img {
-    margin-left: 200px !important;
+    /* margin-left: 200px !important; */
     height: 300px;
     width: 450px !important;
   } 
@@ -1274,8 +1282,8 @@ strong {
   }
 
   .logo-banner img{
-    width: 100px !important;
-    height: 60px !important;
+    width: 200px !important;
+    height: 100px !important;
   }
 
 /* 
