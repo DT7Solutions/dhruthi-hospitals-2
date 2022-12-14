@@ -975,13 +975,11 @@ strong {
     margin-left: -35px;
   }
   .carousel-img img{
-    max-height: 250px;
-    max-width: 280px !important;
-    margin-left: 8px;
+    max-height: auto ;
+    max-width: 100% !important;
     border-radius: 15px !important;
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
+    padding: 10px;
+    
   } 
   .logo-banner{
     margin-top: -110px !important;
@@ -990,13 +988,21 @@ strong {
    
   }
   .logo-banner img{
-    width: 10px !important;
-    height: 30px !important;
+    width: 10px;
+    height: 30px;
   }
+}
+@media screen and (min-width: 380px) and (max-width: 436px) {
+  .carousel-img img{
+    max-height: auto ;
+    max-width: 100% !important;
+    padding: 18px;
+    margin: 10px;
+    
+  } 
 }
 
 
-/* @media screen and (max-width: 900px) and (min-width: 600px)  */
 @media screen and (min-width: 320px) and (max-width: 480px) {
   /* .heroText {
     padding: 1rem;
@@ -1081,12 +1087,14 @@ strong {
     .doctor-one {
       padding-left: 20px;
       padding-right: 20px;
-      border-radius: 10% !important ;
+      height: 300px;
+      /* border-radius: 10% !important ; */
     }
     .doctor-two {
       padding-left: 20px;
       padding-right: 20px;
-      border-radius: 10% !important ;
+      height: 300px;
+      /* border-radius: 10% !important ; */
     }
     .row-text h2{ 
       font-size: 1.2rem;
@@ -1095,13 +1103,7 @@ strong {
          word-spacing: -4.5px !important;
          
     }
-    /* .team-section .card{ */
-      /* margin-left: -8px !important; */
-      /* margin-left: -10px !important;
-      padding: 25px !important;
-      width: 15rem ; */
-      
-    /* } */
+    
     .ftco-faqs .myaccordion .btn {
       width: 100% !important;
       font-size: small!important;
@@ -1113,24 +1115,10 @@ strong {
            margin-top: -90px !important;
     }
 
-    /* .carousel-img img{
-      max-height: 250px;
-      max-width: 280px !important;
-      border-radius: 15px !important;
-      display: flex !important;
-      justify-content: center !important;
-      align-items: center !important;
-
-      
-    } */
-    /* .carousel-insurance .item img{
-      
-      min-height: 100px !important;
-      min-width: 250px !important;
-      padding: 10px;
-      margin-left: -35px;
+    .meet-text {
+      text-align: justify !important;
+      line-height: normal;
     }
-    */
 
     .staff-card .card-text {
       text-align: center;
@@ -1152,16 +1140,40 @@ strong {
     margin-left: 24%;
   }
   .logo-banner{
-    margin-top: -80px !important;
-    
-   
+    margin-top: -105px !important;
+    margin-left:calc(25%) !important;
+    display: block;
+
   }
   .logo-banner img{
-    width: 20px !important;
-    height: 40px !important;
+    width: 100px !important;
+    height: 80px !important;
   }
-
-
+  .meet-text{
+    width: 100%;
+    text-align: justify;
+  }
+   .carousel-section{
+    margin-top: 550px;
+   }
+   .slider-banner {
+    margin-top: 100px !important;
+   }
+   .swiper-slide .slider-image{
+    width: 100%;
+    padding-top: 50% !important;
+    
+  }
+  .carousel-img img{
+    max-height: 250px;
+    max-width: 100% !important;
+    margin-left: 8px;
+    border-radius: 15px !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  } 
+  
 
 }
 
@@ -1171,10 +1183,29 @@ strong {
 @media screen and (min-width: 480px){
   .carousel-img .item img {
     margin-left: 22px !important;
-
-    
   }
+  /* .logo-banner{
+    margin-top: -105px !important;
+    margin-left: 34% !important;
+    display: flex !important;
+    flex-wrap: wrap;
+    justify-content: center !important;
+    align-items: center !important;
+  
+  } */
+  /* .logo-banner img{
+    width: 300px !important;
+    height: 200px !important;
+    padding-bottom: 25px;
+  } */
 }
+
+/* @media screen and (min-width: 390px){
+  .carousel-img .item img {
+    padding-left: 5px !important;
+  }
+} */
+
 /* tablet */
 @media screen and (min-width: 481px) and (max-width: 768px) {
   html,body {
@@ -1192,24 +1223,17 @@ strong {
     min-width: 450px !important;
   }
   .logo-banner{
-    margin-top: -80px !important;
+    margin-top: -8% !important;
+    margin-left: 10%;
     
    
   }
   .logo-banner img{
-    width: 20px !important;
-    height: 40px !important;
+    width: 130px !important;
+    height: 80px !important;
   }
-    /* .carousel-img img{
-      height: 300px;
-      min-width: 400px !important;
-      border-radius: 5px !important;
-      margin-top: 20px !important;
-      margin-left: 250px!important;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    } */
+ 
+    
   
 }
 
@@ -1243,12 +1267,12 @@ strong {
     height: 300px;
     width: 450px !important;
   } 
+  
   .logo-banner{
     margin-top: -50px !important;
     margin-left: 50px ;
-    
-   
   }
+
   .logo-banner img{
     width: 100px !important;
     height: 60px !important;
@@ -1346,19 +1370,7 @@ strong {
  
 }
 
-/* .accordion button:not(.collapsed) {
-  background-color: #069c38;
-  color: #fff;
-}
 
-.accordion button {
-  background-color: #00c0e1;
-  color: #fff;
-} */
-
-/* .accordion button[aria-expanded="true"]{
-  color: white !important;
-} */
 
 .close{
   position: absolute !important;
