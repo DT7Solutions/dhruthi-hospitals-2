@@ -314,7 +314,7 @@ strong {
 } 
 .swiper-slide .slider-image{
   width: 100%;
- padding-top: 30% !important;
+  padding-top: 30% !important;
   background-repeat: no-repeat;
   background-size:100%;
   object-fit: none;  
