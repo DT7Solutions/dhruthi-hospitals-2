@@ -4,5 +4,5 @@ from .views import home,Chirala,Harikrishna
 urlpatterns = [
     path('', home, name='home'),
     path('chirala/', Chirala, name='chirala'),
-    path('RevuriHarikrishna/', Harikrishna, name='RevuriHarikrishna'),
+    path('drrevuriharikrishna/', Harikrishna, name='drrevuriharikrishna'),
 ]
