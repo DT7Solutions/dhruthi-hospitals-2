@@ -939,18 +939,18 @@ i.bi-youtube:hover{
 .award-section{
     min-height: 500px !important;
     min-width: 100%;
-    background: rgb(43,70,91);
-    background: linear-gradient(90deg, rgba(43,70,91,1) 38%, rgba(57,112,70,1) 100%); 
+    /* background: rgb(43,70,91);
+    background: linear-gradient(90deg, rgba(43,70,91,1) 38%, rgba(57,112,70,1) 100%);  */
 }
 
 .award-text h2{
  text-align: center !important;
  padding-top: 15px !important;
- color: white !important;
+ color:#006d95 !important;
 }
 .carousel-img img{
   min-height: 350px;
-  width: 420px !important;
+  width: 450px !important;
   border-radius: 5px !important;
   margin-top: 55px !important;
 }
@@ -966,15 +966,16 @@ i.bi-youtube:hover{
   align-items: center;
 }
 .award-content h3{
-  color: rgb(243, 231, 62) !important;
+  color: rgb(228, 213, 10) !important;
   margin-top: 48PX !important;
   padding-top: 20px !important;
+  font-weight: 800;
 }
 .award-content P{
-  color: whitesmoke !important;
+  color: #006d95 !important;
   text-align: justify;
   padding-right: 30px !important;
-  font-weight: 450;
+  font-weight: 600;
  
 }
 
@@ -1290,7 +1291,7 @@ button.close{
 
 .testimonial-carousel .owl-dots {
   margin-top: 25px;
-  display: flex;
+  display: none;
   align-items: flex-end;
   justify-content: center;
 }

@@ -1049,12 +1049,12 @@ a:focus {
       padding-left: 25px !important;
     
     }
-    
+ 
+
     i.bi-facebook{
       color: rgb(241, 244, 247) !important;
       filter: drop-shadow(0 20px 10px  rgb(15, 15, 15));
-      /* -webkit-text-stroke: 1px rgb(248, 240, 240);
-      -webkit-text-fill-color: rgb(13, 118, 122); */
+      /* font-size: 50px; */
      
     }
     i.bi-facebook:hover{
