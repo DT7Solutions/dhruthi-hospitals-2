@@ -101,3 +101,6 @@ def page_not_found_view(request, exception):
 
 def Chirala(request):
     return render(request,'uifiles/chirala-clininc.html')
+
+def Harikrishna(request):
+    return render(request,'uifiles/revuriharikrishna.html')
