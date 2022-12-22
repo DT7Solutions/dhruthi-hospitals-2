@@ -1181,7 +1181,14 @@ button.close{
   
 } 
 
-
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .whatsapp{
+    right:calc(12%);
+    left:calc(88%);
+    height: 40px;
+    width: 40px;
+  }
+}
 
 
 
