@@ -10,6 +10,7 @@
 
         <!-- Favicon -->
         <link href="img/favicon.ico" rel="icon">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
 
         <!-- Google Font -->
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -41,6 +42,7 @@
                                 <p>I'm</p>
                                 <h2></h2>
                                 <h1 class="typed-text">Dr.Revuri Hari krishna</h1> 
+                                <p>M D (General Medicine)</p>
                                
                                 <!-- <div >Web Designer, Web Developer, Front End Developer, Apps Designer, Apps Developer</div> -->
                              </div> 
@@ -77,7 +79,7 @@
                             <p class="team-info__text">MD(General Medicine)  2008, Manipal Academy of Higher Education </p>
                         </div>
                         <div class="team-info shadow  bg-body rounded">
-                            <h4 class="team-info__title">Specialist</h4>
+                            <h4 class="team-info__title">Specialization</h4>
                             <p class="team-info__text">General Medicine</p>
                         </div>
                         <div class="team-info shadow  bg-body rounded">
@@ -87,17 +89,17 @@
                             <p class="team-info__text">International Diabetic Federation</p>
                         </div>
                     </div>
-                    <div class="col-lg-7 mt-20 mt-lg-0 mt-5">
+                    <div class="col-lg-7 mt-20 mt-lg-0 mt-5" style="display:flex;flex-direction:column;justify-content:center;">
                         <h2 class="inner-title-style2 mt-n2 mb-2 pb-1" >Introduction</h2>
-                        <p class="mb-4 pb-2" style="text-align: justify;">Dr. Revuri Hari Krishna is an extremely committed and passionate doctor in General Medicine. Post completing his graduation and MD (internal medicine), he started his career as a faculty in NRI medical college. He is proficient in evaluating and treating infectious as well as chronic issues such as hypertension, diabetes and thyroid abnormalities. He is one of the best general medicine doctors in Guntur, India and he is an active participant in
-                             various national and international medical societies and also in academic research activities</p>
-                        <div class="skill-bar">
+                        <p class="mb-4 pb-2" style="text-align: justify;">Myself Dr. Revuri Hari Krishna extremely committed and passionate doctor in General Medicine. Post completing my graduation and MD (internal medicine), I started my career as a faculty in NRI medical college. I am proficient in evaluating and treating infectious as well as chronic issues such as hypertension, diabetes and thyroid abnormalities. One of the best general medicine doctors in Guntur, and an active participant in various 
+                            national and international medical societies and also in academic research activities</p>
+                        <!-- <div class="skill-bar">
                             <h4 class="skill-bar__title">General Medicine</h4><span class="skill-bar__number">100%</span>
                             <div class="progress">
                                 <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100"
                                     aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
-                        </div>
+                        </div> -->
                         <!-- <div class="skill-bar">
                             <h4 class="skill-bar__title">Dental Surgery</h4><span class="skill-bar__number">64%</span>
                             <div class="progress">
@@ -105,12 +107,13 @@
                                     aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div> -->
-                        <p class="pt-3 mb-3 pb-3" style="text-align: justify;">Dr. Harikrishna has established Dhruthi Hospitals one of the best general hospital in guntur which is providing best general medicine in Guntur City with its core principle as patient welfare and quick recovery.</p>
+                        <p class="pt-3 mb-3 pb-3" style="text-align: justify;">I have established Dhruthi Hospital one of the best general hospital in guntur which is providing best general 
+                            medicine in Guntur City with its core principle as patient welfare and quick recovery.</p>
                         <div class="check-list style4 pt-1 mb-5 pb-1">
                             <ul>
-                                <li style="text-align: justify;">He has extensive experience of 10-15 years as a renowned doctor and has the capacity to evaluate root cause of the patient problems.</li>
-                                <li style="text-align: justify;">He is an exceptionally compassionate doctor and is available 24/7 for patient welfare.</li>
-                                <li style="text-align: justify;">Read the comprehensive overview reimburse employees insurance.</li>
+                                <li style="text-align: justify;">I has extensive experience of 10-15 years as a renowned doctor and has the capacity to evaluate root cause of the patient problems</li>
+                                <li style="text-align: justify;"> am an exceptionally compassionate doctor and available 24/7 for patient welfare.</li>
+                                
                             </ul>
                         </div>
                         <!-- <h4 class="inner-title-style3">Skills</h4> -->
@@ -134,12 +137,12 @@
 
         <!-- About Start -->
          <div class="about wow fadeInUp mt-5" data-wow-delay="0.1s" id="about">
-            <div class="container-fluid">
+            <div class="container">
                 <h2 class="text-center title mb-4">About Dhruthi</h2>
                 <div class="row align-items-center">
                     <div class="col-lg-6">
                         <div class="about-img">
-                            <img src="{% static 'revuriharikrishna/img/about-dhruthi.png' %}" alt="Image">
+                            <img src="{% static 'revuriharikrishna/img/about-dhruthi.png' %}" style="border-radius: 6px;" alt="Image">
                         </div>
                     </div>
                     <div class="col-lg-6">
@@ -160,17 +163,14 @@
             </div>
         </div> 
         <!-- About End -->
-        
-        
-        
          <!-- Experience Start -->
-        <div class="experience" id="experience">
-            <div class="container">
+        <div class="experience  pt-5" id="experience" >
+            <div class="container  ">
                 <header class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
                     
-                    <h2 class="title">Our Branches</h2>
+                    <h2 class="title" style="font-weight: 600;font-size: 2rem;">Our Branches</h2>
                 </header>
-                <div class="timeline">
+                 <!--<div class="timeline">
                     <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
                         <div class="timeline-text">
                             <div class="timeline-date">2018</div>
@@ -213,27 +213,146 @@
                     </div>
                     
                     
-                </div>
+                </div> -->
+                <section class=" pb-0  " id="timeline">
+                    
+                    <div class="container mb-0">
+                      <div class="row">
+                        <div class="timeline">
+                          <div class="row g-0 justify-content-end justify-content-md-around align-items-start timeline-nodes">
+                            <div class="col-9  col-md-5 me-md-4 me-lg-0 order-3 order-md-1 timeline-content bg-white shadow-lg"
+                              data-aos="fade-left" data-wow-delay="0.6s">
+                              <img src="{% static 'images/dh-images/dhruthi-hospital-timeline-card-399x190.png' %}"
+                                class="timeline-card" />
+                              <h2 class="mt-3" style="font-weight: 600;">Lakshmipuram</h2>
+                              <h5 style="color:#006d95 ;font-weight:400;">Guntur</h5>
+                              <div class="loaction-view mt-2">
+                                <a
+                                  href="https://www.google.com/maps/search/%235-89-19,+1st+cross,+behind+Chaitanya+college,+3rd+line,+lakshmipuram,+Guntur/@16.310384,80.431403,10z?hl=en-US"><button
+                                    class="btn-test btn-md me-3">Get Directions</button></a>
+                                <a href="https://www.dhruthiclinics.com/"><button class="btn-test ">More Info</button></a>
+                              </div>
+                            </div>
+                            <div class="col-3  col-sm-1 order-1 timeline-icons text-md-center">
+                              <i class="bi bi-calendar-check timeline-icon"></i>
+                            </div>
+              
+                            <div class="col-9 col-md-5 ps-md-3 ps-lg-0 order-1 order-md-3 py-4 timeline-date">
+                              <time class="time-text">2018</time>
+                            </div>
+                          </div>
+              
+              
+                          <div class="row g-0 justify-content-end justify-content-md-around align-items-start timeline-nodes my-lg-5 my-4">
+                            <div class="col-9 col-md-5 ms-md-4 ms-lg-0 order-3 order-md-1 timeline-content bg-white shadow-lg  wow"
+                              data-aos="fade-right" data-wow-delay="0.6s">
+                              <img src="{% static 'images/dh-images/dhruthi-hospitals-kothapet-branch-200x150.png' %}"
+                                class="timeline-card" />
+              
+                              <h2 class="mt-3"style="font-weight: 600;">Kothapet</h2>
+                              <h5 style="color:#006d95 ;font-weight:400;">Guntur</h5>
+                              <div class="loaction-view mt-2">
+                                <a
+                                  href="https://www.google.com/maps?ll=16.295203,80.449945&z=10&t=m&hl=en-US&gl=US&mapclient=embed&cid=7550184175581018102"><button
+                                    class="btn-test  me-3">Get Directions</button></a>
+                                <a href="https://dhruthihospital.com/dhruthi-hospitals/"><button class="btn-test">More Info</button></a>
+                              </div>
+                            </div>
+              
+                            <div class="col-3 col-sm-1 order-1 timeline-icons text-md-center">
+                              <i class="bi bi-calendar-check timeline-icon"></i>
+                            </div>
+              
+                            <div class="col-9 col-md-5 pe-md-3 pe-lg-0 order-1 order-md-3 py-4 timeline-date">
+                              <time class="time-text">2020</time>
+                            </div>
+                          </div>
+              
+                          <div class="row g-0 justify-content-end justify-content-md-around align-items-start timeline-nodes ">
+                            <div class="col-9 col-md-5 me-md-4 me-lg-0 order-3 order-md-1 timeline-content bg-white shadow-lg  wow"
+                              data-aos="fade-left" data-wow-delay="0.6s">
+                              <img src="{% static 'images/dh-images/dhruthi-hospital-main-page-doctors-image-1024x266 (1).webp' %}"
+                                class="branches"  />
+                              <h2 class="mt-3" style="font-weight: 600;">Churuch Road</h2>
+                              <h5 style="color:#006d95 ;font-weight:400;">Chirala</h5>
+                              <div class="loaction-view mt-2">
+                                <a
+                                  href="https://www.google.com/maps?ll=15.824922,80.363014&z=10&t=m&hl=en-US&gl=US&mapclient=embed&q=C/o+Chinnari+hospital+Church+Road,+Chirala">
+                                  <button class="btn-test btn-md me-3">Get Directions</button></a>
+                                <a href="http://127.0.0.1:8000/chirala/"><button class="btn-test">More Info</button></a>
+                              </div>
+                            </div>
+              
+                            <div class="col-3 col-sm-1 order-1 timeline-icons text-md-center">
+                              <i class="bi bi-calendar-check timeline-icon"></i>
+                            </div>
+              
+                            <div class="col-9 col-md-5 ps-md-3 ps-lg-0 order-1 order-md-3 py-4 timeline-date">
+                              <time class="time-text">2022</time>
+                            </div>
+                          </div>
+              
+                          
+                          <div class="row g-0 justify-content-end justify-content-md-around align-items-start timeline-nodes my-lg-5 my-4 ">
+                            <div class="col-9 col-md-5 ms-md-4 ms-lg-0 order-3 order-md-1 timeline-content bg-white shadow-lg  wow "
+                              data-aos="fade-right" data-wow-delay="0.6s">
+                              <img src="{% static 'images/dh-images/dhruthi-hospital-timeline-card-399x190.png' %}"
+                                class="timeline-card" />
+              
+                              <h2 class="mt-3" style="font-weight: 600;">RamMandir Road</h2>
+                              <h5 class="mb-3 pb-0" style="color:#006d95 ;font-weight:400;">Inkollu</h5>
+                              <div class="loaction-view mt-2">
+              
+                                <button class="btn-test btn-md me-3 ">Get Directions</button>
+                                <button class="btn-test">More Info</button>
+                              </div>
+                            </div>
+              
+                            <div class="col-3 col-sm-1 order-1 timeline-icons text-md-center">
+                              <i class="bi bi-calendar-check timeline-icon"></i>
+                            </div>
+              
+                            <div class="col-9 col-md-5 pe-md-3 pe-lg-0 order-1 order-md-3 py-4 timeline-date">
+                              <time class="time-text">2022</time>
+                            </div>
+                          </div>
+                        </div>
+              
+                      </div>
+                    </div>
+                  </section>
+
             </div>
         </div>
+        
         <!-- Job Experience End -->
         
         
         <!-- Banner Start -->
-        <div class="banner wow zoomIn" data-wow-delay="0.1s">
-            <div class="container" style="display:flex;flex-wrap: wrap;">
-                <div class="section-header col-lg-6 col-12">
-                  <h3 class="text-white title">Follow us on </h3>
+        <div class="banner wow zoomIn "  data-wow-delay="0.1s">
+            <div class="container" style="display:flex; justify-content:center;align-items:center;flex-wrap: wrap;">
+                <div class="section-header col-lg-6 col-12" style="display: flex;justify-content: center;align-items: center;">
+                  <h3 class="text-white title mt-4" style="font-size:3rem;">Follow us on </h3>
                 </div>
                  <div class="team-social col-lg-6 col-12" style ="flex-wrap: wrap;">
-                    <a class="btn" href=""><i class="fab fa-twitter"></i></a>
-                    <a class="btn" href="https://www.facebook.com/dhruthihospital/"><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn " href="https://www.facebook.com/dhruthihospital/"><i class="fab fa-linkedin-in"></i></a>
-                    <a class="btn " href="https://www.instagram.com/dhruthihealthcare/"><i class="fab fa-instagram"></i></a>
-                </div> 
+                    <a class="" href=""><i class="fab fa-twitter" style="color: rgb(192, 224, 228) !important;
+                        filter: drop-shadow(0 20px 10px rgb(15, 15, 15));font-size: 40px !important;padding-left: 25px !important;"></i></a>
+                    <a class="" href="https://www.facebook.com/dhruthihospital/"><i class="fab fa-facebook-f" style="color: rgb(0, 110, 255) !important;
+                        filter: drop-shadow(0 20px 10px rgb(15, 15, 15));font-size: 40px !important;
+    padding-left: 25px !important;"></i></a>
+    <a class="" href="https://www.instagram.com/dhruthihealthcare/"><i class="fab fa-instagram" style="color:  rgb(228, 58, 6) !important;
+        filter: drop-shadow(0 20px 10px rgb(15, 15, 15));font-size: 40px !important;
+padding-left: 25px !important;"></i></a>
+                    <a class="" href="https://www.facebook.com/dhruthihospital/"><i class="fab fa-linkedin-in" style="color: rgb(0, 110, 255) !important;
+                        filter: drop-shadow(0 20px 10px rgb(15, 15, 15));font-size: 40px !important;
+    padding-left: 25px !important;"></i></a>
+                    
+                </div>  
+               
                 
             </div>
         </div>
+        
         <!-- Banner End -->
 
 
@@ -242,7 +361,7 @@
             <div class="container">
                 <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
                     
-                    <h2 class="title"> Portfolio</h2>
+                    <h2 class="title" style="font-weight: 600;font-size: 2rem;"> Portfolio</h2>
                 </div>
                 <div class="row">
                     <div class="col-12">
@@ -260,65 +379,67 @@
                             <div class="portfolio-img">
                                 <img src="{% static 'revuriharikrishna/img/Dhruthi-hospital-awards-and-recognations-page-times-icons-of-healthcare-award-2022-image.jpg' %}" alt="Image">
                             </div>
-                            <div class="portfolio-text">
-                                <h3> Health Minister</h3>
-                                <a class="btn" href="{% static 'revuriharikrishna/img/Dhruthi-hospital-awards-and-recognations-page-times-icons-of-healthcare-award-2022-image.jpg' %}" data-lightbox="portfolio">+</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4 col-sm-12 portfolio-item filter-2 wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="portfolio-wrap">
-                            <div class="portfolio-img">
-                                <img src="{% static 'revuriharikrishna/img/news.png' %}" alt="Image">
-                            </div>
-                            <div class="portfolio-text">
-                                <h3>1st CME On Infectious Diseases AP </h3>
-                                <a class="btn" href="{% static 'revuriharikrishna/img/news.png' %}" data-lightbox="portfolio">+</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="0.4s">
-                        <div class="portfolio-wrap">
-                            <div class="portfolio-img">
-                                <img src="{% static 'revuriharikrishna/img/news2.png' %}" alt="Image">
-                            </div>
-                            <div class="portfolio-text">
-                                <h3>1st CME On Infectious Diseases AP </h3>
-                                <a class="btn" href="{% static 'revuriharikrishna/img/news2.png' %}" data-lightbox="portfolio">+</a>
-                            </div>
+                             <div class="portfolio-text">
+                                 <h3 style="text-align: center;">Times icon of healthcare</h3>
+                               
+                            </div> 
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.6s">
                         <div class="portfolio-wrap">
                             <div class="portfolio-img">
-                                <img src="{% static 'revuriharikrishna/img/tenali.jpg' %}" alt="Image">
+                                <img src="{% static 'revuriharikrishna/img/drrevuriharikrishna-portofoilo-award-385x260-.png' %}" alt="Image">
                             </div>
-                            <div class="portfolio-text">
-                                <h3>IMA tenali</h3>
-                                <a class="btn" href="{% static 'revuriharikrishna/img/tenali.jpg' %}" data-lightbox="portfolio">+</a>
-                            </div>
+                             <div class="portfolio-text">
+                                <h3 style="text-align: center;">IMA tenali</h3>
+                               
+                            </div> 
                         </div>
                     </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 portfolio-item filter-2 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="portfolio-wrap">
+                            <div class="portfolio-img">
+                                <img src="{% static 'revuriharikrishna/img/drrevuriharikrishna-portfoilo-physicians-385x260.png' %}" alt="Image">
+                            </div>
+                             <div class="portfolio-text">
+                                <h3 style="text-align: center;">National physician's day </h3>
+                                
+                            </div> 
+                        </div>
+                    </div>
+                    
+                    
                     <div class="col-lg-4 col-md-4 col-sm-12 portfolio-item filter-2 wow fadeInUp" data-wow-delay="0.8s">
                         <div class="portfolio-wrap">
                             <div class="portfolio-img">
-                                <img src="{% static 'revuriharikrishna/img/news4.png' %}" alt="Image">
+                                <img src="{% static 'revuriharikrishna/img/drrevuriharikrishna-portfoilo-newsevents385x260.png' %}" alt="Image">
                             </div>
-                            <div class="portfolio-text">
-                                <h3>Don't use  Antibiotics own </h3>
-                                <a class="btn" href="{% static 'revuriharikrishna/img/news4.png' %}" data-lightbox="portfolio">+</a>
+                             <div class="portfolio-text">
+                                <h3 style="text-align: center;">National physician's day </h3>
+                                
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="portfolio-wrap">
+                            <div class="portfolio-img">
+                                <img src="{% static 'revuriharikrishna/img/drrevuriharikrishna-portfoilo-common-infection-disese-385x260.png' %}" alt="Image">
                             </div>
+                             <div class="portfolio-text">
+                                <h3 style="text-align: center;">1st CME On Infectious Diseases </h3>
+                               
+                            </div> 
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="1s">
                         <div class="portfolio-wrap">
                             <div class="portfolio-img">
-                                <img src="{% static 'revuriharikrishna/img/news3.png' %}" alt="Image">
+                                <img src="{% static 'revuriharikrishna/img/inguration.png' %}" alt="Image">
                             </div>
-                            <div class="portfolio-text">
-                                <h3>1st CME On Infectious Diseases AP</h3>
-                                <a class="btn" href="{% static 'revuriharikrishna/img/news3.png' %}" data-lightbox="portfolio">+</a>
-                            </div>
+                             <div class="portfolio-text">
+                                <h3 style="text-align: center;">1st CME On Infectious Diseases</h3>
+                               
+                            </div> 
                         </div>
                     </div>
                 </div>
@@ -338,7 +459,7 @@
                         <!-- <h3>123 Street, New York, USA</h3> -->
                         <div class="footer-menu">
                             <a href="tel:+919858190190">+9198581 90190</a>
-                            <a>dhruthihospital@gmail.com</a>
+                            <a>drharirevuri@dhruthihealthcare.com</a>
                         </div>
                         <div class="footer-social">
                             <a href=""><i class="fab fa-twitter"></i></a>
@@ -380,7 +501,11 @@
         
         <!-- Contact Javascript File -->
         <script src="{% static 'revuriharikrishna/mail/jqBootstrapValidation.min.js' %}"></script>
-        <!-- <script src="mail/contact.js"></script> -->
+        <script src="mail/contact.js"></script> 
+
+        <script>
+            new WOW().init();
+          </script>
 
         <!-- Template Javascript -->
         <script src="{% static 'revuriharikrishna/js/main.js' %}"></script>
