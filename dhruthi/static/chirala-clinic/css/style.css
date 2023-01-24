@@ -317,6 +317,18 @@ a:focus {
   color: #ffffff;
 }
 
+
+
+.detail-box p {
+    text-align: justify;
+    font-weight: 500 !important;
+    color: rgb(9,82,109)!important;
+}
+
+
+
+
+
 .slider_section .img-box {
   display: -webkit-box;
   display: -ms-flexbox;
