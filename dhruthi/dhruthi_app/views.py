@@ -1,7 +1,6 @@
 import os
 from django.shortcuts import render
-from .models import HomeSlider
-
+from .models import HomeSlider,Popup
 from googleapiclient.discovery import build
 from google.oauth2 import service_account
 
@@ -11,6 +10,7 @@ from django.views.decorators.csrf import csrf_exempt
 @csrf_exempt
 def home(request):
     slider = HomeSlider.objects.all()
+    popup = Popup.objects.first()
 
     if request.method == "POST":
         name = request.POST.get('name',"")
@@ -50,7 +50,7 @@ def home(request):
 
         
 
-    return render( request,'uifiles/index.html',{'slider':slider})
+    return render( request,'uifiles/index.html',{'slider':slider,'popup':popup})
 
 def page_not_found_view(request, exception):
     return render(request, 'uifiles/404.html', status=404)
