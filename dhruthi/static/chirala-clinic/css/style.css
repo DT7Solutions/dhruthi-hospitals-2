@@ -702,14 +702,15 @@ a:focus {
 
 .client_section .box .img-box {
   margin-bottom: 15px;
-  min-width: 145px;
-  max-width: 145px;
+  /* min-width: 400px;
+  max-width: 40px;  */
   overflow: hidden;
 }
 
 .client_section .box .img-box img {
   width: 100%;
-  border-radius: 100%;
+  height: auto;
+  border-radius: 10px;
   border: 7px solid rgba(255, 255, 255, 0.45);
 }
 

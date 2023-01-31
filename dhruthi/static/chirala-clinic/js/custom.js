@@ -35,6 +35,52 @@ $(".client_owl-carousel").owlCarousel({
 });
 
 
+// client section owl carousel
+$(".carouselExample2Controls").owlCarousel({
+    loop: true,
+    margin: 0,
+    dots: false,
+    nav: true,
+    navText: [],
+    autoplay: true,
+    autoplayHoverPause: true,
+    navText: [
+        '<i class="fa fa-angle-left" aria-hidden="true"></i>',
+        '<i class="fa fa-angle-right" aria-hidden="true"></i>'
+    ],
+    responsive: {
+        0: {
+            items: 2
+        },
+        600: {
+            items: 2
+        },
+        1000: {
+            items: 2
+        }
+    }
+});
+
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:false,
+    autoplay: true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:3
+        }
+    }
+})
+
+
+
 
 /** google_map js **/
 function myMap() {
